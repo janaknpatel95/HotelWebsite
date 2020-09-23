@@ -29,7 +29,7 @@
 +
 ### View or cancle
 +
-+ abel to view reservasion or cancle reservasion by conformasion number
++ abel to view reservasion or cancle(Delate) reservasion by conformasion number
 +
 ### As Admin
 +
