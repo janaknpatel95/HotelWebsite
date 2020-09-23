@@ -64,8 +64,7 @@
 
 - [ ] Weekly journal entry
 - [ ] Integration with  api
-- [ ] Create new hotel table (test, dev and prod dbs)
-- [ ] Add the trail report entity
+- [ ] Create new hotel table (test, dev)
 - [ ] Create the hotel reservasion system and check
 - [ ] Prepare for Checkpoint 3: Deployed to AWS, at least one JSP that displays data from the database is implemented. 
 
