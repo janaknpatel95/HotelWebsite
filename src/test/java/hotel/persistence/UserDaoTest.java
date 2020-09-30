@@ -25,7 +25,18 @@ class UserDaoTest {
         dao = new UserDao();
     }
 
-
+    /**
+     * Verify successful update of a User
+     */
+    @Test
+    void saveOrUpdate() {
+        String updateNewUser = "mike";
+        User userBeforeUpdate = dao.getById(2);
+        userBeforeUpdate.setFirst_name(updateNewUser);
+        dao.saveOrUpdate(userBeforeUpdate);
+        User userAfterUpdate = dao.getById(2);
+        assertEquals(updateNewUser, userAfterUpdate.getFirst_name());
+    }
     @Test
     void insert() {
         User newUser = new User("jack", "robertson", "jackrobert");
