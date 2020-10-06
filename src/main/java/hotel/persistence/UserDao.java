@@ -90,6 +90,8 @@ public class UserDao {
 
 
     }
+
+
     public List<User> getAll() {
 
         Session session = sessionFactory.openSession();

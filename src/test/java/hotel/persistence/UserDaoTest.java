@@ -1,5 +1,6 @@
 package hotel.persistence;
 
+import hote.entity.Order;
 import hote.entity.User;
 import hotel.test.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -66,5 +67,30 @@ class UserDaoTest {
     void getAllSuccess() {
         List<User> users = dao.getAll();
         assertEquals(4, users.size());
+    }
+    /**
+     * Verify successful insert of a user
+     */
+    @Test
+    void insertWithOrderSuccess() {
+
+        User newUser = new User("Fred", "Flintstone", "fflintstone");
+        String orderDecription = "Order 1";
+        Order order = new Order(orderDecription, newUser);
+
+        newUser.addOrder(order);
+
+
+
+        int id = dao.insert(newUser);
+
+
+        assertNotEquals(0,id);
+        User insertedUser = dao.getById(id);
+        assertEquals("Fred", insertedUser.getFirst_name());
+        assertEquals(1, insertedUser.getOrders().size());
+        // Could continue comparing all values, but
+        // it may make sense to use .equals()
+        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
     }
 }
