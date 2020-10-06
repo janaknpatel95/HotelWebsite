@@ -14,16 +14,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserDaoTest {
 
     UserDao dao;
+    GenericDao genericDao;
 
     @BeforeEach
     void setUp() {
+        dao = new UserDao();
+        genericDao = new GenericDao(Order.class);
         Database database = Database.getInstance();
         database.runSQL("clean.sql");
 
 
 
 
-        dao = new UserDao();
     }
 
     /**
@@ -32,31 +34,31 @@ class UserDaoTest {
     @Test
     void saveOrUpdate() {
         String updateNewUser = "mike";
-        User userBeforeUpdate = dao.getById(2);
+        User userBeforeUpdate = (User)genericDao.getById(2);
         userBeforeUpdate.setFirst_name(updateNewUser);
-        dao.saveOrUpdate(userBeforeUpdate);
-        User userAfterUpdate = dao.getById(2);
+        genericDao.saveOrUpdate(userBeforeUpdate);
+        User userAfterUpdate = (User)genericDao.getById(2);
         assertEquals(updateNewUser, userAfterUpdate.getFirst_name());
     }
     @Test
     void insert() {
         User newUser = new User("jack", "robertson", "jackrobert");
-        int id = dao.insert(newUser);
+        int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)genericDao.getById(id);
         assertEquals("jack", insertedUser.getFirst_name());
     }
 
     @Test
     void delete() {
-        dao.delete(dao.getById(3));
-        assertNull(dao.getById(3));
+        genericDao.delete(genericDao.getById(3));
+        assertNull(genericDao.getById(3));
     }
 
     @Test
     void getByPropertyLike() {
 
-        List<User> users = dao.getByPropertyLike("last_name", "c");
+        List<User> users = genericDao.getByPropertyLike("last_name", "c");
         assertEquals(3, users.size());
     }
 
@@ -65,7 +67,7 @@ class UserDaoTest {
      */
     @Test
     void getAllSuccess() {
-        List<User> users = dao.getAll();
+        List<User> users = genericDao.getAll();
         assertEquals(4, users.size());
     }
     /**

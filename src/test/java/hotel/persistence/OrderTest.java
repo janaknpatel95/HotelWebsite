@@ -16,28 +16,31 @@ import static org.junit.jupiter.api.Assertions.*;
 class OrderTest {
 
     OrderDao dao;
+    GenericDao genericDao;
 
     @BeforeEach
     void setUp() {
+        dao = new OrderDao();
+        genericDao = new GenericDao(Order.class);
         Database database = Database.getInstance();
         database.runSQL("clean.sql");
 
 
 
 
-        dao = new OrderDao();
+
     }
 
     @Test
     void getAllOrdersSuccess() {
-       List<Order> orders =  dao.getAll();
+       List<Order> orders =  genericDao.getAll();
        assertEquals(7,orders.size());
     }
 
 
     @Test
     void getByTdSuccess() {
-        Order retrievedOrder = dao.getById(2);
+        Order retrievedOrder = (Order) genericDao.getById(2);
         assertNotNull(retrievedOrder);
         assertEquals("Books", retrievedOrder.getDescription());
 
@@ -48,10 +51,10 @@ class OrderTest {
     @Test
     void updateSuccess() {
         String description = "Plates, forks, and knives";
-        Order orderToUpdate = dao.getById(3);
+        Order orderToUpdate = (Order) genericDao.getById(3);
         orderToUpdate.setDescription(description);
-        dao.saveOrUpdate(orderToUpdate);
-        Order retrievedOrder = dao.getById(3);
+        genericDao.saveOrUpdate(orderToUpdate);
+        Order retrievedOrder = (Order)genericDao.getById(3);
         assertEquals(description, retrievedOrder.getDescription());
     }
     /**
@@ -63,10 +66,10 @@ class OrderTest {
     User user = userDao.getById(1);
         Order newOrder = new Order("Plates", user);
     user.addOrder(newOrder);
-        int id = dao.insert(newOrder);
+        int id = genericDao.insert(newOrder);
 
         assertNotEquals(0,id);
-        Order insertedOrder = dao.getById(id);
+        Order insertedOrder = (Order)genericDao.getById(id);
         assertEquals("Plates", insertedOrder.getDescription());
         assertEquals("Joe", insertedOrder.getUser().getFirst_name());
         // Could continue comparing all values, but
@@ -79,8 +82,8 @@ class OrderTest {
      */
     @Test
     void deleteSuccess() {
-        dao.delete(dao.getById(2));
-        assertNull(dao.getById(2));
+        genericDao.delete(genericDao.getById(2));
+        assertNull(genericDao.getById(2));
     }
 
     /**
@@ -97,7 +100,7 @@ class OrderTest {
      */
     @Test
     void getByPropertyEqualSuccess() {
-        List<Order> orders = dao.getByPropertyEqual("description", "Books");
+        List<Order> orders = genericDao.getByPropertyEqual("description", "Books");
         assertEquals(1, orders.size());
         assertEquals(2, orders.get(0).getId());
     }
@@ -107,7 +110,7 @@ class OrderTest {
      */
     @Test
     void getByPropertyLikeSuccess() {
-        List<Order> orders = dao.getByPropertyLike("description", "b");
+        List<Order> orders = genericDao.getByPropertyLike("description", "b");
         assertEquals(3, orders.size());
     }
 }
