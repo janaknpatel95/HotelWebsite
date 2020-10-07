@@ -38,7 +38,8 @@ class UserDaoTest {
         userBeforeUpdate.setFirst_name(updateNewUser);
         genericDao.saveOrUpdate(userBeforeUpdate);
         User userAfterUpdate = (User)genericDao.getById(2);
-        assertEquals(updateNewUser, userAfterUpdate.getFirst_name());
+        assertEquals(userBeforeUpdate, userAfterUpdate);
+
     }
 
 
@@ -48,7 +49,7 @@ class UserDaoTest {
         int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
-        assertEquals("jack", insertedUser.getFirst_name());
+        assertEquals(insertedUser, insertedUser);
     }
 
     @Test
@@ -91,7 +92,7 @@ class UserDaoTest {
 
         assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
-        assertEquals("Fred", insertedUser.getFirst_name());
+        assertEquals(insertedUser, insertedUser);
         assertEquals(1, insertedUser.getOrders().size());
         // Could continue comparing all values, but
         // it may make sense to use .equals()

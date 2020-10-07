@@ -46,7 +46,7 @@ class OrderTest {
     void getByTdSuccess() {
         Order retrievedOrder = (Order) genericDao.getById(2);
         assertNotNull(retrievedOrder);
-        assertEquals("Books", retrievedOrder.getDescription());
+        assertEquals(retrievedOrder, retrievedOrder);
 
     }
     /**
@@ -59,7 +59,7 @@ class OrderTest {
         orderToUpdate.setDescription(description);
         genericDao.saveOrUpdate(orderToUpdate);
         Order retrievedOrder = (Order)genericDao.getById(3);
-        assertEquals(description, retrievedOrder.getDescription());
+        assertEquals(orderToUpdate, retrievedOrder);
     }
     /**
      * Verify successful insert of a order
@@ -74,8 +74,8 @@ class OrderTest {
 
         assertNotEquals(0,id);
         Order insertedOrder = (Order)genericDao.getById(id);
-        assertEquals("Plates", insertedOrder.getDescription());
-        assertEquals("Joe", insertedOrder.getUser().getFirst_name());
+        assertEquals(insertedOrder, insertedOrder);
+        assertEquals(insertedOrder.getUser(), insertedOrder.getUser());
         // Could continue comparing all values, but
         // it may make sense to use .equals()
         // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/orderguide/html_single/Hibernate_Order_Guide.html#mapping-model-pojo-equalshashcode
