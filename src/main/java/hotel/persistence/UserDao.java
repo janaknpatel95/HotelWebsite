@@ -80,16 +80,16 @@ public class UserDao {
         return users;
     }
 
-
-    public User getById(int id){
-        Session session = sessionFactory.openSession();
-        User user = session.get(User.class, id);
-        session.close();
-
-        return user;
-
-
-    }
+//
+//    public User getById(int id){
+//        Session session = sessionFactory.openSession();
+//        User user = session.get(User.class, id);
+//        session.close();
+//
+//        return user;
+//
+//
+//    }
 
 
     public List<User> getAll() {

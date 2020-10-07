@@ -13,13 +13,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserDaoTest {
 
-    UserDao dao;
+//    UserDao dao;
     GenericDao genericDao;
 
     @BeforeEach
     void setUp() {
-        dao = new UserDao();
-        genericDao = new GenericDao(Order.class);
+//        dao = new UserDao();
+        genericDao = new GenericDao(User.class);
         Database database = Database.getInstance();
         database.runSQL("clean.sql");
 
@@ -33,13 +33,15 @@ class UserDaoTest {
      */
     @Test
     void saveOrUpdate() {
-        String updateNewUser = "mike";
+        String updateNewUser = "Fred";
         User userBeforeUpdate = (User)genericDao.getById(2);
         userBeforeUpdate.setFirst_name(updateNewUser);
         genericDao.saveOrUpdate(userBeforeUpdate);
         User userAfterUpdate = (User)genericDao.getById(2);
         assertEquals(updateNewUser, userAfterUpdate.getFirst_name());
     }
+
+
     @Test
     void insert() {
         User newUser = new User("jack", "robertson", "jackrobert");
@@ -84,11 +86,11 @@ class UserDaoTest {
 
 
 
-        int id = dao.insert(newUser);
+        int id = genericDao.insert(newUser);
 
 
         assertNotEquals(0,id);
-        User insertedUser = dao.getById(id);
+        User insertedUser = (User)genericDao.getById(id);
         assertEquals("Fred", insertedUser.getFirst_name());
         assertEquals(1, insertedUser.getOrders().size());
         // Could continue comparing all values, but

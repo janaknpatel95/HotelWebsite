@@ -1,6 +1,7 @@
 package hotel.persistence;
 
 import hote.entity.Order;
+
 import hote.entity.User;
 import hotel.test.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,13 +16,16 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class OrderTest {
 
-    OrderDao dao;
+//    OrderDao dao;
     GenericDao genericDao;
+    GenericDao genericDaoUser;
+
 
     @BeforeEach
     void setUp() {
-        dao = new OrderDao();
+//        dao = new OrderDao();
         genericDao = new GenericDao(Order.class);
+        genericDaoUser = new GenericDao(User.class);
         Database database = Database.getInstance();
         database.runSQL("clean.sql");
 
@@ -62,8 +66,8 @@ class OrderTest {
      */
     @Test
     void insertSuccess() {
-    UserDao userDao = new UserDao();
-    User user = userDao.getById(1);
+
+    User user = (User)genericDaoUser.getById(1);
         Order newOrder = new Order("Plates", user);
     user.addOrder(newOrder);
         int id = genericDao.insert(newOrder);
@@ -76,6 +80,19 @@ class OrderTest {
         // it may make sense to use .equals()
         // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/orderguide/html_single/Hibernate_Order_Guide.html#mapping-model-pojo-equalshashcode
     }
+//    void insert() {
+//        User user = (User)genericDaoUser.getById(1);
+//        String roleName = "sign_in";
+//        UserRole newUserRoles = new UserRole(roleName, user);
+//        user.addUserRoles(newUserRoles);
+//        int id = genericDao.insert(newUserRoles);
+//        assertNotEquals(0, id);
+//        UserRole insertedUser = (UserRole)genericDao.getById(id);
+//        assertNotNull(insertedUser);
+//        assertEquals(roleName, insertedUser.getRoleName());
+//        assertNotNull(insertedUser.getUser());
+//        assertEquals("Joe", insertedUser.getUser().getFirstName());
+//    }
 
     /**
      * Verify successful delete of order
@@ -86,14 +103,6 @@ class OrderTest {
         assertNull(genericDao.getById(2));
     }
 
-    /**
-     * Verify successful retrieval of all orders
-     */
-    @Test
-    void getAllSuccess() {
-        List<Order> orders = dao.getAll();
-        assertEquals(7, orders.size());
-    }
 
     /**
      * Verify successful get by property (equal match)
