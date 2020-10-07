@@ -80,19 +80,7 @@ class OrderTest {
         // it may make sense to use .equals()
         // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/orderguide/html_single/Hibernate_Order_Guide.html#mapping-model-pojo-equalshashcode
     }
-//    void insert() {
-//        User user = (User)genericDaoUser.getById(1);
-//        String roleName = "sign_in";
-//        UserRole newUserRoles = new UserRole(roleName, user);
-//        user.addUserRoles(newUserRoles);
-//        int id = genericDao.insert(newUserRoles);
-//        assertNotEquals(0, id);
-//        UserRole insertedUser = (UserRole)genericDao.getById(id);
-//        assertNotNull(insertedUser);
-//        assertEquals(roleName, insertedUser.getRoleName());
-//        assertNotNull(insertedUser.getUser());
-//        assertEquals("Joe", insertedUser.getUser().getFirstName());
-//    }
+
 
     /**
      * Verify successful delete of order
