@@ -13,6 +13,11 @@ import javax.persistence.criteria.Expression;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
+/**
+ * The type Generic dao.
+ *
+ * @param <T> the type parameter
+ */
 public class GenericDao<T> {
 
 
@@ -20,13 +25,23 @@ public class GenericDao<T> {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
 
-
+    /**
+     * Instantiates a new Generic dao.
+     *
+     * @param type the type
+     */
     public GenericDao(Class<T> type) {
         this.type = type;
     }
 
 
-
+    /**
+     * Get by id t.
+     *
+     * @param <T> the type parameter
+     * @param id  the id
+     * @return the t
+     */
     public <T>T getById(int id){
         Session session = getSession();
         T entity = (T)session.get(type, id);
@@ -46,9 +61,12 @@ public class GenericDao<T> {
         transaction.commit();
         session.close();
     }
+
     /**
      * update order
-     * @param entity  Order to be inserted or updated
+     *
+     * @param entity Order to be inserted or updated
+     * @return the int
      */
     public int insert(T entity) {
         int id = 0;
@@ -80,7 +98,8 @@ public class GenericDao<T> {
 
     /**
      * update order
-     * @param entity   to be inserted or updated
+     *
+     * @param entity to be inserted or updated
      */
     public void saveOrUpdate(T entity) {
         Session session = getSession();
@@ -91,6 +110,10 @@ public class GenericDao<T> {
     /**
      * Get order by property (exact match)
      * sample usage: getByPropertyEqual("lastname", "Curry")
+     *
+     * @param propertyName the property name
+     * @param value        the value
+     * @return the by property equal
      */
     public List<T> getByPropertyEqual(String propertyName, String value) {
         Session session = getSession();
@@ -107,6 +130,13 @@ public class GenericDao<T> {
         return list;
     }
 
+    /**
+     * Gets by property like.
+     *
+     * @param propertyName the property name
+     * @param value        the value
+     * @return the by property like
+     */
     public List<T> getByPropertyLike(String propertyName, String value) {
         Session session = getSession();
 

@@ -11,11 +11,20 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * The type User dao test.
+ */
 class UserDaoTest {
 
+    /**
+     * The Generic dao.
+     */
 //    UserDao dao;
     GenericDao genericDao;
 
+    /**
+     * Sets up.
+     */
     @BeforeEach
     void setUp() {
 //        dao = new UserDao();
@@ -43,6 +52,9 @@ class UserDaoTest {
     }
 
 
+    /**
+     * Insert.
+     */
     @Test
     void insert() {
         User newUser = new User("jack", "robertson", "jackrobert");
@@ -52,12 +64,18 @@ class UserDaoTest {
         assertEquals(insertedUser, insertedUser);
     }
 
+    /**
+     * Delete.
+     */
     @Test
     void delete() {
         genericDao.delete(genericDao.getById(3));
         assertNull(genericDao.getById(3));
     }
 
+    /**
+     * Gets by property like.
+     */
     @Test
     void getByPropertyLike() {
 
@@ -73,6 +91,7 @@ class UserDaoTest {
         List<User> users = genericDao.getAll();
         assertEquals(4, users.size());
     }
+
     /**
      * Verify successful insert of a user
      */

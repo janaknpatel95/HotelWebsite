@@ -16,11 +16,20 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class OrderTest {
 
+    /**
+     * The Generic dao.
+     */
 //    OrderDao dao;
     GenericDao genericDao;
+    /**
+     * The Generic dao user.
+     */
     GenericDao genericDaoUser;
 
 
+    /**
+     * Sets up.
+     */
     @BeforeEach
     void setUp() {
 //        dao = new OrderDao();
@@ -35,6 +44,9 @@ class OrderTest {
 
     }
 
+    /**
+     * Gets all orders success.
+     */
     @Test
     void getAllOrdersSuccess() {
        List<Order> orders =  genericDao.getAll();
@@ -42,6 +54,9 @@ class OrderTest {
     }
 
 
+    /**
+     * Gets by td success.
+     */
     @Test
     void getByTdSuccess() {
         Order retrievedOrder = (Order) genericDao.getById(2);
@@ -49,6 +64,7 @@ class OrderTest {
         assertEquals(retrievedOrder, retrievedOrder);
 
     }
+
     /**
      * Verify successful update of order
      */
@@ -61,6 +77,7 @@ class OrderTest {
         Order retrievedOrder = (Order)genericDao.getById(3);
         assertEquals(orderToUpdate, retrievedOrder);
     }
+
     /**
      * Verify successful insert of a order
      */
