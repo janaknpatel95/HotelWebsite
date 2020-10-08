@@ -4,34 +4,34 @@
 
 ### Sign Up
 +
-+ As a new user I want to create account so that i can edit informasion about hotel.
++ As a new user, I want to create an account so that I can edit information about the hotel.
 +
 ### Sign In
 + 
-+ As registered user I want to log in so can edit date pictur or avalibity.
++ As a registered user I want to log in so can edit date picture or avalibity.
 +
 +
-### Check Avelibility
+### Check Availability
 +
-+ As user i want to check hotel avaliblity and Prices for dates.
++ As a user, I want to check hotel availability and Prices for dates.
 +
 ### Able to book room 
 +
-+ Able to book room with avaliblity in hotel.
++ As user able to see rate and availability for rooms.
 +
-### As Admin able to edit room rate,avablity,room type,photo.
+###  Admin able to edit room rate, availability, room type, photo.
 +
-+ as Admin able to change rate avablity for rooms.
++ As Admin able to change rate and availability for rooms.
 +
 ### About
 +
-+ informasion about this hotel what is near by
++ information about this hotel what place is nearby.
 +
 ### View or cancle
 +
-+ abel to view reservasion or cancle(Delate) reservasion by conformasion number
++ Abel to view reservations or cancel(Delate) reservation by conformation number.
 +
-### As Admin
+### Admin
 +
-+ Should be able to see reservasion how many coming
++ Admin able to see how many room reservations coming for a particular date.
 +
