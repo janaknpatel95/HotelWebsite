@@ -1,17 +1,16 @@
 <%--
   Created by IntelliJ IDEA.
   User: student
-  Date: 9/22/20
-  Time: 3:00 PM
+  Date: 10/18/20
+  Time: 10:56 AM
   To change this template use File | Settings | File Templates.
 --%>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>HotelWebsite</title>
+    <title>Login Error</title>
 </head>
 <body>
-<h1>This is just index</h1>
-<a href ="search.jsp">Go to the User Search</a>
+log-in faild please try again
 </body>
 </html>
