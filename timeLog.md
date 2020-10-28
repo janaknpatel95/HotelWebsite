@@ -14,6 +14,15 @@
 |9/29/20|fix week four excercise as commented|1|week4|
 |9/30/20|Start week 5 video and activity|3|week5|
 |10/6/20|finish wating week 5 video and startworking on week excersice|3|week5|
-|||||
+|10/7/2020|Start working with week 6|5|week6|
+|10/8/2020|statrt on indi project to apply excercise|5|week6|
+|10/12/2020|Start on week 7 video and check point finised|6|week 7|
+|10/14/2020|Finish ing on video on week 7 and start on appy on indi project|4|wek 7|
+|10/17/2020|almost done with apply on indi project  |2|week |
+|10/19/2020|finish week 7 and start on week 8 video|3|week8|
+|10/21/2020|finish video for week 8|2|week8|
+|10/22/2020|statr on week 8 excercise for indi project|2|week8|
+|10/26/2020|working on check point 3|3|week 8|
+
              
 
