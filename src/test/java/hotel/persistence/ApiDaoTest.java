@@ -1,5 +1,6 @@
 package hotel.persistence;
 
+
 import hote.entity.PostalCodesItem;
 import org.junit.jupiter.api.Test;
 

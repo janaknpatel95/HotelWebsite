@@ -92,6 +92,7 @@ class UserDaoTest {
         assertEquals(4, users.size());
     }
 
+
     /**
      * Verify successful insert of a user
      */

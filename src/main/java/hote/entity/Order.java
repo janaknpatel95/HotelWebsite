@@ -12,7 +12,7 @@ import java.util.Objects;
 @Entity(name = "Order")
 @Table(name = "orders")
 public class Order {
-
+    @Column(name = "order_id")
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
