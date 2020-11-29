@@ -55,8 +55,7 @@ public class HelloWorld {
         String Html = "<br><html><body><h1>data: " + users + "</h1></body></html>";
         //String json = "{\"Hello\":\"\"}";
 
-        return Response.status(200).entity(output + Html).build();
+        return Response.status(200).entity(Html).build();
     }
-
 
 }

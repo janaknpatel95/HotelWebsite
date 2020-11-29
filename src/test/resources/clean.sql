@@ -1,4 +1,9 @@
 delete from user;
-delete from orders;
-INSERT INTO `user` VALUES (1,'Joe','Coyne','jcoyne','supersecret1'),(2,'Fred','Hensen','fhensen','supersecret2'),(3,'Barney','Curry','bcurry','supersecret3'),(4,'Karen','Mack','kmack','supersecret4');
-INSERT INTO `orders` VALUES (1,'plates',1),(2,'Books',2),(3,'Plates, forks, and knives',2),(4,'Soccer ball',1),(5,'Coffee, Almond, ',4),(6,'Bananas',1),(7,'Coffee, cups, and cremenr',4);
+delete from reservation;
+delete from room;
+delete from room_reserved;
+
+INSERT INTO `user` VALUES (1,'janak','patel','jpate@some.com','6089638522','1013 8th street, baraboo, wi','has reservasion','jpatel','jpatel'),(2,'jackk','ptel','jate@some.com','6049638522','1014 8th street, baraboo, wi','has reseasion','jpatel1','jpatel2');
+INSERT INTO `reservation` VALUES (1,1,'2019-10-21','2020-10-22',50.00);
+INSERT INTO `room` VALUES (1,'2queen','2 queen bed',60.00,2);
+INSERT INTO `room_reserved` VALUES (1,1,1,60.00);

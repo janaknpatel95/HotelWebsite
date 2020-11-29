@@ -4,7 +4,7 @@
 
 <h2>User Display Exercise</h2>
 
-<form action="searchUser" method="GET">
+<form action="ApiHtml" method="GET">
     <input type="text" name="param1" value="LastName"/><br />
     <br />
     <br />

@@ -1,6 +1,6 @@
 <hibernate-configuration>
     <session-factory>
-        <property name="connection.url">jdbc:mysql://localhost:3306/hotel</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/hotelFull</property>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="connection.username">root</property>
         <property name="connection.password">student</property>
@@ -10,6 +10,10 @@
         <property name="hibernate.c3p0.max_statements">50</property>
         <property name="hibernate.c3p0.idle_test_period">3000</property>
         <mapping class="hote.entity.User"/>
-        <mapping class="hote.entity.Order"/>
+        <mapping class="hote.entity.Role"/>
+        <mapping class="hote.entity.Reservation"/>
+        <mapping class="hote.entity.Room"/>
+        <mapping class="hote.entity.RoomReserved"/>
+
     </session-factory>
 </hibernate-configuration>

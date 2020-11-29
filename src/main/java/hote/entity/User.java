@@ -30,6 +30,26 @@ public class User {
      */
     public String user_name;
 
+    public String email;
+
+    public String phone;
+     public String address;
+
+     public String details;
+
+     public String Password;
+
+
+
+
+    public String getPassword() {
+        return Password;
+    }
+
+    public void setPassword(String password) {
+        Password = password;
+    }
+
     // Every Entity must have a unique identifier which is annotated @Id
     // Notice there is no @Column here as the column and instance variable name are the same
     @Id
@@ -52,164 +72,190 @@ public class User {
      Source: http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#associations-one-to-many
      */
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Order> orders = new HashSet<>();
+    private Set<Reservation> reservations = new HashSet<>();
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Role> roles = new HashSet<>();
 
-    /**
-     * Instantiates a new User.
-     */
     public User() {
     }
 
-    /**
-     * Instantiates a new User.
-     *
-     * @param first_name the first name
-     * @param last_name  the last name
-     * @param user_name  the user name
-     */
-    public User(String first_name, String last_name, String user_name) {
+    public User(String first_name, String last_name, String user_name, String email, String password, String phone) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.user_name = user_name;
+        this.email = email;
+        this.Password = password;
+        this.phone = phone;
+    }
+
+    public User(String first_name, String last_name, String user_name, String email, String phone, String address, String details) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.user_name = user_name;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+        this.details = details;
+    }
+
+     public User(String first_name, String last_name, String user_name, String email, String phone) {
+
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.user_name = user_name;
+        this.email = email;
+        this.phone = phone;
     }
 
 
-    /**
-     * Gets first name.
-     *
-     * @return the first name
-     */
+
+
+
     public String getFirst_name() {
         return first_name;
     }
 
-    /**
-     * Sets first name.
-     *
-     * @param first_name the first name
-     */
     public void setFirst_name(String first_name) {
         this.first_name = first_name;
     }
 
-    /**
-     * Gets last name.
-     *
-     * @return the last name
-     */
     public String getLast_name() {
         return last_name;
     }
 
-    /**
-     * Sets last name.
-     *
-     * @param last_name the last name
-     */
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
 
-    /**
-     * Gets user name.
-     *
-     * @return the user name
-     */
     public String getUser_name() {
         return user_name;
     }
 
-    /**
-     * Sets user name.
-     *
-     * @param user_name the user name
-     */
     public void setUser_name(String user_name) {
         this.user_name = user_name;
     }
 
+    public String getEmail() {
+        return email;
+    }
 
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
+
     public int getId() {
         return id;
     }
 
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
     public void setId(int id) {
         this.id = id;
     }
 
-    /**
-     * Gets orders.
-     *
-     * @return the orders
-     */
-    public Set<Order> getOrders() {
-        return orders;
+    public Set<Reservation> getReservations() {
+        return reservations;
     }
 
-    /**
-     * Sets orders.
-     *
-     * @param orders the orders
-     */
-    public void setOrders(Set<Order> orders) {
-        this.orders = orders;
+    public void setReservations(Set<Reservation> reservations) {
+        this.reservations = reservations;
     }
 
-    /**
-     * Add order.
-     *
-     * @param order the order
-     */
-    public void addOrder(Order order) {
-        orders.add(order);
-        order.setUser(this);
 
-    }
-
-    /**
-     * Remove order.
-     *
-     * @param order the order
-     */
-    public void removeOrder(Order order) {
-        orders.remove(order);
-        order.setUser(null);
-
-    }
     @Override
     public String toString() {
         return "User{" +
                 "first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
                 ", user_name='" + user_name + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", details='" + details + '\'' +
                 ", id=" + id +
                 '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return id == user.id &&
-                Objects.equals(first_name, user.first_name) &&
-                Objects.equals(last_name, user.last_name) &&
-                Objects.equals(user_name, user.user_name);
+    public Set<Reservation> getReservasion() {
+        return reservations;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(first_name, last_name, user_name, id);
+    public void setReservasion(Set<Reservation> reservations) {
+        this.reservations = reservations;
     }
+
+
+    /**
+     * Add role.
+     *
+     * @param reservation the role
+     */
+    public void addReservasion(Reservation reservation) {
+        reservations.add(reservation);
+        reservation.setUser(this);
+    }
+
+    /**
+     * Remove role.
+     *
+     * @param reservasion the role
+     */
+    public void removeReservasion(Reservation reservasion) {
+        reservations.remove(reservasion);
+        reservasion.setUser(null);
+    }
+
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+
+    /**
+     * Add role.
+     *
+     * @param role the role
+     */
+    public void addRole(Role role) {
+        roles.add(role);
+        role.setUser(this);
+    }
+
+    /**
+     * Remove role.
+     *
+     * @param role the role
+     */
+    public void removeRole(Role role) {
+        roles.remove(role);
+        role.setUser(null);
+    }
+
 }

@@ -128,6 +128,8 @@ public class GenericDao<T> {
 
         session.close();
         return list;
+
+
     }
 
     /**
@@ -152,6 +154,11 @@ public class GenericDao<T> {
         List<T> entities = session.createQuery( query ).getResultList();
         session.close();
         return entities;
+
+
+
+
+
     }
     /**
      * Returns an open session from the SessionFactory

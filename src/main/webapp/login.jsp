@@ -16,7 +16,10 @@
         <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
         <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
         <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
+
     </TABLE>
+
+    <a href = "singUp.jsp">Go to singUp page if you do not have account</a>
 </FORM>
 </body>
 </html>

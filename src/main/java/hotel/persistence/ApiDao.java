@@ -13,7 +13,7 @@ import javax.ws.rs.core.MediaType;
 public class ApiDao {
 
 
-    Weather getPlace()  {
+    public Weather getPlace()  {
         Client client = ClientBuilder.newClient();
         WebTarget target =
                 client.target("http://api.geonames.org/postalCodeSearchJSON?username=janak&postalcode=53913&countryCode=us");

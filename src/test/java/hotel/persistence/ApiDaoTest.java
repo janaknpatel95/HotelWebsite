@@ -14,11 +14,11 @@ class ApiDaoTest {
         ApiDao dao = new ApiDao();
         //System.out.println(dao.getPlace().getPostalCodes());
         for ( PostalCodesItem code : dao.getPlace().getPostalCodes()){
-            //System.out.println(code.getPlaceName());
+            System.out.println(code.toString());
 
             assertEquals("Baraboo", code.getPlaceName());
         }
-        //System.out.println(code.getPlaceName());
+
         //assertEquals("Tatooine", dao.getPlace().getPlaceName().);
 
 

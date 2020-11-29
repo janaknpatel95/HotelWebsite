@@ -8,29 +8,25 @@
     <h2>Search Results: </h2>
 
 
-    <table style="width:100%">
-        <tr>
-            <td>ID</td>
-            <td>Name</td>
-            <td>Orders</td>
-        </tr>
+    <h1>Thank you for singup</h1>
 
-    <c:forEach items="${users}" var="user1">
+    <a href ="search.jsp">Please go back to login page to login </a>
+<%--    <c:forEach items="${users}" var="user1">--%>
 
-        <tr>
-            <td>${user1.getId()}</td>
-            <td>${user1.getFirst_name()}</td>
+<%--        <tr>--%>
+<%--            <td>${user1.getId()}</td>--%>
+<%--            <td>${user1.getFirst_name()}</td>--%>
 
-        <td>
-        <c:forEach items="${user.orders}" var="order">
-            ${order.id} ${order.description}
-        </c:forEach>
+<%--        <td>--%>
+<%--        <c:forEach items="${user.orders}" var="order">--%>
+<%--            ${order.id} ${order.description}--%>
+<%--        </c:forEach>--%>
 
-            </td>
-        </tr>
+<%--            </td>--%>
+<%--        </tr>--%>
 
-    </c:forEach>
-    </table>
+<%--    </c:forEach>--%>
+
 </div>
 
 </body>

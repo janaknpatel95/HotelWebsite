@@ -26,10 +26,10 @@ public class PostalCodesItem{
 	private String adminName1;
 
 	@JsonProperty("ISO3166-2")
-	private String iSO31662;
+	public String iSO31662;
 
 	@JsonProperty("placeName")
-	private String placeName;
+	public String placeName;
 
 	@JsonProperty("lat")
 	private double lat;
