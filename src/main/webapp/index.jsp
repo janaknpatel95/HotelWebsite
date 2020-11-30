@@ -12,6 +12,6 @@
 </head>
 <body>
 <h1>This is just index</h1>
-<a href ="search.jsp">Go to the User Search</a>
+<a href ="ApiSearch.jsp">Go to the User Search</a>
 </body>
 </html>

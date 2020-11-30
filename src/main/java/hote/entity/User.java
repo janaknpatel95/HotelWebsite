@@ -72,7 +72,7 @@ public class User {
      Source: http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#associations-one-to-many
      */
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<Reservation> reservations = new HashSet<>();
+    public Set<Reservation> reservations = new HashSet<>();
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
@@ -199,14 +199,14 @@ public class User {
                 '}';
     }
 
-    public Set<Reservation> getReservasion() {
-        return reservations;
-    }
-
-    public void setReservasion(Set<Reservation> reservations) {
-        this.reservations = reservations;
-    }
-
+//    public Set<Reservation> getReservasion() {
+//        return reservations;
+//    }
+//
+//    public void setReservasion(Set<Reservation> reservations) {
+//        this.reservations = reservations;
+//    }
+//
 
     /**
      * Add role.

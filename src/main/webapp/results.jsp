@@ -10,7 +10,7 @@
 
     <h1>Thank you for singup</h1>
 
-    <a href ="search.jsp">Please go back to login page to login </a>
+    <a href ="ApiSearch.jsp">Please go back to login page to login </a>
 <%--    <c:forEach items="${users}" var="user1">--%>
 
 <%--        <tr>--%>
