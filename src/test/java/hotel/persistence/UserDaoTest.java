@@ -1,6 +1,6 @@
 package hotel.persistence;
 
-import hote.entity.Order;
+//import hote.entity.Order;
 import hote.entity.Reservation;
 import hote.entity.User;
 import hotel.test.Database;
@@ -84,17 +84,9 @@ class UserDaoTest {
 
         List<User> users = genericDao.getByPropertyLike("last_name", "p");
         assertEquals(2, users.size());
-        System.out.println(users);
 
 
 
-        for(User user : users){
-           System.out.println("this is "+user.getReservations());
-            System.out.println("This is id   "+user.getId());
-            System.out.println("This is reservasion "+user.reservations);
-
-
-        }
     }
 
     /**

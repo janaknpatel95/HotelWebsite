@@ -30,22 +30,45 @@ public class User {
      */
     public String user_name;
 
+    /**
+     * The Email.
+     */
     public String email;
 
+    /**
+     * The Phone.
+     */
     public String phone;
-     public String address;
+    /**
+     * The Address.
+     */
+    public String address;
 
-     public String details;
+    /**
+     * The Details.
+     */
+    public String details;
 
-     public String Password;
+    /**
+     * The Password.
+     */
+    public String Password;
 
 
-
-
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
     public String getPassword() {
         return Password;
     }
 
+    /**
+     * Sets password.
+     *
+     * @param password the password
+     */
     public void setPassword(String password) {
         Password = password;
     }
@@ -59,17 +82,13 @@ public class User {
 
     /**
      * Bidirectional @OneToMany
-
-     The bidirectional @OneToMany association also requires a @ManyToOne association on the child side.
-     Although the Domain Model exposes two sides to navigate this association, behind the scenes,
-     the relational database has only one foreign key for this relationship.
-
-     Every bidirectional association must have one owning side only (the child side),
-     the other one being referred to as the inverse (or the mappedBy) side.
-
-     Foreign key is on the child table (Order in this example)
-
-     Source: http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#associations-one-to-many
+     * The bidirectional @OneToMany association also requires a @ManyToOne association on the child side.
+     * Although the Domain Model exposes two sides to navigate this association, behind the scenes,
+     * the relational database has only one foreign key for this relationship.
+     * Every bidirectional association must have one owning side only (the child side),
+     * the other one being referred to as the inverse (or the mappedBy) side.
+     * Foreign key is on the child table (Order in this example)
+     * Source: http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#associations-one-to-many
      */
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     public Set<Reservation> reservations = new HashSet<>();
@@ -77,9 +96,22 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
 
+    /**
+     * Instantiates a new User.
+     */
     public User() {
     }
 
+    /**
+     * Instantiates a new User.
+     *
+     * @param first_name the first name
+     * @param last_name  the last name
+     * @param user_name  the user name
+     * @param email      the email
+     * @param password   the password
+     * @param phone      the phone
+     */
     public User(String first_name, String last_name, String user_name, String email, String password, String phone) {
         this.first_name = first_name;
         this.last_name = last_name;
@@ -89,6 +121,17 @@ public class User {
         this.phone = phone;
     }
 
+    /**
+     * Instantiates a new User.
+     *
+     * @param first_name the first name
+     * @param last_name  the last name
+     * @param user_name  the user name
+     * @param email      the email
+     * @param phone      the phone
+     * @param address    the address
+     * @param details    the details
+     */
     public User(String first_name, String last_name, String user_name, String email, String phone, String address, String details) {
         this.first_name = first_name;
         this.last_name = last_name;
@@ -99,7 +142,16 @@ public class User {
         this.details = details;
     }
 
-     public User(String first_name, String last_name, String user_name, String email, String phone) {
+    /**
+     * Instantiates a new User.
+     *
+     * @param first_name the first name
+     * @param last_name  the last name
+     * @param user_name  the user name
+     * @param email      the email
+     * @param phone      the phone
+     */
+    public User(String first_name, String last_name, String user_name, String email, String phone) {
 
         this.first_name = first_name;
         this.last_name = last_name;
@@ -109,77 +161,164 @@ public class User {
     }
 
 
-
-
-
+    /**
+     * Gets first name.
+     *
+     * @return the first name
+     */
     public String getFirst_name() {
         return first_name;
     }
 
+    /**
+     * Sets first name.
+     *
+     * @param first_name the first name
+     */
     public void setFirst_name(String first_name) {
         this.first_name = first_name;
     }
 
+    /**
+     * Gets last name.
+     *
+     * @return the last name
+     */
     public String getLast_name() {
         return last_name;
     }
 
+    /**
+     * Sets last name.
+     *
+     * @param last_name the last name
+     */
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
 
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
     public String getUser_name() {
         return user_name;
     }
 
+    /**
+     * Sets user name.
+     *
+     * @param user_name the user name
+     */
     public void setUser_name(String user_name) {
         this.user_name = user_name;
     }
 
+    /**
+     * Gets email.
+     *
+     * @return the email
+     */
     public String getEmail() {
         return email;
     }
 
+    /**
+     * Sets email.
+     *
+     * @param email the email
+     */
     public void setEmail(String email) {
         this.email = email;
     }
 
+    /**
+     * Gets phone.
+     *
+     * @return the phone
+     */
     public String getPhone() {
         return phone;
     }
 
+    /**
+     * Sets phone.
+     *
+     * @param phone the phone
+     */
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
+    /**
+     * Gets address.
+     *
+     * @return the address
+     */
     public String getAddress() {
         return address;
     }
 
+    /**
+     * Sets address.
+     *
+     * @param address the address
+     */
     public void setAddress(String address) {
         this.address = address;
     }
 
+    /**
+     * Gets details.
+     *
+     * @return the details
+     */
     public String getDetails() {
         return details;
     }
 
+    /**
+     * Sets details.
+     *
+     * @param details the details
+     */
     public void setDetails(String details) {
         this.details = details;
     }
 
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Gets reservations.
+     *
+     * @return the reservations
+     */
     public Set<Reservation> getReservations() {
         return reservations;
     }
 
+    /**
+     * Sets reservations.
+     *
+     * @param reservations the reservations
+     */
     public void setReservations(Set<Reservation> reservations) {
         this.reservations = reservations;
     }
@@ -199,14 +338,6 @@ public class User {
                 '}';
     }
 
-//    public Set<Reservation> getReservasion() {
-//        return reservations;
-//    }
-//
-//    public void setReservasion(Set<Reservation> reservations) {
-//        this.reservations = reservations;
-//    }
-//
 
     /**
      * Add role.
@@ -229,10 +360,20 @@ public class User {
     }
 
 
+    /**
+     * Gets roles.
+     *
+     * @return the roles
+     */
     public Set<Role> getRoles() {
         return roles;
     }
 
+    /**
+     * Sets roles.
+     *
+     * @param roles the roles
+     */
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }

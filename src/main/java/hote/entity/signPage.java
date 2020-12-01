@@ -37,17 +37,10 @@ public class signPage extends HttpServlet {
 
 
 
-
-//            User newUser = new User("Fred", "Flintstone", userName);
-
             String roleName = "admin";
             Role role = new Role(newUser,roleName, userName);
 
             newUser.addRole(role);
-
-//            int id = userDao.insert(newUser);
-//
-//            System.out.println(id);
 
 
 

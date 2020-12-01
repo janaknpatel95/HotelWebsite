@@ -1,7 +1,7 @@
 package hotel.persistence;
 
 
-import hote.entity.Order;
+//import hote.entity.Order;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.Session;

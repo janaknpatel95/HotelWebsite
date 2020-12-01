@@ -42,20 +42,9 @@ public class reservasionPage extends HttpServlet {
 
         Double price = 50.00;
 
-//            User newUser = new User("Fred", "Flintstone", userName);
-
-//            String roleName = "admin";
-//            Role role = new Role(newUser,roleName, userName);
             Reservation reservation = new Reservation(start, end, price, newUser );
 
             newUser.addReservasion(reservation);
-
-
-
-
-
-
-
 
 
         req.setAttribute("users", userDao.insert(newUser));
