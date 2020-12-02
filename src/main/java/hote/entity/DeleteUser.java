@@ -33,11 +33,11 @@ import java.io.IOException;
             GenericDao userData = new GenericDao(User.class);
 //            UserData userData = new UserData();
 
-            System.out.println("This is int"+Integer.valueOf(req.getParameter("id")));
+
             userData.delete(userData.getById(Integer.parseInt(req.getParameter("id"))));
 //            genericDao.delete(genericDao.getById(2));
-            System.out.println("This is int"+Integer.valueOf(req.getParameter("id")));
-            RequestDispatcher dispatcher = req.getRequestDispatcher("searchUser?searchTerm=&submit=viewAll");
+            String firstName = req.getParameter("firstName");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("searchreservasion?param1="+firstName+"&submit=viewAll");
             dispatcher.forward(req, resp);
         }
 

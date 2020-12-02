@@ -44,16 +44,24 @@ class UserDaoTest {
      */
     @Test
     void saveOrUpdate() {
-        String updateNewUser = "jackk";
+        String updateNewUser = "jac";
         User userBeforeUpdate = (User)genericDao.getById(2);
+
         userBeforeUpdate.setFirst_name(updateNewUser);
+
         genericDao.saveOrUpdate(userBeforeUpdate);
         User userAfterUpdate = (User)genericDao.getById(2);
-        assertEquals(userBeforeUpdate.getFirst_name(), userAfterUpdate.getFirst_name());
+
+        assertTrue(updateNewUser.equals(userAfterUpdate.getFirst_name()));
 
     }
 
-
+//    String newLastName = "Davis";
+//    User userToUpdate = dao.getById(3);
+//        userToUpdate.setLastName(newLastName);
+//        dao.saveOrUpdate(userToUpdate);
+//    User retrievedUser = dao.getById(3);
+//    assertEquals(newLastName, retrievedUser.getLastName());
     /**
      * Insert.
      */

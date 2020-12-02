@@ -103,7 +103,9 @@ public class GenericDao<T> {
      */
     public void saveOrUpdate(T entity) {
         Session session = getSession();
+        Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(entity);
+        transaction.commit();
         session.close();
     }
 

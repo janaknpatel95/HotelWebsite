@@ -1,0 +1,1499 @@
+[DEBUG] 2020-12-02 11:37:44.469 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2020-12-02 11:37:44.526 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+[DEBUG] 2020-12-02 11:37:44.562 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2020-12-02 11:37:45.061 [main] Version - HHH000412: Hibernate Core {5.4.4.Final}
+[DEBUG] 2020-12-02 11:37:45.088 [main] Environment - HHH000206: hibernate.properties not found
+[DEBUG] 2020-12-02 11:37:47.022 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2020-12-02 11:37:49.928 [main] ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+[DEBUG] 2020-12-02 11:37:50.121 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[DEBUG] 2020-12-02 11:37:50.133 [main] RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+[INFO ] 2020-12-02 11:37:50.324 [main] Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[DEBUG] 2020-12-02 11:37:50.619 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@55a609dd
+[DEBUG] 2020-12-02 11:37:50.626 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@55a609dd
+[DEBUG] 2020-12-02 11:37:50.626 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@55a609dd
+[DEBUG] 2020-12-02 11:37:50.629 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@719bb3b4
+[DEBUG] 2020-12-02 11:37:50.630 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@28f878a0
+[DEBUG] 2020-12-02 11:37:50.631 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@572e6fd9
+[DEBUG] 2020-12-02 11:37:50.653 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@68577ba8
+[DEBUG] 2020-12-02 11:37:50.654 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@68577ba8
+[DEBUG] 2020-12-02 11:37:50.654 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@68577ba8
+[DEBUG] 2020-12-02 11:37:50.662 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@43f0c2d1
+[DEBUG] 2020-12-02 11:37:50.662 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@43f0c2d1
+[DEBUG] 2020-12-02 11:37:50.671 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@43f0c2d1
+[DEBUG] 2020-12-02 11:37:50.682 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1c5c616f
+[DEBUG] 2020-12-02 11:37:50.687 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1c5c616f
+[DEBUG] 2020-12-02 11:37:50.687 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1c5c616f
+[DEBUG] 2020-12-02 11:37:50.694 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@3f985a86
+[DEBUG] 2020-12-02 11:37:50.695 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@3f985a86
+[DEBUG] 2020-12-02 11:37:50.695 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@3f985a86
+[DEBUG] 2020-12-02 11:37:50.709 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6dfcffb5
+[DEBUG] 2020-12-02 11:37:50.710 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@6dfcffb5
+[DEBUG] 2020-12-02 11:37:50.710 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@6dfcffb5
+[DEBUG] 2020-12-02 11:37:50.720 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4088741b
+[DEBUG] 2020-12-02 11:37:50.726 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@4088741b
+[DEBUG] 2020-12-02 11:37:50.726 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@4088741b
+[DEBUG] 2020-12-02 11:37:50.733 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3e48d38
+[DEBUG] 2020-12-02 11:37:50.737 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@3e48d38
+[DEBUG] 2020-12-02 11:37:50.738 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3e48d38
+[DEBUG] 2020-12-02 11:37:50.744 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5833f5cd
+[DEBUG] 2020-12-02 11:37:50.749 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5833f5cd
+[DEBUG] 2020-12-02 11:37:50.756 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@31ff6309
+[DEBUG] 2020-12-02 11:37:50.762 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@31ff6309
+[DEBUG] 2020-12-02 11:37:50.766 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@4dc8c0ea
+[DEBUG] 2020-12-02 11:37:50.774 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@4dc8c0ea
+[DEBUG] 2020-12-02 11:37:50.775 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@7a34f66a
+[DEBUG] 2020-12-02 11:37:50.776 [main] BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@173797f0
+[DEBUG] 2020-12-02 11:37:50.787 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@33d53216
+[DEBUG] 2020-12-02 11:37:50.788 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@33d53216
+[DEBUG] 2020-12-02 11:37:50.800 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@1d0a61c8
+[DEBUG] 2020-12-02 11:37:50.801 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@1d0a61c8
+[DEBUG] 2020-12-02 11:37:50.844 [main] BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@4e6f2bb5
+[DEBUG] 2020-12-02 11:37:50.853 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@4e6f2bb5
+[DEBUG] 2020-12-02 11:37:50.866 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6cd166b8
+[DEBUG] 2020-12-02 11:37:50.869 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6cd166b8
+[DEBUG] 2020-12-02 11:37:50.876 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@3abfe845
+[DEBUG] 2020-12-02 11:37:50.882 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@3abfe845
+[DEBUG] 2020-12-02 11:37:50.887 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@24b4d544
+[DEBUG] 2020-12-02 11:37:50.887 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@24b4d544
+[DEBUG] 2020-12-02 11:37:50.906 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3a230001
+[DEBUG] 2020-12-02 11:37:50.906 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@3a230001
+[DEBUG] 2020-12-02 11:37:50.920 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@2c0b4c83
+[DEBUG] 2020-12-02 11:37:50.926 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@2c0b4c83
+[DEBUG] 2020-12-02 11:37:50.937 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6d7cada5
+[DEBUG] 2020-12-02 11:37:50.937 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6d7cada5
+[DEBUG] 2020-12-02 11:37:50.955 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@4acb2510
+[DEBUG] 2020-12-02 11:37:50.963 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@4acb2510
+[DEBUG] 2020-12-02 11:37:50.973 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@2b59501e
+[DEBUG] 2020-12-02 11:37:50.974 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2b59501e
+[DEBUG] 2020-12-02 11:37:50.984 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@61d84e08
+[DEBUG] 2020-12-02 11:37:50.990 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@61d84e08
+[DEBUG] 2020-12-02 11:37:50.991 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@61d84e08
+[DEBUG] 2020-12-02 11:37:50.993 [main] BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@715d6168
+[DEBUG] 2020-12-02 11:37:50.998 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@75a118e6
+[DEBUG] 2020-12-02 11:37:50.998 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@75a118e6
+[DEBUG] 2020-12-02 11:37:50.998 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@75a118e6
+[DEBUG] 2020-12-02 11:37:51.005 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4a14c44f
+[DEBUG] 2020-12-02 11:37:51.007 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@5c1f6d57
+[DEBUG] 2020-12-02 11:37:51.021 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5c1f6d57
+[DEBUG] 2020-12-02 11:37:51.023 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@16872c4d
+[DEBUG] 2020-12-02 11:37:51.035 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@16872c4d
+[DEBUG] 2020-12-02 11:37:51.037 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@67fc2aad
+[DEBUG] 2020-12-02 11:37:51.038 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@67fc2aad
+[DEBUG] 2020-12-02 11:37:51.046 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@2e53b094
+[DEBUG] 2020-12-02 11:37:51.047 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@2e53b094
+[DEBUG] 2020-12-02 11:37:51.048 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@53b8afea
+[DEBUG] 2020-12-02 11:37:51.053 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@53b8afea
+[DEBUG] 2020-12-02 11:37:51.058 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@499ef98e
+[DEBUG] 2020-12-02 11:37:51.059 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@341672e
+[DEBUG] 2020-12-02 11:37:51.060 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@341672e
+[DEBUG] 2020-12-02 11:37:51.060 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@341672e
+[DEBUG] 2020-12-02 11:37:51.067 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4554de02
+[DEBUG] 2020-12-02 11:37:51.067 [main] BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4554de02
+[DEBUG] 2020-12-02 11:37:51.071 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4554de02
+[DEBUG] 2020-12-02 11:37:51.075 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@58496c97
+[DEBUG] 2020-12-02 11:37:51.076 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@12968227
+[DEBUG] 2020-12-02 11:37:51.085 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@2a066689
+[DEBUG] 2020-12-02 11:37:51.085 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@2a066689
+[DEBUG] 2020-12-02 11:37:51.085 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@2a066689
+[DEBUG] 2020-12-02 11:37:51.087 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@79d06bbd
+[DEBUG] 2020-12-02 11:37:51.087 [main] BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@79d06bbd
+[DEBUG] 2020-12-02 11:37:51.088 [main] BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@79d06bbd
+[DEBUG] 2020-12-02 11:37:51.088 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@e8ea697
+[DEBUG] 2020-12-02 11:37:51.098 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@45bf6f39
+[DEBUG] 2020-12-02 11:37:51.110 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@5fe7f967
+[DEBUG] 2020-12-02 11:37:51.110 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5fe7f967
+[DEBUG] 2020-12-02 11:37:51.111 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@3eabe84a
+[DEBUG] 2020-12-02 11:37:51.120 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@222afc67
+[DEBUG] 2020-12-02 11:37:51.120 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@222afc67
+[DEBUG] 2020-12-02 11:37:51.131 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@670d4d38
+[DEBUG] 2020-12-02 11:37:51.132 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@670d4d38
+[DEBUG] 2020-12-02 11:37:51.137 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@2e060819
+[DEBUG] 2020-12-02 11:37:51.140 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@63411512
+[DEBUG] 2020-12-02 11:37:51.145 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@61af1510
+[DEBUG] 2020-12-02 11:37:51.170 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@319c3a25
+[DEBUG] 2020-12-02 11:37:51.170 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@319c3a25
+[DEBUG] 2020-12-02 11:37:51.176 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@81b5db0
+[DEBUG] 2020-12-02 11:37:51.176 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@7487b142
+[DEBUG] 2020-12-02 11:37:51.177 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@7139bd31
+[DEBUG] 2020-12-02 11:37:51.180 [main] BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@199bc830
+[DEBUG] 2020-12-02 11:37:51.181 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@4b3fe06e
+[DEBUG] 2020-12-02 11:37:51.181 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@27b45ea
+[DEBUG] 2020-12-02 11:37:51.184 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3e17a0a1
+[DEBUG] 2020-12-02 11:37:51.185 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@790a251b
+[DEBUG] 2020-12-02 11:37:51.365 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2020-12-02 11:37:51.367 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2020-12-02 11:37:51.369 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-12-02 11:37:51.370 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2020-12-02 11:37:51.372 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2020-12-02 11:37:51.380 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2020-12-02 11:37:51.387 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2020-12-02 11:37:51.392 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-12-02 11:37:51.394 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+[DEBUG] 2020-12-02 11:37:51.395 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2020-12-02 11:37:51.395 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2020-12-02 11:37:51.396 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+[DEBUG] 2020-12-02 11:37:51.396 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2020-12-02 11:37:51.410 [main] DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[INFO ] 2020-12-02 11:37:51.453 [main] C3P0ConnectionProvider - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/hotelFull_test
+[INFO ] 2020-12-02 11:37:51.457 [main] C3P0ConnectionProvider - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2020-12-02 11:37:51.457 [main] C3P0ConnectionProvider - HHH10001003: Autocommit mode: false
+[INFO ] 2020-12-02 11:37:52.324 [main] C3P0ConnectionProvider - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2020-12-02 11:37:52.744 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.0.22
+      major : 8
+      minor : 0
+[DEBUG] 2020-12-02 11:37:52.745 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-java-8.0.16 (Revision: 34cbc6bc61f72836e26327537a432d6db7c77de6)
+      major : 8
+      minor : 0
+[DEBUG] 2020-12-02 11:37:52.746 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[INFO ] 2020-12-02 11:37:52.912 [main] Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[DEBUG] 2020-12-02 11:37:52.971 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2020-12-02 11:37:53.137 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2020-12-02 11:37:53.308 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2020-12-02 11:37:53.322 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@63cd2cd2] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@557a84fe]
+[DEBUG] 2020-12-02 11:37:53.552 [main] AnnotationBinder - Binding entity from annotated class: hote.entity.User
+[DEBUG] 2020-12-02 11:37:53.632 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-12-02 11:37:53.650 [main] EntityBinder - Import with entity name User
+[DEBUG] 2020-12-02 11:37:53.657 [main] EntityBinder - Bind entity hote.entity.User on table user
+[DEBUG] 2020-12-02 11:37:53.750 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.763 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-12-02 11:37:53.768 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:id]
+[DEBUG] 2020-12-02 11:37:53.775 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-12-02 11:37:53.782 [main] PropertyBinder - Building property id
+[DEBUG] 2020-12-02 11:37:53.794 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-12-02 11:37:53.801 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=Password, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.802 [main] PropertyBinder - MetadataSourceProcessor property Password with lazy=false
+[DEBUG] 2020-12-02 11:37:53.802 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:Password]
+[DEBUG] 2020-12-02 11:37:53.802 [main] SimpleValueBinder - building SimpleValue for Password
+[DEBUG] 2020-12-02 11:37:53.803 [main] PropertyBinder - Building property Password
+[DEBUG] 2020-12-02 11:37:53.803 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=address, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.804 [main] PropertyBinder - MetadataSourceProcessor property address with lazy=false
+[DEBUG] 2020-12-02 11:37:53.804 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:address]
+[DEBUG] 2020-12-02 11:37:53.806 [main] SimpleValueBinder - building SimpleValue for address
+[DEBUG] 2020-12-02 11:37:53.806 [main] PropertyBinder - Building property address
+[DEBUG] 2020-12-02 11:37:53.806 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=details, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.806 [main] PropertyBinder - MetadataSourceProcessor property details with lazy=false
+[DEBUG] 2020-12-02 11:37:53.808 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:details]
+[DEBUG] 2020-12-02 11:37:53.813 [main] SimpleValueBinder - building SimpleValue for details
+[DEBUG] 2020-12-02 11:37:53.813 [main] PropertyBinder - Building property details
+[DEBUG] 2020-12-02 11:37:53.813 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=email, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.817 [main] PropertyBinder - MetadataSourceProcessor property email with lazy=false
+[DEBUG] 2020-12-02 11:37:53.818 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:email]
+[DEBUG] 2020-12-02 11:37:53.818 [main] SimpleValueBinder - building SimpleValue for email
+[DEBUG] 2020-12-02 11:37:53.818 [main] PropertyBinder - Building property email
+[DEBUG] 2020-12-02 11:37:53.824 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.825 [main] PropertyBinder - MetadataSourceProcessor property first_name with lazy=false
+[DEBUG] 2020-12-02 11:37:53.825 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:first_name]
+[DEBUG] 2020-12-02 11:37:53.825 [main] SimpleValueBinder - building SimpleValue for first_name
+[DEBUG] 2020-12-02 11:37:53.825 [main] PropertyBinder - Building property first_name
+[DEBUG] 2020-12-02 11:37:53.826 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.826 [main] PropertyBinder - MetadataSourceProcessor property last_name with lazy=false
+[DEBUG] 2020-12-02 11:37:53.826 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:last_name]
+[DEBUG] 2020-12-02 11:37:53.826 [main] SimpleValueBinder - building SimpleValue for last_name
+[DEBUG] 2020-12-02 11:37:53.826 [main] PropertyBinder - Building property last_name
+[DEBUG] 2020-12-02 11:37:53.827 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=phone, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.827 [main] PropertyBinder - MetadataSourceProcessor property phone with lazy=false
+[DEBUG] 2020-12-02 11:37:53.827 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:phone]
+[DEBUG] 2020-12-02 11:37:53.827 [main] SimpleValueBinder - building SimpleValue for phone
+[DEBUG] 2020-12-02 11:37:53.827 [main] PropertyBinder - Building property phone
+[DEBUG] 2020-12-02 11:37:53.833 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-12-02 11:37:53.834 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=reservations, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.841 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.874 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.875 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=reservations_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.877 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='reservations_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-12-02 11:37:53.884 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-12-02 11:37:53.884 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-12-02 11:37:53.885 [main] CollectionBinder - Collection role: hote.entity.User.reservations
+[DEBUG] 2020-12-02 11:37:53.900 [main] PropertyBinder - Building property reservations
+[DEBUG] 2020-12-02 11:37:53.900 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-12-02 11:37:53.901 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=roles, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.901 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.902 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.903 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=roles_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.906 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roles_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-12-02 11:37:53.906 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-12-02 11:37:53.907 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='user'}
+[DEBUG] 2020-12-02 11:37:53.907 [main] CollectionBinder - Collection role: hote.entity.User.roles
+[DEBUG] 2020-12-02 11:37:53.909 [main] PropertyBinder - Building property roles
+[DEBUG] 2020-12-02 11:37:53.909 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.910 [main] PropertyBinder - MetadataSourceProcessor property user_name with lazy=false
+[DEBUG] 2020-12-02 11:37:53.910 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.User:user_name]
+[DEBUG] 2020-12-02 11:37:53.910 [main] SimpleValueBinder - building SimpleValue for user_name
+[DEBUG] 2020-12-02 11:37:53.910 [main] PropertyBinder - Building property user_name
+[DEBUG] 2020-12-02 11:37:53.918 [main] AnnotationBinder - Binding entity from annotated class: hote.entity.Role
+[DEBUG] 2020-12-02 11:37:53.918 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-12-02 11:37:53.919 [main] EntityBinder - Import with entity name Role
+[DEBUG] 2020-12-02 11:37:53.919 [main] EntityBinder - Bind entity hote.entity.Role on table role
+[DEBUG] 2020-12-02 11:37:53.943 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.944 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-12-02 11:37:53.944 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Role:id]
+[DEBUG] 2020-12-02 11:37:53.944 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-12-02 11:37:53.944 [main] PropertyBinder - Building property id
+[DEBUG] 2020-12-02 11:37:53.948 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-12-02 11:37:53.948 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=role_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.948 [main] PropertyBinder - MetadataSourceProcessor property roleName with lazy=false
+[DEBUG] 2020-12-02 11:37:53.949 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Role:roleName]
+[DEBUG] 2020-12-02 11:37:53.953 [main] SimpleValueBinder - building SimpleValue for roleName
+[DEBUG] 2020-12-02 11:37:53.953 [main] PropertyBinder - Building property roleName
+[DEBUG] 2020-12-02 11:37:53.960 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-12-02 11:37:53.960 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.971 [main] PropertyBinder - Building property user
+[DEBUG] 2020-12-02 11:37:53.974 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(role), mappingColumn=user_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.974 [main] PropertyBinder - MetadataSourceProcessor property userName with lazy=false
+[DEBUG] 2020-12-02 11:37:53.975 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Role:userName]
+[DEBUG] 2020-12-02 11:37:53.975 [main] SimpleValueBinder - building SimpleValue for userName
+[DEBUG] 2020-12-02 11:37:53.975 [main] PropertyBinder - Building property userName
+[DEBUG] 2020-12-02 11:37:53.976 [main] AnnotationBinder - Binding entity from annotated class: hote.entity.Reservation
+[DEBUG] 2020-12-02 11:37:53.977 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-12-02 11:37:53.977 [main] EntityBinder - Import with entity name Reservation
+[DEBUG] 2020-12-02 11:37:53.978 [main] EntityBinder - Bind entity hote.entity.Reservation on table reservation
+[DEBUG] 2020-12-02 11:37:53.985 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.985 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-12-02 11:37:53.985 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Reservation:id]
+[DEBUG] 2020-12-02 11:37:53.985 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-12-02 11:37:53.986 [main] PropertyBinder - Building property id
+[DEBUG] 2020-12-02 11:37:53.986 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-12-02 11:37:53.986 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=end_date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.989 [main] PropertyBinder - MetadataSourceProcessor property end_date with lazy=false
+[DEBUG] 2020-12-02 11:37:53.990 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Reservation:end_date]
+[DEBUG] 2020-12-02 11:37:53.992 [main] SimpleValueBinder - building SimpleValue for end_date
+[DEBUG] 2020-12-02 11:37:53.992 [main] PropertyBinder - Building property end_date
+[DEBUG] 2020-12-02 11:37:53.992 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='reservation'}
+[DEBUG] 2020-12-02 11:37:53.993 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=roomReserveds, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.993 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.993 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.993 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=roomReserveds_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:53.994 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roomReserveds_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-12-02 11:37:53.994 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='reservation'}
+[DEBUG] 2020-12-02 11:37:53.994 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='reservation'}
+[DEBUG] 2020-12-02 11:37:53.994 [main] CollectionBinder - Collection role: hote.entity.Reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:53.994 [main] PropertyBinder - Building property roomReserveds
+[DEBUG] 2020-12-02 11:37:53.994 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=start_date, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.000 [main] PropertyBinder - MetadataSourceProcessor property start_date with lazy=false
+[DEBUG] 2020-12-02 11:37:54.000 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Reservation:start_date]
+[DEBUG] 2020-12-02 11:37:54.006 [main] SimpleValueBinder - building SimpleValue for start_date
+[DEBUG] 2020-12-02 11:37:54.006 [main] PropertyBinder - Building property start_date
+[DEBUG] 2020-12-02 11:37:54.006 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=total_price, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.016 [main] PropertyBinder - MetadataSourceProcessor property total_price with lazy=false
+[DEBUG] 2020-12-02 11:37:54.017 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Reservation:total_price]
+[DEBUG] 2020-12-02 11:37:54.017 [main] SimpleValueBinder - building SimpleValue for total_price
+[DEBUG] 2020-12-02 11:37:54.029 [main] PropertyBinder - Building property total_price
+[DEBUG] 2020-12-02 11:37:54.031 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='guest_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-12-02 11:37:54.031 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(reservation), mappingColumn=user, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.034 [main] PropertyBinder - Building property user
+[DEBUG] 2020-12-02 11:37:54.034 [main] AnnotationBinder - Binding entity from annotated class: hote.entity.Room
+[DEBUG] 2020-12-02 11:37:54.035 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-12-02 11:37:54.035 [main] EntityBinder - Import with entity name Room
+[DEBUG] 2020-12-02 11:37:54.035 [main] EntityBinder - Bind entity hote.entity.Room on table room
+[DEBUG] 2020-12-02 11:37:54.044 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.044 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-12-02 11:37:54.044 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Room:id]
+[DEBUG] 2020-12-02 11:37:54.048 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-12-02 11:37:54.048 [main] PropertyBinder - Building property id
+[DEBUG] 2020-12-02 11:37:54.051 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-12-02 11:37:54.054 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=Avalable, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.055 [main] PropertyBinder - MetadataSourceProcessor property Avalable with lazy=false
+[DEBUG] 2020-12-02 11:37:54.055 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Room:Avalable]
+[DEBUG] 2020-12-02 11:37:54.055 [main] SimpleValueBinder - building SimpleValue for Avalable
+[DEBUG] 2020-12-02 11:37:54.056 [main] PropertyBinder - Building property Avalable
+[DEBUG] 2020-12-02 11:37:54.057 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=current_price, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.057 [main] PropertyBinder - MetadataSourceProcessor property current_price with lazy=false
+[DEBUG] 2020-12-02 11:37:54.057 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Room:current_price]
+[DEBUG] 2020-12-02 11:37:54.057 [main] SimpleValueBinder - building SimpleValue for current_price
+[DEBUG] 2020-12-02 11:37:54.059 [main] PropertyBinder - Building property current_price
+[DEBUG] 2020-12-02 11:37:54.059 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=description, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.060 [main] PropertyBinder - MetadataSourceProcessor property description with lazy=false
+[DEBUG] 2020-12-02 11:37:54.060 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Room:description]
+[DEBUG] 2020-12-02 11:37:54.060 [main] SimpleValueBinder - building SimpleValue for description
+[DEBUG] 2020-12-02 11:37:54.060 [main] PropertyBinder - Building property description
+[DEBUG] 2020-12-02 11:37:54.060 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='room'}
+[DEBUG] 2020-12-02 11:37:54.061 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=roomReserveds, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.063 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=null, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.063 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=element, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.063 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=roomReserveds_KEY, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.063 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='roomReserveds_KEY', referencedColumn='null', mappedBy='null'}
+[DEBUG] 2020-12-02 11:37:54.064 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='room'}
+[DEBUG] 2020-12-02 11:37:54.067 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='room'}
+[DEBUG] 2020-12-02 11:37:54.068 [main] CollectionBinder - Collection role: hote.entity.Room.roomReserveds
+[DEBUG] 2020-12-02 11:37:54.068 [main] PropertyBinder - Building property roomReserveds
+[DEBUG] 2020-12-02 11:37:54.068 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room), mappingColumn=room_name, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.068 [main] PropertyBinder - MetadataSourceProcessor property room_name with lazy=false
+[DEBUG] 2020-12-02 11:37:54.068 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.Room:room_name]
+[DEBUG] 2020-12-02 11:37:54.069 [main] SimpleValueBinder - building SimpleValue for room_name
+[DEBUG] 2020-12-02 11:37:54.069 [main] PropertyBinder - Building property room_name
+[DEBUG] 2020-12-02 11:37:54.069 [main] AnnotationBinder - Binding entity from annotated class: hote.entity.RoomReserved
+[DEBUG] 2020-12-02 11:37:54.069 [main] Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+[DEBUG] 2020-12-02 11:37:54.070 [main] EntityBinder - Import with entity name Roomreserved
+[DEBUG] 2020-12-02 11:37:54.071 [main] EntityBinder - Bind entity hote.entity.RoomReserved on table room_reserved
+[DEBUG] 2020-12-02 11:37:54.077 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room_reserved), mappingColumn=id, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.079 [main] PropertyBinder - MetadataSourceProcessor property id with lazy=false
+[DEBUG] 2020-12-02 11:37:54.080 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.RoomReserved:id]
+[DEBUG] 2020-12-02 11:37:54.081 [main] SimpleValueBinder - building SimpleValue for id
+[DEBUG] 2020-12-02 11:37:54.082 [main] PropertyBinder - Building property id
+[DEBUG] 2020-12-02 11:37:54.083 [main] BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2020-12-02 11:37:54.085 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room_reserved), mappingColumn=price, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.085 [main] PropertyBinder - MetadataSourceProcessor property price with lazy=false
+[DEBUG] 2020-12-02 11:37:54.086 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [hote.entity.RoomReserved:price]
+[DEBUG] 2020-12-02 11:37:54.086 [main] SimpleValueBinder - building SimpleValue for price
+[DEBUG] 2020-12-02 11:37:54.086 [main] PropertyBinder - Building property price
+[DEBUG] 2020-12-02 11:37:54.086 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='reservation_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-12-02 11:37:54.088 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room_reserved), mappingColumn=reservation, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.089 [main] PropertyBinder - Building property reservation
+[DEBUG] 2020-12-02 11:37:54.092 [main] Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='room_id', referencedColumn='', mappedBy=''}
+[DEBUG] 2020-12-02 11:37:54.092 [main] Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(room_reserved), mappingColumn=room, insertable=true, updatable=true, unique=false}
+[DEBUG] 2020-12-02 11:37:54.093 [main] PropertyBinder - Building property room
+[DEBUG] 2020-12-02 11:37:54.098 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-12-02 11:37:54.099 [main] SimpleValueBinder - Starting fillSimpleValue for Password
+[DEBUG] 2020-12-02 11:37:54.099 [main] SimpleValueBinder - Starting fillSimpleValue for address
+[DEBUG] 2020-12-02 11:37:54.099 [main] SimpleValueBinder - Starting fillSimpleValue for details
+[DEBUG] 2020-12-02 11:37:54.099 [main] SimpleValueBinder - Starting fillSimpleValue for email
+[DEBUG] 2020-12-02 11:37:54.099 [main] SimpleValueBinder - Starting fillSimpleValue for first_name
+[DEBUG] 2020-12-02 11:37:54.099 [main] SimpleValueBinder - Starting fillSimpleValue for last_name
+[DEBUG] 2020-12-02 11:37:54.099 [main] SimpleValueBinder - Starting fillSimpleValue for phone
+[DEBUG] 2020-12-02 11:37:54.099 [main] SimpleValueBinder - Starting fillSimpleValue for user_name
+[DEBUG] 2020-12-02 11:37:54.100 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-12-02 11:37:54.100 [main] SimpleValueBinder - Starting fillSimpleValue for roleName
+[DEBUG] 2020-12-02 11:37:54.104 [main] SimpleValueBinder - Starting fillSimpleValue for userName
+[DEBUG] 2020-12-02 11:37:54.104 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-12-02 11:37:54.104 [main] SimpleValueBinder - Starting fillSimpleValue for end_date
+[DEBUG] 2020-12-02 11:37:54.104 [main] SimpleValueBinder - Starting fillSimpleValue for start_date
+[DEBUG] 2020-12-02 11:37:54.104 [main] SimpleValueBinder - Starting fillSimpleValue for total_price
+[DEBUG] 2020-12-02 11:37:54.105 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-12-02 11:37:54.105 [main] SimpleValueBinder - Starting fillSimpleValue for Avalable
+[DEBUG] 2020-12-02 11:37:54.105 [main] SimpleValueBinder - Starting fillSimpleValue for current_price
+[DEBUG] 2020-12-02 11:37:54.105 [main] SimpleValueBinder - Starting fillSimpleValue for description
+[DEBUG] 2020-12-02 11:37:54.105 [main] SimpleValueBinder - Starting fillSimpleValue for room_name
+[DEBUG] 2020-12-02 11:37:54.105 [main] SimpleValueBinder - Starting fillSimpleValue for id
+[DEBUG] 2020-12-02 11:37:54.106 [main] SimpleValueBinder - Starting fillSimpleValue for price
+[DEBUG] 2020-12-02 11:37:54.124 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user]
+[DEBUG] 2020-12-02 11:37:54.125 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [role]
+[DEBUG] 2020-12-02 11:37:54.125 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [reservation]
+[DEBUG] 2020-12-02 11:37:54.125 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [room]
+[DEBUG] 2020-12-02 11:37:54.125 [main] PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [room_reserved]
+[DEBUG] 2020-12-02 11:37:54.129 [main] CollectionSecondPass - Second pass for collection: hote.entity.User.reservations
+[DEBUG] 2020-12-02 11:37:54.139 [main] CollectionBinder - Binding a OneToMany: hote.entity.User.reservations through a foreign key
+[DEBUG] 2020-12-02 11:37:54.143 [main] CollectionBinder - Mapping collection: hote.entity.User.reservations -> reservation
+[DEBUG] 2020-12-02 11:37:54.147 [main] TableBinder - Retrieving property hote.entity.Reservation.user
+[DEBUG] 2020-12-02 11:37:54.147 [main] CollectionSecondPass - Mapped collection key: guest_id, one-to-many: hote.entity.Reservation
+[DEBUG] 2020-12-02 11:37:54.147 [main] CollectionSecondPass - Second pass for collection: hote.entity.User.roles
+[DEBUG] 2020-12-02 11:37:54.148 [main] CollectionBinder - Binding a OneToMany: hote.entity.User.roles through a foreign key
+[DEBUG] 2020-12-02 11:37:54.148 [main] CollectionBinder - Mapping collection: hote.entity.User.roles -> role
+[DEBUG] 2020-12-02 11:37:54.148 [main] TableBinder - Retrieving property hote.entity.Role.user
+[DEBUG] 2020-12-02 11:37:54.148 [main] CollectionSecondPass - Mapped collection key: user_id, one-to-many: hote.entity.Role
+[DEBUG] 2020-12-02 11:37:54.152 [main] CollectionSecondPass - Second pass for collection: hote.entity.Reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:54.152 [main] CollectionBinder - Binding a OneToMany: hote.entity.Reservation.roomReserveds through a foreign key
+[DEBUG] 2020-12-02 11:37:54.155 [main] CollectionBinder - Mapping collection: hote.entity.Reservation.roomReserveds -> room_reserved
+[DEBUG] 2020-12-02 11:37:54.156 [main] TableBinder - Retrieving property hote.entity.RoomReserved.reservation
+[DEBUG] 2020-12-02 11:37:54.158 [main] CollectionSecondPass - Mapped collection key: reservation_id, one-to-many: hote.entity.RoomReserved
+[DEBUG] 2020-12-02 11:37:54.159 [main] CollectionSecondPass - Second pass for collection: hote.entity.Room.roomReserveds
+[DEBUG] 2020-12-02 11:37:54.160 [main] CollectionBinder - Binding a OneToMany: hote.entity.Room.roomReserveds through a foreign key
+[DEBUG] 2020-12-02 11:37:54.160 [main] CollectionBinder - Mapping collection: hote.entity.Room.roomReserveds -> room_reserved
+[DEBUG] 2020-12-02 11:37:54.160 [main] TableBinder - Retrieving property hote.entity.RoomReserved.room
+[DEBUG] 2020-12-02 11:37:54.160 [main] CollectionSecondPass - Mapped collection key: room_id, one-to-many: hote.entity.RoomReserved
+[DEBUG] 2020-12-02 11:37:54.160 [main] InFlightMetadataCollectorImpl - Resolving reference to class: hote.entity.User
+[DEBUG] 2020-12-02 11:37:54.169 [main] InFlightMetadataCollectorImpl - Resolving reference to class: hote.entity.User
+[DEBUG] 2020-12-02 11:37:54.170 [main] InFlightMetadataCollectorImpl - Resolving reference to class: hote.entity.Reservation
+[DEBUG] 2020-12-02 11:37:54.170 [main] InFlightMetadataCollectorImpl - Resolving reference to class: hote.entity.Room
+[DEBUG] 2020-12-02 11:37:54.172 [main] InFlightMetadataCollectorImpl - Resolving reference to class: hote.entity.User
+[DEBUG] 2020-12-02 11:37:54.179 [main] InFlightMetadataCollectorImpl - Resolving reference to class: hote.entity.User
+[DEBUG] 2020-12-02 11:37:54.179 [main] InFlightMetadataCollectorImpl - Resolving reference to class: hote.entity.Reservation
+[DEBUG] 2020-12-02 11:37:54.180 [main] InFlightMetadataCollectorImpl - Resolving reference to class: hote.entity.Room
+[DEBUG] 2020-12-02 11:37:54.296 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2020-12-02 11:37:54.299 [main] Settings - SessionFactory name : null
+[DEBUG] 2020-12-02 11:37:54.300 [main] Settings - Automatic flush during beforeCompletion(): enabled
+[DEBUG] 2020-12-02 11:37:54.300 [main] Settings - Automatic session close at end of transaction: disabled
+[DEBUG] 2020-12-02 11:37:54.300 [main] Settings - Statistics: disabled
+[DEBUG] 2020-12-02 11:37:54.300 [main] Settings - Deleted entity synthetic identifier rollback: disabled
+[DEBUG] 2020-12-02 11:37:54.300 [main] Settings - Default entity-mode: pojo
+[DEBUG] 2020-12-02 11:37:54.300 [main] Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+[DEBUG] 2020-12-02 11:37:54.300 [main] Settings - Allow initialization of lazy state outside session : disabled
+[DEBUG] 2020-12-02 11:37:54.300 [main] Settings - Using BatchFetchStyle : LEGACY
+[DEBUG] 2020-12-02 11:37:54.301 [main] Settings - Default batch fetch size: -1
+[DEBUG] 2020-12-02 11:37:54.301 [main] Settings - Maximum outer join fetch depth: 2
+[DEBUG] 2020-12-02 11:37:54.301 [main] Settings - Default null ordering: NONE
+[DEBUG] 2020-12-02 11:37:54.301 [main] Settings - Order SQL updates by primary key: disabled
+[DEBUG] 2020-12-02 11:37:54.301 [main] Settings - Order SQL inserts for batching: disabled
+[DEBUG] 2020-12-02 11:37:54.301 [main] Settings - multi-tenancy strategy : NONE
+[DEBUG] 2020-12-02 11:37:54.304 [main] Settings - JTA Track by Thread: enabled
+[DEBUG] 2020-12-02 11:37:54.304 [main] Settings - Query language substitutions: {}
+[DEBUG] 2020-12-02 11:37:54.305 [main] Settings - Named query checking : enabled
+[DEBUG] 2020-12-02 11:37:54.305 [main] Settings - Second-level cache: disabled
+[DEBUG] 2020-12-02 11:37:54.305 [main] Settings - Second-level query cache: disabled
+[DEBUG] 2020-12-02 11:37:54.305 [main] Settings - Second-level query cache factory: null
+[DEBUG] 2020-12-02 11:37:54.305 [main] Settings - Second-level cache region prefix: null
+[DEBUG] 2020-12-02 11:37:54.305 [main] Settings - Optimize second-level cache for minimal puts: disabled
+[DEBUG] 2020-12-02 11:37:54.305 [main] Settings - Structured second-level cache entries: disabled
+[DEBUG] 2020-12-02 11:37:54.305 [main] Settings - Second-level cache direct-reference entries: disabled
+[DEBUG] 2020-12-02 11:37:54.306 [main] Settings - Automatic eviction of collection cache: disabled
+[DEBUG] 2020-12-02 11:37:54.310 [main] Settings - JDBC batch size: 15
+[DEBUG] 2020-12-02 11:37:54.310 [main] Settings - JDBC batch updates for versioned data: enabled
+[DEBUG] 2020-12-02 11:37:54.310 [main] Settings - Scrollable result sets: enabled
+[DEBUG] 2020-12-02 11:37:54.310 [main] Settings - Wrap result sets: disabled
+[DEBUG] 2020-12-02 11:37:54.310 [main] Settings - JDBC3 getGeneratedKeys(): enabled
+[DEBUG] 2020-12-02 11:37:54.310 [main] Settings - JDBC result set fetch size: null
+[DEBUG] 2020-12-02 11:37:54.310 [main] Settings - Connection release mode: AFTER_TRANSACTION
+[DEBUG] 2020-12-02 11:37:54.311 [main] Settings - Generate SQL with comments: disabled
+[DEBUG] 2020-12-02 11:37:54.316 [main] Settings - JPA compliance - query : 
+[DEBUG] 2020-12-02 11:37:54.316 [main] Settings - JPA compliance - closed-handling : 
+[DEBUG] 2020-12-02 11:37:54.316 [main] Settings - JPA compliance - lists : 
+[DEBUG] 2020-12-02 11:37:54.316 [main] Settings - JPA compliance - transactions : 
+[INFO ] 2020-12-02 11:37:54.625 [main] beans - HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+[DEBUG] 2020-12-02 11:37:54.714 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2020-12-02 11:37:54.714 [main] SessionFactoryImpl - Instantiating session factory with properties: {sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/snap/intellij-idea-ultimate/261/lib/idea_rt.jar:/snap/intellij-idea-ultimate/261/plugins/junit/lib/junit5-rt.jar:/snap/intellij-idea-ultimate/261/plugins/junit/lib/junit-rt.jar:/home/student/IdeaProjects/HotelWebsie/target/test-classes:/home/student/IdeaProjects/HotelWebsie/target/classes:/home/student/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/home/student/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/home/student/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/home/student/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/home/student/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/home/student/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/home/student/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/student/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/student/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/home/student/.m2/repository/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar:/home/student/.m2/repository/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar:/home/student/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/home/student/.m2/repository/org/apache/logging/log4j/log4j-core/2.10.0/log4j-core-2.10.0.jar:/home/student/.m2/repository/org/hibernate/hibernate-core/5.4.4.Final/hibernate-core-5.4.4.Final.jar:/home/student/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/student/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/home/student/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/home/student/.m2/repository/net/bytebuddy/byte-buddy/1.9.11/byte-buddy-1.9.11.jar:/home/student/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/home/student/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/home/student/.m2/repository/org/jboss/jandex/2.0.5.Final/jandex-2.0.5.Final.jar:/home/student/.m2/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/home/student/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/home/student/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/home/student/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/home/student/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/home/student/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/home/student/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/home/student/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/home/student/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/home/student/.m2/repository/org/hibernate/hibernate-c3p0/5.4.4.Final/hibernate-c3p0-5.4.4.Final.jar:/home/student/.m2/repository/com/mchange/c3p0/0.9.5.3/c3p0-0.9.5.3.jar:/home/student/.m2/repository/com/mchange/mchange-commons-java/0.2.15/mchange-commons-java-0.2.15.jar:/home/student/.m2/repository/org/glassfish/jersey/core/jersey-client/2.29.1/jersey-client-2.29.1.jar:/home/student/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/home/student/.m2/repository/org/glassfish/jersey/core/jersey-common/2.29.1/jersey-common-2.29.1.jar:/home/student/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/student/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/student/.m2/repository/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar:/home/student/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/home/student/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.29.1/jersey-hk2-2.29.1.jar:/home/student/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/home/student/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/home/student/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/home/student/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/home/student/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar:/home/student/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar:/home/student/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar:/home/student/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.29.1/jersey-container-servlet-2.29.1.jar:/home/student/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.29.1/jersey-container-servlet-core-2.29.1.jar:/home/student/.m2/repository/org/glassfish/jersey/core/jersey-server/2.29.1/jersey-server-2.29.1.jar:/home/student/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.29.1/jersey-media-jaxb-2.29.1.jar:/home/student/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/student/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/home/student/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar, java.vm.vendor=Ubuntu, sun.arch.data.model=64, idea.test.cyclic.buffer.size=1048576, java.vendor.url=https://ubuntu.com/, user.timezone=America/Chicago, os.name=Linux, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/usr/lib/jvm/java-11-openjdk-amd64/lib, sun.java.command=com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 hotel.persistence.UserDaoTest,saveOrUpdate, jdk.debug=release, sun.cpu.endian=little, user.home=/home/student, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2020-07-14, java.home=/usr/lib/jvm/java-11-openjdk-amd64, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, connection.password=student, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, hibernate.c3p0.max_size=20, java.runtime.version=11.0.8+10-post-Ubuntu-0ubuntu118.04.1, user.name=student, path.separator=:, hibernate.connection.username=****, os.version=5.4.0-51-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/hotelFull_test, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://bugs.launchpad.net/ubuntu/+source/openjdk-lts, java.io.tmpdir=/tmp, java.version=11.0.8, user.dir=/home/student/IdeaProjects/HotelWebsie, os.arch=amd64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@474179fa, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, java.vendor=Ubuntu, java.vm.info=mixed mode, sharing, java.vm.version=11.0.8+10-post-Ubuntu-0ubuntu118.04.1, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, connection.url=jdbc:mysql://localhost:3306/hotelFull_test, java.class.version=55.0}
+[DEBUG] 2020-12-02 11:37:54.777 [main] TypeSafeActivator - Unable to acquire Bean Validation ValidatorFactory, skipping activation
+[DEBUG] 2020-12-02 11:37:54.778 [main] JaccIntegrator - Skipping JACC integration as it was not enabled
+[DEBUG] 2020-12-02 11:37:54.779 [main] SessionFactoryImpl - Instantiated session factory
+[DEBUG] 2020-12-02 11:37:54.779 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@63cd2cd2] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@60f21960]
+[DEBUG] 2020-12-02 11:37:55.118 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.Reservation] is safe
+[DEBUG] 2020-12-02 11:37:55.120 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.Reservation
+[DEBUG] 2020-12-02 11:37:55.193 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.Reservation] is safe
+[DEBUG] 2020-12-02 11:37:55.193 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.Reservation
+[DEBUG] 2020-12-02 11:37:56.334 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.Room] is safe
+[DEBUG] 2020-12-02 11:37:56.336 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.Room
+[DEBUG] 2020-12-02 11:37:56.338 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.Room] is safe
+[DEBUG] 2020-12-02 11:37:56.338 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.Room
+[DEBUG] 2020-12-02 11:37:56.471 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.RoomReserved] is safe
+[DEBUG] 2020-12-02 11:37:56.471 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.RoomReserved
+[DEBUG] 2020-12-02 11:37:56.472 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.RoomReserved] is safe
+[DEBUG] 2020-12-02 11:37:56.472 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.RoomReserved
+[DEBUG] 2020-12-02 11:37:56.564 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.User] is safe
+[DEBUG] 2020-12-02 11:37:56.564 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.User
+[DEBUG] 2020-12-02 11:37:56.565 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.User] is safe
+[DEBUG] 2020-12-02 11:37:56.565 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.User
+[DEBUG] 2020-12-02 11:37:56.736 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.Role] is safe
+[DEBUG] 2020-12-02 11:37:56.736 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.Role
+[DEBUG] 2020-12-02 11:37:56.737 [main] ClassLoaderAccessImpl - Not known whether passed class name [hote.entity.Role] is safe
+[DEBUG] 2020-12-02 11:37:56.737 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hote.entity.Role
+[DEBUG] 2020-12-02 11:37:56.838 [main] AbstractCollectionPersister - Static SQL for collection: hote.entity.User.reservations
+[DEBUG] 2020-12-02 11:37:56.841 [main] AbstractCollectionPersister -  Row insert: update reservation set guest_id=? where id=?
+[DEBUG] 2020-12-02 11:37:56.841 [main] AbstractCollectionPersister -  Row update: update reservation set  where id=?
+[DEBUG] 2020-12-02 11:37:56.841 [main] AbstractCollectionPersister -  Row delete: update reservation set guest_id=null where guest_id=? and id=?
+[DEBUG] 2020-12-02 11:37:56.841 [main] AbstractCollectionPersister -  One-shot delete: update reservation set guest_id=null where guest_id=?
+[DEBUG] 2020-12-02 11:37:56.841 [main] AbstractCollectionPersister - Static SQL for collection: hote.entity.User.roles
+[DEBUG] 2020-12-02 11:37:56.842 [main] AbstractCollectionPersister -  Row insert: update role set user_id=? where id=?
+[DEBUG] 2020-12-02 11:37:56.842 [main] AbstractCollectionPersister -  Row update: update role set  where id=?
+[DEBUG] 2020-12-02 11:37:56.842 [main] AbstractCollectionPersister -  Row delete: update role set user_id=null where user_id=? and id=?
+[DEBUG] 2020-12-02 11:37:56.842 [main] AbstractCollectionPersister -  One-shot delete: update role set user_id=null where user_id=?
+[DEBUG] 2020-12-02 11:37:56.842 [main] AbstractCollectionPersister - Static SQL for collection: hote.entity.Reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:56.842 [main] AbstractCollectionPersister -  Row insert: update room_reserved set reservation_id=? where id=?
+[DEBUG] 2020-12-02 11:37:56.842 [main] AbstractCollectionPersister -  Row update: update room_reserved set  where id=?
+[DEBUG] 2020-12-02 11:37:56.842 [main] AbstractCollectionPersister -  Row delete: update room_reserved set reservation_id=null where reservation_id=? and id=?
+[DEBUG] 2020-12-02 11:37:56.845 [main] AbstractCollectionPersister -  One-shot delete: update room_reserved set reservation_id=null where reservation_id=?
+[DEBUG] 2020-12-02 11:37:56.846 [main] AbstractCollectionPersister - Static SQL for collection: hote.entity.Room.roomReserveds
+[DEBUG] 2020-12-02 11:37:56.846 [main] AbstractCollectionPersister -  Row insert: update room_reserved set room_id=? where id=?
+[DEBUG] 2020-12-02 11:37:56.846 [main] AbstractCollectionPersister -  Row update: update room_reserved set  where id=?
+[DEBUG] 2020-12-02 11:37:56.846 [main] AbstractCollectionPersister -  Row delete: update room_reserved set room_id=null where room_id=? and id=?
+[DEBUG] 2020-12-02 11:37:56.847 [main] AbstractCollectionPersister -  One-shot delete: update room_reserved set room_id=null where room_id=?
+[DEBUG] 2020-12-02 11:37:56.857 [main] AbstractEntityPersister - Static SQL for entity: hote.entity.Reservation
+[DEBUG] 2020-12-02 11:37:56.857 [main] AbstractEntityPersister -  Version select: select id from reservation where id =?
+[DEBUG] 2020-12-02 11:37:56.857 [main] AbstractEntityPersister -  Snapshot select: select reservatio_.id, reservatio_.end_date as end_date2_0_, reservatio_.start_date as start_da3_0_, reservatio_.total_price as total_pr4_0_, reservatio_.guest_id as guest_id5_0_ from reservation reservatio_ where reservatio_.id=?
+[DEBUG] 2020-12-02 11:37:56.857 [main] AbstractEntityPersister -  Insert 0: insert into reservation (end_date, start_date, total_price, guest_id, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2020-12-02 11:37:56.857 [main] AbstractEntityPersister -  Update 0: update reservation set end_date=?, start_date=?, total_price=?, guest_id=? where id=?
+[DEBUG] 2020-12-02 11:37:56.857 [main] AbstractEntityPersister -  Delete 0: delete from reservation where id=?
+[DEBUG] 2020-12-02 11:37:56.857 [main] AbstractEntityPersister -  Identity insert: insert into reservation (end_date, start_date, total_price, guest_id) values (?, ?, ?, ?)
+[DEBUG] 2020-12-02 11:37:56.935 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7eb27768]
+[DEBUG] 2020-12-02 11:37:56.939 [main] MetamodelGraphWalker - Visiting attribute path : end_date
+[DEBUG] 2020-12-02 11:37:56.939 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds
+[DEBUG] 2020-12-02 11:37:56.947 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@78d92eef]
+[DEBUG] 2020-12-02 11:37:56.951 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@79ca7bea]
+[DEBUG] 2020-12-02 11:37:56.953 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.price
+[DEBUG] 2020-12-02 11:37:56.953 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:56.953 [main] MetamodelGraphWalker - Property path deemed to be circular : roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:56.955 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room
+[DEBUG] 2020-12-02 11:37:56.955 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6b063470]
+[DEBUG] 2020-12-02 11:37:56.956 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.Avalable
+[DEBUG] 2020-12-02 11:37:56.959 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.current_price
+[DEBUG] 2020-12-02 11:37:56.960 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.description
+[DEBUG] 2020-12-02 11:37:56.962 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.roomReserveds
+[DEBUG] 2020-12-02 11:37:56.962 [main] MetamodelGraphWalker - Property path deemed to be circular : roomReserveds.room.roomReserveds
+[DEBUG] 2020-12-02 11:37:56.964 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.room_name
+[DEBUG] 2020-12-02 11:37:56.965 [main] MetamodelGraphWalker - Visiting attribute path : start_date
+[DEBUG] 2020-12-02 11:37:56.965 [main] MetamodelGraphWalker - Visiting attribute path : total_price
+[DEBUG] 2020-12-02 11:37:56.966 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-12-02 11:37:56.969 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3f048c86]
+[DEBUG] 2020-12-02 11:37:56.969 [main] MetamodelGraphWalker - Visiting attribute path : user.Password
+[DEBUG] 2020-12-02 11:37:56.969 [main] MetamodelGraphWalker - Visiting attribute path : user.address
+[DEBUG] 2020-12-02 11:37:56.973 [main] MetamodelGraphWalker - Visiting attribute path : user.details
+[DEBUG] 2020-12-02 11:37:56.973 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2020-12-02 11:37:56.974 [main] MetamodelGraphWalker - Visiting attribute path : user.first_name
+[DEBUG] 2020-12-02 11:37:56.974 [main] MetamodelGraphWalker - Visiting attribute path : user.last_name
+[DEBUG] 2020-12-02 11:37:56.974 [main] MetamodelGraphWalker - Visiting attribute path : user.phone
+[DEBUG] 2020-12-02 11:37:56.977 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations
+[DEBUG] 2020-12-02 11:37:56.977 [main] MetamodelGraphWalker - Property path deemed to be circular : user.reservations
+[DEBUG] 2020-12-02 11:37:56.977 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-12-02 11:37:56.977 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1de13f34]
+[DEBUG] 2020-12-02 11:37:56.977 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7e191fda]
+[DEBUG] 2020-12-02 11:37:56.978 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.roleName
+[DEBUG] 2020-12-02 11:37:56.978 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.user
+[DEBUG] 2020-12-02 11:37:56.978 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles.user
+[DEBUG] 2020-12-02 11:37:56.978 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.userName
+[DEBUG] 2020-12-02 11:37:56.979 [main] MetamodelGraphWalker - Visiting attribute path : user.user_name
+[DEBUG] 2020-12-02 11:37:56.979 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.034 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.066 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.Reservation)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.Reservation, querySpaceUid=<gen:0>, path=hote.entity.Reservation)
+          - CollectionAttributeFetchImpl(collection=hote.entity.Reservation.roomReserveds, querySpaceUid=<gen:1>, path=hote.entity.Reservation.roomReserveds)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:2>, path=hote.entity.Reservation.roomReserveds.<elements>)
+                - EntityAttributeFetchImpl(entity=hote.entity.Room, querySpaceUid=<gen:3>, path=hote.entity.Reservation.roomReserveds.<elements>.room)
+          - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:4>, path=hote.entity.Reservation.user)
+             - CollectionAttributeFetchImpl(collection=hote.entity.User.roles, querySpaceUid=<gen:5>, path=hote.entity.Reservation.user.roles)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Role, querySpaceUid=<gen:6>, path=hote.entity.Reservation.user.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.Reservation)
+          - SQL table alias mapping - reservatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(roomReserveds)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=hote.entity.Reservation.roomReserveds)
+                - SQL table alias mapping - roomreserv1_
+                - alias suffix - 1_
+                - suffixed key columns - {reservat3_3_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_3_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.RoomReserved)
+                      - SQL table alias mapping - roomreserv1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_3_2_}
+                      - JOIN (JoinDefinedByMetadata(room)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=hote.entity.Room)
+                            - SQL table alias mapping - room2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_2_3_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:4>
+             - EntityQuerySpaceImpl(uid=<gen:4>, entity=hote.entity.User)
+                - SQL table alias mapping - user3_
+                - alias suffix - 4_
+                - suffixed key columns - {id1_4_4_}
+                - JOIN (JoinDefinedByMetadata(roles)) : <gen:4> -> <gen:5>
+                   - CollectionQuerySpaceImpl(uid=<gen:5>, collection=hote.entity.User.roles)
+                      - SQL table alias mapping - roles4_
+                      - alias suffix - 5_
+                      - suffixed key columns - {user_id4_1_5_}
+                      - entity-element alias suffix - 6_
+                      - 6_entity-element suffixed key columns - id1_1_6_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:5> -> <gen:6>
+                         - EntityQuerySpaceImpl(uid=<gen:6>, entity=hote.entity.Role)
+                            - SQL table alias mapping - roles4_
+                            - alias suffix - 6_
+                            - suffixed key columns - {id1_1_6_}
+
+[DEBUG] 2020-12-02 11:37:57.074 [main] EntityLoader - Static select for entity hote.entity.Reservation [NONE]: select reservatio0_.id as id1_0_0_, reservatio0_.end_date as end_date2_0_0_, reservatio0_.start_date as start_da3_0_0_, reservatio0_.total_price as total_pr4_0_0_, reservatio0_.guest_id as guest_id5_0_0_, roomreserv1_.reservation_id as reservat3_3_1_, roomreserv1_.id as id1_3_1_, roomreserv1_.id as id1_3_2_, roomreserv1_.price as price2_3_2_, roomreserv1_.reservation_id as reservat3_3_2_, roomreserv1_.room_id as room_id4_3_2_, room2_.id as id1_2_3_, room2_.Avalable as Avalable2_2_3_, room2_.current_price as current_3_2_3_, room2_.description as descript4_2_3_, room2_.room_name as room_nam5_2_3_, user3_.id as id1_4_4_, user3_.Password as Password2_4_4_, user3_.address as address3_4_4_, user3_.details as details4_4_4_, user3_.email as email5_4_4_, user3_.first_name as first_na6_4_4_, user3_.last_name as last_nam7_4_4_, user3_.phone as phone8_4_4_, user3_.user_name as user_nam9_4_4_, roles4_.user_id as user_id4_1_5_, roles4_.id as id1_1_5_, roles4_.id as id1_1_6_, roles4_.role_name as role_nam2_1_6_, roles4_.user_id as user_id4_1_6_, roles4_.user_name as user_nam3_1_6_ from reservation reservatio0_ left outer join room_reserved roomreserv1_ on reservatio0_.id=roomreserv1_.reservation_id left outer join room room2_ on roomreserv1_.room_id=room2_.id left outer join user user3_ on reservatio0_.guest_id=user3_.id left outer join role roles4_ on user3_.id=roles4_.user_id where reservatio0_.id=?
+[DEBUG] 2020-12-02 11:37:57.076 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@34009349]
+[DEBUG] 2020-12-02 11:37:57.076 [main] MetamodelGraphWalker - Visiting attribute path : end_date
+[DEBUG] 2020-12-02 11:37:57.076 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds
+[DEBUG] 2020-12-02 11:37:57.078 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4faf1f4]
+[DEBUG] 2020-12-02 11:37:57.078 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4f811029]
+[DEBUG] 2020-12-02 11:37:57.080 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.price
+[DEBUG] 2020-12-02 11:37:57.081 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:57.081 [main] MetamodelGraphWalker - Property path deemed to be circular : roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:57.081 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room
+[DEBUG] 2020-12-02 11:37:57.082 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@56a05324]
+[DEBUG] 2020-12-02 11:37:57.084 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.Avalable
+[DEBUG] 2020-12-02 11:37:57.085 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.current_price
+[DEBUG] 2020-12-02 11:37:57.085 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.description
+[DEBUG] 2020-12-02 11:37:57.085 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.085 [main] MetamodelGraphWalker - Property path deemed to be circular : roomReserveds.room.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.085 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room.room_name
+[DEBUG] 2020-12-02 11:37:57.085 [main] MetamodelGraphWalker - Visiting attribute path : start_date
+[DEBUG] 2020-12-02 11:37:57.086 [main] MetamodelGraphWalker - Visiting attribute path : total_price
+[DEBUG] 2020-12-02 11:37:57.086 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-12-02 11:37:57.086 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@342beaf6]
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.Password
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.address
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.details
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.first_name
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.last_name
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.phone
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Property path deemed to be circular : user.reservations
+[DEBUG] 2020-12-02 11:37:57.087 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-12-02 11:37:57.088 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@56cfe6be]
+[DEBUG] 2020-12-02 11:37:57.088 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7f0d8eff]
+[DEBUG] 2020-12-02 11:37:57.088 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.roleName
+[DEBUG] 2020-12-02 11:37:57.088 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.user
+[DEBUG] 2020-12-02 11:37:57.088 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles.user
+[DEBUG] 2020-12-02 11:37:57.088 [main] MetamodelGraphWalker - Visiting attribute path : user.roles.userName
+[DEBUG] 2020-12-02 11:37:57.089 [main] MetamodelGraphWalker - Visiting attribute path : user.user_name
+[DEBUG] 2020-12-02 11:37:57.089 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.089 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.100 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.Reservation)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.Reservation, querySpaceUid=<gen:0>, path=hote.entity.Reservation)
+          - CollectionAttributeFetchImpl(collection=hote.entity.Reservation.roomReserveds, querySpaceUid=<gen:1>, path=hote.entity.Reservation.roomReserveds)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:2>, path=hote.entity.Reservation.roomReserveds.<elements>)
+                - EntityAttributeFetchImpl(entity=hote.entity.Room, querySpaceUid=<gen:3>, path=hote.entity.Reservation.roomReserveds.<elements>.room)
+          - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:4>, path=hote.entity.Reservation.user)
+             - CollectionAttributeFetchImpl(collection=hote.entity.User.roles, querySpaceUid=<gen:5>, path=hote.entity.Reservation.user.roles)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Role, querySpaceUid=<gen:6>, path=hote.entity.Reservation.user.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.Reservation)
+          - SQL table alias mapping - reservatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(roomReserveds)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=hote.entity.Reservation.roomReserveds)
+                - SQL table alias mapping - roomreserv1_
+                - alias suffix - 1_
+                - suffixed key columns - {reservat3_3_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_3_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.RoomReserved)
+                      - SQL table alias mapping - roomreserv1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_3_2_}
+                      - JOIN (JoinDefinedByMetadata(room)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=hote.entity.Room)
+                            - SQL table alias mapping - room2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_2_3_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:4>
+             - EntityQuerySpaceImpl(uid=<gen:4>, entity=hote.entity.User)
+                - SQL table alias mapping - user3_
+                - alias suffix - 4_
+                - suffixed key columns - {id1_4_4_}
+                - JOIN (JoinDefinedByMetadata(roles)) : <gen:4> -> <gen:5>
+                   - CollectionQuerySpaceImpl(uid=<gen:5>, collection=hote.entity.User.roles)
+                      - SQL table alias mapping - roles4_
+                      - alias suffix - 5_
+                      - suffixed key columns - {user_id4_1_5_}
+                      - entity-element alias suffix - 6_
+                      - 6_entity-element suffixed key columns - id1_1_6_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:5> -> <gen:6>
+                         - EntityQuerySpaceImpl(uid=<gen:6>, entity=hote.entity.Role)
+                            - SQL table alias mapping - roles4_
+                            - alias suffix - 6_
+                            - suffixed key columns - {id1_1_6_}
+
+[DEBUG] 2020-12-02 11:37:57.102 [main] EntityLoader - Static select for entity hote.entity.Reservation [READ]: select reservatio0_.id as id1_0_0_, reservatio0_.end_date as end_date2_0_0_, reservatio0_.start_date as start_da3_0_0_, reservatio0_.total_price as total_pr4_0_0_, reservatio0_.guest_id as guest_id5_0_0_, roomreserv1_.reservation_id as reservat3_3_1_, roomreserv1_.id as id1_3_1_, roomreserv1_.id as id1_3_2_, roomreserv1_.price as price2_3_2_, roomreserv1_.reservation_id as reservat3_3_2_, roomreserv1_.room_id as room_id4_3_2_, room2_.id as id1_2_3_, room2_.Avalable as Avalable2_2_3_, room2_.current_price as current_3_2_3_, room2_.description as descript4_2_3_, room2_.room_name as room_nam5_2_3_, user3_.id as id1_4_4_, user3_.Password as Password2_4_4_, user3_.address as address3_4_4_, user3_.details as details4_4_4_, user3_.email as email5_4_4_, user3_.first_name as first_na6_4_4_, user3_.last_name as last_nam7_4_4_, user3_.phone as phone8_4_4_, user3_.user_name as user_nam9_4_4_, roles4_.user_id as user_id4_1_5_, roles4_.id as id1_1_5_, roles4_.id as id1_1_6_, roles4_.role_name as role_nam2_1_6_, roles4_.user_id as user_id4_1_6_, roles4_.user_name as user_nam3_1_6_ from reservation reservatio0_ left outer join room_reserved roomreserv1_ on reservatio0_.id=roomreserv1_.reservation_id left outer join room room2_ on roomreserv1_.room_id=room2_.id left outer join user user3_ on reservatio0_.guest_id=user3_.id left outer join role roles4_ on user3_.id=roles4_.user_id where reservatio0_.id=?
+[DEBUG] 2020-12-02 11:37:57.156 [main] Loader - Static select for action ACTION_MERGE on entity hote.entity.Reservation: select reservatio0_.id as id1_0_1_, reservatio0_.end_date as end_date2_0_1_, reservatio0_.start_date as start_da3_0_1_, reservatio0_.total_price as total_pr4_0_1_, reservatio0_.guest_id as guest_id5_0_1_, roomreserv1_.reservation_id as reservat3_3_3_, roomreserv1_.id as id1_3_3_, roomreserv1_.id as id1_3_0_, roomreserv1_.price as price2_3_0_, roomreserv1_.reservation_id as reservat3_3_0_, roomreserv1_.room_id as room_id4_3_0_ from reservation reservatio0_ left outer join room_reserved roomreserv1_ on reservatio0_.id=roomreserv1_.reservation_id where reservatio0_.id=?
+[DEBUG] 2020-12-02 11:37:57.158 [main] Loader - Static select for action ACTION_REFRESH on entity hote.entity.Reservation: select reservatio0_.id as id1_0_1_, reservatio0_.end_date as end_date2_0_1_, reservatio0_.start_date as start_da3_0_1_, reservatio0_.total_price as total_pr4_0_1_, reservatio0_.guest_id as guest_id5_0_1_, roomreserv1_.reservation_id as reservat3_3_3_, roomreserv1_.id as id1_3_3_, roomreserv1_.id as id1_3_0_, roomreserv1_.price as price2_3_0_, roomreserv1_.reservation_id as reservat3_3_0_, roomreserv1_.room_id as room_id4_3_0_ from reservation reservatio0_ left outer join room_reserved roomreserv1_ on reservatio0_.id=roomreserv1_.reservation_id where reservatio0_.id=?
+[DEBUG] 2020-12-02 11:37:57.159 [main] AbstractEntityPersister - Static SQL for entity: hote.entity.Room
+[DEBUG] 2020-12-02 11:37:57.159 [main] AbstractEntityPersister -  Version select: select id from room where id =?
+[DEBUG] 2020-12-02 11:37:57.159 [main] AbstractEntityPersister -  Snapshot select: select room_.id, room_.Avalable as Avalable2_2_, room_.current_price as current_3_2_, room_.description as descript4_2_, room_.room_name as room_nam5_2_ from room room_ where room_.id=?
+[DEBUG] 2020-12-02 11:37:57.159 [main] AbstractEntityPersister -  Insert 0: insert into room (Avalable, current_price, description, room_name, id) values (?, ?, ?, ?, ?)
+[DEBUG] 2020-12-02 11:37:57.160 [main] AbstractEntityPersister -  Update 0: update room set Avalable=?, current_price=?, description=?, room_name=? where id=?
+[DEBUG] 2020-12-02 11:37:57.160 [main] AbstractEntityPersister -  Delete 0: delete from room where id=?
+[DEBUG] 2020-12-02 11:37:57.160 [main] AbstractEntityPersister -  Identity insert: insert into room (Avalable, current_price, description, room_name) values (?, ?, ?, ?)
+[DEBUG] 2020-12-02 11:37:57.160 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@582a3b19]
+[DEBUG] 2020-12-02 11:37:57.160 [main] MetamodelGraphWalker - Visiting attribute path : Avalable
+[DEBUG] 2020-12-02 11:37:57.160 [main] MetamodelGraphWalker - Visiting attribute path : current_price
+[DEBUG] 2020-12-02 11:37:57.160 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2020-12-02 11:37:57.160 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds
+[DEBUG] 2020-12-02 11:37:57.160 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2616b618]
+[DEBUG] 2020-12-02 11:37:57.161 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@73bb573d]
+[DEBUG] 2020-12-02 11:37:57.161 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.price
+[DEBUG] 2020-12-02 11:37:57.161 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:57.161 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@60deefed]
+[DEBUG] 2020-12-02 11:37:57.161 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.end_date
+[DEBUG] 2020-12-02 11:37:57.161 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.161 [main] MetamodelGraphWalker - Property path deemed to be circular : roomReserveds.reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.161 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.start_date
+[DEBUG] 2020-12-02 11:37:57.161 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.total_price
+[DEBUG] 2020-12-02 11:37:57.162 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.user
+[DEBUG] 2020-12-02 11:37:57.162 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@31881aa2]
+[DEBUG] 2020-12-02 11:37:57.162 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room
+[DEBUG] 2020-12-02 11:37:57.162 [main] MetamodelGraphWalker - Property path deemed to be circular : roomReserveds.room
+[DEBUG] 2020-12-02 11:37:57.166 [main] MetamodelGraphWalker - Visiting attribute path : room_name
+[DEBUG] 2020-12-02 11:37:57.166 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.168 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.174 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.Room)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.Room, querySpaceUid=<gen:0>, path=hote.entity.Room)
+          - CollectionAttributeFetchImpl(collection=hote.entity.Room.roomReserveds, querySpaceUid=<gen:1>, path=hote.entity.Room.roomReserveds)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:2>, path=hote.entity.Room.roomReserveds.<elements>)
+                - EntityAttributeFetchImpl(entity=hote.entity.Reservation, querySpaceUid=<gen:3>, path=hote.entity.Room.roomReserveds.<elements>.reservation)
+                   - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:4>, path=hote.entity.Room.roomReserveds.<elements>.reservation.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.Room)
+          - SQL table alias mapping - room0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(roomReserveds)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=hote.entity.Room.roomReserveds)
+                - SQL table alias mapping - roomreserv1_
+                - alias suffix - 1_
+                - suffixed key columns - {room_id4_3_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_3_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.RoomReserved)
+                      - SQL table alias mapping - roomreserv1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_3_2_}
+                      - JOIN (JoinDefinedByMetadata(reservation)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=hote.entity.Reservation)
+                            - SQL table alias mapping - reservatio2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+
+[DEBUG] 2020-12-02 11:37:57.174 [main] EntityLoader - Static select for entity hote.entity.Room [NONE]: select room0_.id as id1_2_0_, room0_.Avalable as Avalable2_2_0_, room0_.current_price as current_3_2_0_, room0_.description as descript4_2_0_, room0_.room_name as room_nam5_2_0_, roomreserv1_.room_id as room_id4_3_1_, roomreserv1_.id as id1_3_1_, roomreserv1_.id as id1_3_2_, roomreserv1_.price as price2_3_2_, roomreserv1_.reservation_id as reservat3_3_2_, roomreserv1_.room_id as room_id4_3_2_, reservatio2_.id as id1_0_3_, reservatio2_.end_date as end_date2_0_3_, reservatio2_.start_date as start_da3_0_3_, reservatio2_.total_price as total_pr4_0_3_, reservatio2_.guest_id as guest_id5_0_3_ from room room0_ left outer join room_reserved roomreserv1_ on room0_.id=roomreserv1_.room_id left outer join reservation reservatio2_ on roomreserv1_.reservation_id=reservatio2_.id where room0_.id=?
+[DEBUG] 2020-12-02 11:37:57.174 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1b46392c]
+[DEBUG] 2020-12-02 11:37:57.175 [main] MetamodelGraphWalker - Visiting attribute path : Avalable
+[DEBUG] 2020-12-02 11:37:57.175 [main] MetamodelGraphWalker - Visiting attribute path : current_price
+[DEBUG] 2020-12-02 11:37:57.175 [main] MetamodelGraphWalker - Visiting attribute path : description
+[DEBUG] 2020-12-02 11:37:57.175 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds
+[DEBUG] 2020-12-02 11:37:57.175 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6f15f52a]
+[DEBUG] 2020-12-02 11:37:57.175 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1eb9bf60]
+[DEBUG] 2020-12-02 11:37:57.178 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.price
+[DEBUG] 2020-12-02 11:37:57.178 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:57.178 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@787d1f9c]
+[DEBUG] 2020-12-02 11:37:57.178 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.end_date
+[DEBUG] 2020-12-02 11:37:57.178 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.179 [main] MetamodelGraphWalker - Property path deemed to be circular : roomReserveds.reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.179 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.start_date
+[DEBUG] 2020-12-02 11:37:57.180 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.total_price
+[DEBUG] 2020-12-02 11:37:57.180 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.reservation.user
+[DEBUG] 2020-12-02 11:37:57.180 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7c71c889]
+[DEBUG] 2020-12-02 11:37:57.181 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds.room
+[DEBUG] 2020-12-02 11:37:57.181 [main] MetamodelGraphWalker - Property path deemed to be circular : roomReserveds.room
+[DEBUG] 2020-12-02 11:37:57.181 [main] MetamodelGraphWalker - Visiting attribute path : room_name
+[DEBUG] 2020-12-02 11:37:57.181 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.182 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.187 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.Room)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.Room, querySpaceUid=<gen:0>, path=hote.entity.Room)
+          - CollectionAttributeFetchImpl(collection=hote.entity.Room.roomReserveds, querySpaceUid=<gen:1>, path=hote.entity.Room.roomReserveds)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:2>, path=hote.entity.Room.roomReserveds.<elements>)
+                - EntityAttributeFetchImpl(entity=hote.entity.Reservation, querySpaceUid=<gen:3>, path=hote.entity.Room.roomReserveds.<elements>.reservation)
+                   - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:4>, path=hote.entity.Room.roomReserveds.<elements>.reservation.user)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.Room)
+          - SQL table alias mapping - room0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(roomReserveds)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=hote.entity.Room.roomReserveds)
+                - SQL table alias mapping - roomreserv1_
+                - alias suffix - 1_
+                - suffixed key columns - {room_id4_3_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_3_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.RoomReserved)
+                      - SQL table alias mapping - roomreserv1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_3_2_}
+                      - JOIN (JoinDefinedByMetadata(reservation)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=hote.entity.Reservation)
+                            - SQL table alias mapping - reservatio2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+
+[DEBUG] 2020-12-02 11:37:57.187 [main] EntityLoader - Static select for entity hote.entity.Room [READ]: select room0_.id as id1_2_0_, room0_.Avalable as Avalable2_2_0_, room0_.current_price as current_3_2_0_, room0_.description as descript4_2_0_, room0_.room_name as room_nam5_2_0_, roomreserv1_.room_id as room_id4_3_1_, roomreserv1_.id as id1_3_1_, roomreserv1_.id as id1_3_2_, roomreserv1_.price as price2_3_2_, roomreserv1_.reservation_id as reservat3_3_2_, roomreserv1_.room_id as room_id4_3_2_, reservatio2_.id as id1_0_3_, reservatio2_.end_date as end_date2_0_3_, reservatio2_.start_date as start_da3_0_3_, reservatio2_.total_price as total_pr4_0_3_, reservatio2_.guest_id as guest_id5_0_3_ from room room0_ left outer join room_reserved roomreserv1_ on room0_.id=roomreserv1_.room_id left outer join reservation reservatio2_ on roomreserv1_.reservation_id=reservatio2_.id where room0_.id=?
+[DEBUG] 2020-12-02 11:37:57.194 [main] Loader - Static select for action ACTION_MERGE on entity hote.entity.Room: select room0_.id as id1_2_1_, room0_.Avalable as Avalable2_2_1_, room0_.current_price as current_3_2_1_, room0_.description as descript4_2_1_, room0_.room_name as room_nam5_2_1_, roomreserv1_.room_id as room_id4_3_3_, roomreserv1_.id as id1_3_3_, roomreserv1_.id as id1_3_0_, roomreserv1_.price as price2_3_0_, roomreserv1_.reservation_id as reservat3_3_0_, roomreserv1_.room_id as room_id4_3_0_ from room room0_ left outer join room_reserved roomreserv1_ on room0_.id=roomreserv1_.room_id where room0_.id=?
+[DEBUG] 2020-12-02 11:37:57.195 [main] Loader - Static select for action ACTION_REFRESH on entity hote.entity.Room: select room0_.id as id1_2_1_, room0_.Avalable as Avalable2_2_1_, room0_.current_price as current_3_2_1_, room0_.description as descript4_2_1_, room0_.room_name as room_nam5_2_1_, roomreserv1_.room_id as room_id4_3_3_, roomreserv1_.id as id1_3_3_, roomreserv1_.id as id1_3_0_, roomreserv1_.price as price2_3_0_, roomreserv1_.reservation_id as reservat3_3_0_, roomreserv1_.room_id as room_id4_3_0_ from room room0_ left outer join room_reserved roomreserv1_ on room0_.id=roomreserv1_.room_id where room0_.id=?
+[DEBUG] 2020-12-02 11:37:57.195 [main] AbstractEntityPersister - Static SQL for entity: hote.entity.RoomReserved
+[DEBUG] 2020-12-02 11:37:57.196 [main] AbstractEntityPersister -  Version select: select id from room_reserved where id =?
+[DEBUG] 2020-12-02 11:37:57.196 [main] AbstractEntityPersister -  Snapshot select: select roomreserv_.id, roomreserv_.price as price2_3_, roomreserv_.reservation_id as reservat3_3_, roomreserv_.room_id as room_id4_3_ from room_reserved roomreserv_ where roomreserv_.id=?
+[DEBUG] 2020-12-02 11:37:57.196 [main] AbstractEntityPersister -  Insert 0: insert into room_reserved (price, reservation_id, room_id, id) values (?, ?, ?, ?)
+[DEBUG] 2020-12-02 11:37:57.196 [main] AbstractEntityPersister -  Update 0: update room_reserved set price=?, reservation_id=?, room_id=? where id=?
+[DEBUG] 2020-12-02 11:37:57.196 [main] AbstractEntityPersister -  Delete 0: delete from room_reserved where id=?
+[DEBUG] 2020-12-02 11:37:57.196 [main] AbstractEntityPersister -  Identity insert: insert into room_reserved (price, reservation_id, room_id) values (?, ?, ?)
+[DEBUG] 2020-12-02 11:37:57.196 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4cc8d70d]
+[DEBUG] 2020-12-02 11:37:57.196 [main] MetamodelGraphWalker - Visiting attribute path : price
+[DEBUG] 2020-12-02 11:37:57.197 [main] MetamodelGraphWalker - Visiting attribute path : reservation
+[DEBUG] 2020-12-02 11:37:57.200 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@101330ad]
+[DEBUG] 2020-12-02 11:37:57.200 [main] MetamodelGraphWalker - Visiting attribute path : reservation.end_date
+[DEBUG] 2020-12-02 11:37:57.205 [main] MetamodelGraphWalker - Visiting attribute path : reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.206 [main] MetamodelGraphWalker - Property path deemed to be circular : reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.206 [main] MetamodelGraphWalker - Visiting attribute path : reservation.start_date
+[DEBUG] 2020-12-02 11:37:57.206 [main] MetamodelGraphWalker - Visiting attribute path : reservation.total_price
+[DEBUG] 2020-12-02 11:37:57.206 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user
+[DEBUG] 2020-12-02 11:37:57.206 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@682e445e]
+[DEBUG] 2020-12-02 11:37:57.206 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.Password
+[DEBUG] 2020-12-02 11:37:57.206 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.address
+[DEBUG] 2020-12-02 11:37:57.206 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.details
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.email
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.first_name
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.last_name
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.phone
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.reservations
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Property path deemed to be circular : reservation.user.reservations
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.roles
+[DEBUG] 2020-12-02 11:37:57.207 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@70fede7d]
+[DEBUG] 2020-12-02 11:37:57.207 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@36510e73]
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.user_name
+[DEBUG] 2020-12-02 11:37:57.207 [main] MetamodelGraphWalker - Visiting attribute path : room
+[DEBUG] 2020-12-02 11:37:57.208 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2c47a053]
+[DEBUG] 2020-12-02 11:37:57.208 [main] MetamodelGraphWalker - Visiting attribute path : room.Avalable
+[DEBUG] 2020-12-02 11:37:57.208 [main] MetamodelGraphWalker - Visiting attribute path : room.current_price
+[DEBUG] 2020-12-02 11:37:57.208 [main] MetamodelGraphWalker - Visiting attribute path : room.description
+[DEBUG] 2020-12-02 11:37:57.208 [main] MetamodelGraphWalker - Visiting attribute path : room.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.208 [main] MetamodelGraphWalker - Property path deemed to be circular : room.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.208 [main] MetamodelGraphWalker - Visiting attribute path : room.room_name
+[DEBUG] 2020-12-02 11:37:57.208 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.209 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.221 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.RoomReserved)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.RoomReserved, querySpaceUid=<gen:0>, path=hote.entity.RoomReserved)
+          - EntityAttributeFetchImpl(entity=hote.entity.Reservation, querySpaceUid=<gen:1>, path=hote.entity.RoomReserved.reservation)
+             - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:2>, path=hote.entity.RoomReserved.reservation.user)
+                - CollectionAttributeFetchImpl(collection=hote.entity.User.roles, querySpaceUid=<gen:3>, path=hote.entity.RoomReserved.reservation.user.roles)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Role, querySpaceUid=<gen:4>, path=hote.entity.RoomReserved.reservation.user.roles.<elements>)
+          - EntityAttributeFetchImpl(entity=hote.entity.Room, querySpaceUid=<gen:5>, path=hote.entity.RoomReserved.room)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.RoomReserved)
+          - SQL table alias mapping - roomreserv0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(reservation)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hote.entity.Reservation)
+                - SQL table alias mapping - reservatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.User)
+                      - SQL table alias mapping - user2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_4_2_}
+          - JOIN (JoinDefinedByMetadata(room)) : <gen:0> -> <gen:5>
+             - EntityQuerySpaceImpl(uid=<gen:5>, entity=hote.entity.Room)
+                - SQL table alias mapping - room3_
+                - alias suffix - 3_
+                - suffixed key columns - {id1_2_3_}
+
+[DEBUG] 2020-12-02 11:37:57.221 [main] EntityLoader - Static select for entity hote.entity.RoomReserved [NONE]: select roomreserv0_.id as id1_3_0_, roomreserv0_.price as price2_3_0_, roomreserv0_.reservation_id as reservat3_3_0_, roomreserv0_.room_id as room_id4_3_0_, reservatio1_.id as id1_0_1_, reservatio1_.end_date as end_date2_0_1_, reservatio1_.start_date as start_da3_0_1_, reservatio1_.total_price as total_pr4_0_1_, reservatio1_.guest_id as guest_id5_0_1_, user2_.id as id1_4_2_, user2_.Password as Password2_4_2_, user2_.address as address3_4_2_, user2_.details as details4_4_2_, user2_.email as email5_4_2_, user2_.first_name as first_na6_4_2_, user2_.last_name as last_nam7_4_2_, user2_.phone as phone8_4_2_, user2_.user_name as user_nam9_4_2_, room3_.id as id1_2_3_, room3_.Avalable as Avalable2_2_3_, room3_.current_price as current_3_2_3_, room3_.description as descript4_2_3_, room3_.room_name as room_nam5_2_3_ from room_reserved roomreserv0_ left outer join reservation reservatio1_ on roomreserv0_.reservation_id=reservatio1_.id left outer join user user2_ on reservatio1_.guest_id=user2_.id left outer join room room3_ on roomreserv0_.room_id=room3_.id where roomreserv0_.id=?
+[DEBUG] 2020-12-02 11:37:57.221 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5ba1b62e]
+[DEBUG] 2020-12-02 11:37:57.221 [main] MetamodelGraphWalker - Visiting attribute path : price
+[DEBUG] 2020-12-02 11:37:57.221 [main] MetamodelGraphWalker - Visiting attribute path : reservation
+[DEBUG] 2020-12-02 11:37:57.222 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@74697863]
+[DEBUG] 2020-12-02 11:37:57.222 [main] MetamodelGraphWalker - Visiting attribute path : reservation.end_date
+[DEBUG] 2020-12-02 11:37:57.222 [main] MetamodelGraphWalker - Visiting attribute path : reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.222 [main] MetamodelGraphWalker - Property path deemed to be circular : reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.222 [main] MetamodelGraphWalker - Visiting attribute path : reservation.start_date
+[DEBUG] 2020-12-02 11:37:57.222 [main] MetamodelGraphWalker - Visiting attribute path : reservation.total_price
+[DEBUG] 2020-12-02 11:37:57.222 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user
+[DEBUG] 2020-12-02 11:37:57.222 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2bba35ef]
+[DEBUG] 2020-12-02 11:37:57.222 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.Password
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.address
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.details
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.email
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.first_name
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.last_name
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.phone
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.reservations
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Property path deemed to be circular : reservation.user.reservations
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.roles
+[DEBUG] 2020-12-02 11:37:57.223 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@19526f1d]
+[DEBUG] 2020-12-02 11:37:57.223 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3d1c933]
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.user_name
+[DEBUG] 2020-12-02 11:37:57.223 [main] MetamodelGraphWalker - Visiting attribute path : room
+[DEBUG] 2020-12-02 11:37:57.224 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@79be91eb]
+[DEBUG] 2020-12-02 11:37:57.224 [main] MetamodelGraphWalker - Visiting attribute path : room.Avalable
+[DEBUG] 2020-12-02 11:37:57.224 [main] MetamodelGraphWalker - Visiting attribute path : room.current_price
+[DEBUG] 2020-12-02 11:37:57.224 [main] MetamodelGraphWalker - Visiting attribute path : room.description
+[DEBUG] 2020-12-02 11:37:57.224 [main] MetamodelGraphWalker - Visiting attribute path : room.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.224 [main] MetamodelGraphWalker - Property path deemed to be circular : room.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.224 [main] MetamodelGraphWalker - Visiting attribute path : room.room_name
+[DEBUG] 2020-12-02 11:37:57.224 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.225 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.231 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.RoomReserved)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.RoomReserved, querySpaceUid=<gen:0>, path=hote.entity.RoomReserved)
+          - EntityAttributeFetchImpl(entity=hote.entity.Reservation, querySpaceUid=<gen:1>, path=hote.entity.RoomReserved.reservation)
+             - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:2>, path=hote.entity.RoomReserved.reservation.user)
+                - CollectionAttributeFetchImpl(collection=hote.entity.User.roles, querySpaceUid=<gen:3>, path=hote.entity.RoomReserved.reservation.user.roles)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Role, querySpaceUid=<gen:4>, path=hote.entity.RoomReserved.reservation.user.roles.<elements>)
+          - EntityAttributeFetchImpl(entity=hote.entity.Room, querySpaceUid=<gen:5>, path=hote.entity.RoomReserved.room)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.RoomReserved)
+          - SQL table alias mapping - roomreserv0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(reservation)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hote.entity.Reservation)
+                - SQL table alias mapping - reservatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.User)
+                      - SQL table alias mapping - user2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_4_2_}
+          - JOIN (JoinDefinedByMetadata(room)) : <gen:0> -> <gen:5>
+             - EntityQuerySpaceImpl(uid=<gen:5>, entity=hote.entity.Room)
+                - SQL table alias mapping - room3_
+                - alias suffix - 3_
+                - suffixed key columns - {id1_2_3_}
+
+[DEBUG] 2020-12-02 11:37:57.232 [main] EntityLoader - Static select for entity hote.entity.RoomReserved [READ]: select roomreserv0_.id as id1_3_0_, roomreserv0_.price as price2_3_0_, roomreserv0_.reservation_id as reservat3_3_0_, roomreserv0_.room_id as room_id4_3_0_, reservatio1_.id as id1_0_1_, reservatio1_.end_date as end_date2_0_1_, reservatio1_.start_date as start_da3_0_1_, reservatio1_.total_price as total_pr4_0_1_, reservatio1_.guest_id as guest_id5_0_1_, user2_.id as id1_4_2_, user2_.Password as Password2_4_2_, user2_.address as address3_4_2_, user2_.details as details4_4_2_, user2_.email as email5_4_2_, user2_.first_name as first_na6_4_2_, user2_.last_name as last_nam7_4_2_, user2_.phone as phone8_4_2_, user2_.user_name as user_nam9_4_2_, room3_.id as id1_2_3_, room3_.Avalable as Avalable2_2_3_, room3_.current_price as current_3_2_3_, room3_.description as descript4_2_3_, room3_.room_name as room_nam5_2_3_ from room_reserved roomreserv0_ left outer join reservation reservatio1_ on roomreserv0_.reservation_id=reservatio1_.id left outer join user user2_ on reservatio1_.guest_id=user2_.id left outer join room room3_ on roomreserv0_.room_id=room3_.id where roomreserv0_.id=?
+[DEBUG] 2020-12-02 11:37:57.232 [main] Loader - Static select for action ACTION_MERGE on entity hote.entity.RoomReserved: select roomreserv0_.id as id1_3_0_, roomreserv0_.price as price2_3_0_, roomreserv0_.reservation_id as reservat3_3_0_, roomreserv0_.room_id as room_id4_3_0_ from room_reserved roomreserv0_ where roomreserv0_.id=?
+[DEBUG] 2020-12-02 11:37:57.232 [main] Loader - Static select for action ACTION_REFRESH on entity hote.entity.RoomReserved: select roomreserv0_.id as id1_3_0_, roomreserv0_.price as price2_3_0_, roomreserv0_.reservation_id as reservat3_3_0_, roomreserv0_.room_id as room_id4_3_0_ from room_reserved roomreserv0_ where roomreserv0_.id=?
+[DEBUG] 2020-12-02 11:37:57.233 [main] AbstractEntityPersister - Static SQL for entity: hote.entity.User
+[DEBUG] 2020-12-02 11:37:57.233 [main] AbstractEntityPersister -  Version select: select id from user where id =?
+[DEBUG] 2020-12-02 11:37:57.238 [main] AbstractEntityPersister -  Snapshot select: select user_.id, user_.Password as Password2_4_, user_.address as address3_4_, user_.details as details4_4_, user_.email as email5_4_, user_.first_name as first_na6_4_, user_.last_name as last_nam7_4_, user_.phone as phone8_4_, user_.user_name as user_nam9_4_ from user user_ where user_.id=?
+[DEBUG] 2020-12-02 11:37:57.239 [main] AbstractEntityPersister -  Insert 0: insert into user (Password, address, details, email, first_name, last_name, phone, user_name, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-12-02 11:37:57.239 [main] AbstractEntityPersister -  Update 0: update user set Password=?, address=?, details=?, email=?, first_name=?, last_name=?, phone=?, user_name=? where id=?
+[DEBUG] 2020-12-02 11:37:57.239 [main] AbstractEntityPersister -  Delete 0: delete from user where id=?
+[DEBUG] 2020-12-02 11:37:57.239 [main] AbstractEntityPersister -  Identity insert: insert into user (Password, address, details, email, first_name, last_name, phone, user_name) values (?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 2020-12-02 11:37:57.239 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@684ce74c]
+[DEBUG] 2020-12-02 11:37:57.239 [main] MetamodelGraphWalker - Visiting attribute path : Password
+[DEBUG] 2020-12-02 11:37:57.239 [main] MetamodelGraphWalker - Visiting attribute path : address
+[DEBUG] 2020-12-02 11:37:57.240 [main] MetamodelGraphWalker - Visiting attribute path : details
+[DEBUG] 2020-12-02 11:37:57.240 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2020-12-02 11:37:57.240 [main] MetamodelGraphWalker - Visiting attribute path : first_name
+[DEBUG] 2020-12-02 11:37:57.240 [main] MetamodelGraphWalker - Visiting attribute path : last_name
+[DEBUG] 2020-12-02 11:37:57.240 [main] MetamodelGraphWalker - Visiting attribute path : phone
+[DEBUG] 2020-12-02 11:37:57.240 [main] MetamodelGraphWalker - Visiting attribute path : reservations
+[DEBUG] 2020-12-02 11:37:57.240 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@68e5c7ae]
+[DEBUG] 2020-12-02 11:37:57.240 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68bd8ca7]
+[DEBUG] 2020-12-02 11:37:57.241 [main] MetamodelGraphWalker - Visiting attribute path : reservations.end_date
+[DEBUG] 2020-12-02 11:37:57.242 [main] MetamodelGraphWalker - Visiting attribute path : reservations.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.242 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@d36c1c3]
+[DEBUG] 2020-12-02 11:37:57.242 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@96abc76]
+[DEBUG] 2020-12-02 11:37:57.242 [main] MetamodelGraphWalker - Visiting attribute path : reservations.roomReserveds.price
+[DEBUG] 2020-12-02 11:37:57.242 [main] MetamodelGraphWalker - Visiting attribute path : reservations.roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:57.242 [main] MetamodelGraphWalker - Property path deemed to be circular : reservations.roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:57.243 [main] MetamodelGraphWalker - Visiting attribute path : reservations.roomReserveds.room
+[DEBUG] 2020-12-02 11:37:57.243 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@787178b1]
+[DEBUG] 2020-12-02 11:37:57.243 [main] MetamodelGraphWalker - Visiting attribute path : reservations.start_date
+[DEBUG] 2020-12-02 11:37:57.243 [main] MetamodelGraphWalker - Visiting attribute path : reservations.total_price
+[DEBUG] 2020-12-02 11:37:57.243 [main] MetamodelGraphWalker - Visiting attribute path : reservations.user
+[DEBUG] 2020-12-02 11:37:57.245 [main] MetamodelGraphWalker - Property path deemed to be circular : reservations.user
+[DEBUG] 2020-12-02 11:37:57.246 [main] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2020-12-02 11:37:57.247 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@24a4e2c5]
+[DEBUG] 2020-12-02 11:37:57.247 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:7> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@27da994b]
+[DEBUG] 2020-12-02 11:37:57.247 [main] MetamodelGraphWalker - Visiting attribute path : roles.roleName
+[DEBUG] 2020-12-02 11:37:57.248 [main] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2020-12-02 11:37:57.248 [main] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2020-12-02 11:37:57.248 [main] MetamodelGraphWalker - Visiting attribute path : roles.userName
+[DEBUG] 2020-12-02 11:37:57.248 [main] MetamodelGraphWalker - Visiting attribute path : user_name
+[DEBUG] 2020-12-02 11:37:57.248 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.251 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.256 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.User, querySpaceUid=<gen:0>, path=hote.entity.User)
+          - CollectionAttributeFetchImpl(collection=hote.entity.User.reservations, querySpaceUid=<gen:1>, path=hote.entity.User.reservations)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Reservation, querySpaceUid=<gen:2>, path=hote.entity.User.reservations.<elements>)
+                - CollectionAttributeFetchImpl(collection=hote.entity.Reservation.roomReserveds, querySpaceUid=<gen:3>, path=hote.entity.User.reservations.<elements>.roomReserveds)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:4>, path=hote.entity.User.reservations.<elements>.roomReserveds.<elements>)
+                      - EntityAttributeFetchImpl(entity=hote.entity.Room, querySpaceUid=<gen:5>, path=hote.entity.User.reservations.<elements>.roomReserveds.<elements>.room)
+          - CollectionAttributeFetchImpl(collection=hote.entity.User.roles, querySpaceUid=<gen:6>, path=hote.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Role, querySpaceUid=<gen:7>, path=hote.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+          - JOIN (JoinDefinedByMetadata(reservations)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=hote.entity.User.reservations)
+                - SQL table alias mapping - reservatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {guest_id5_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.Reservation)
+                      - SQL table alias mapping - reservatio1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+                      - JOIN (JoinDefinedByMetadata(roomReserveds)) : <gen:2> -> <gen:3>
+                         - CollectionQuerySpaceImpl(uid=<gen:3>, collection=hote.entity.Reservation.roomReserveds)
+                            - SQL table alias mapping - roomreserv2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {reservat3_3_3_}
+                            - entity-element alias suffix - 4_
+                            - 4_entity-element suffixed key columns - id1_3_4_
+                            - JOIN (JoinDefinedByMetadata(elements)) : <gen:3> -> <gen:4>
+                               - EntityQuerySpaceImpl(uid=<gen:4>, entity=hote.entity.RoomReserved)
+                                  - SQL table alias mapping - roomreserv2_
+                                  - alias suffix - 4_
+                                  - suffixed key columns - {id1_3_4_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:6>
+             - CollectionQuerySpaceImpl(uid=<gen:6>, collection=hote.entity.User.roles)
+                - SQL table alias mapping - roles3_
+                - alias suffix - 5_
+                - suffixed key columns - {user_id4_1_5_}
+                - entity-element alias suffix - 6_
+                - 6_entity-element suffixed key columns - id1_1_6_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:6> -> <gen:7>
+                   - EntityQuerySpaceImpl(uid=<gen:7>, entity=hote.entity.Role)
+                      - SQL table alias mapping - roles3_
+                      - alias suffix - 6_
+                      - suffixed key columns - {id1_1_6_}
+
+[DEBUG] 2020-12-02 11:37:57.256 [main] EntityLoader - Static select for entity hote.entity.User [NONE]: select user0_.id as id1_4_0_, user0_.Password as Password2_4_0_, user0_.address as address3_4_0_, user0_.details as details4_4_0_, user0_.email as email5_4_0_, user0_.first_name as first_na6_4_0_, user0_.last_name as last_nam7_4_0_, user0_.phone as phone8_4_0_, user0_.user_name as user_nam9_4_0_, reservatio1_.guest_id as guest_id5_0_1_, reservatio1_.id as id1_0_1_, reservatio1_.id as id1_0_2_, reservatio1_.end_date as end_date2_0_2_, reservatio1_.start_date as start_da3_0_2_, reservatio1_.total_price as total_pr4_0_2_, reservatio1_.guest_id as guest_id5_0_2_, roomreserv2_.reservation_id as reservat3_3_3_, roomreserv2_.id as id1_3_3_, roomreserv2_.id as id1_3_4_, roomreserv2_.price as price2_3_4_, roomreserv2_.reservation_id as reservat3_3_4_, roomreserv2_.room_id as room_id4_3_4_, roles3_.user_id as user_id4_1_5_, roles3_.id as id1_1_5_, roles3_.id as id1_1_6_, roles3_.role_name as role_nam2_1_6_, roles3_.user_id as user_id4_1_6_, roles3_.user_name as user_nam3_1_6_ from user user0_ left outer join reservation reservatio1_ on user0_.id=reservatio1_.guest_id left outer join room_reserved roomreserv2_ on reservatio1_.id=roomreserv2_.reservation_id left outer join role roles3_ on user0_.id=roles3_.user_id where user0_.id=?
+[DEBUG] 2020-12-02 11:37:57.258 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@77aea]
+[DEBUG] 2020-12-02 11:37:57.258 [main] MetamodelGraphWalker - Visiting attribute path : Password
+[DEBUG] 2020-12-02 11:37:57.258 [main] MetamodelGraphWalker - Visiting attribute path : address
+[DEBUG] 2020-12-02 11:37:57.258 [main] MetamodelGraphWalker - Visiting attribute path : details
+[DEBUG] 2020-12-02 11:37:57.258 [main] MetamodelGraphWalker - Visiting attribute path : email
+[DEBUG] 2020-12-02 11:37:57.259 [main] MetamodelGraphWalker - Visiting attribute path : first_name
+[DEBUG] 2020-12-02 11:37:57.259 [main] MetamodelGraphWalker - Visiting attribute path : last_name
+[DEBUG] 2020-12-02 11:37:57.259 [main] MetamodelGraphWalker - Visiting attribute path : phone
+[DEBUG] 2020-12-02 11:37:57.259 [main] MetamodelGraphWalker - Visiting attribute path : reservations
+[DEBUG] 2020-12-02 11:37:57.259 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@9a9aa68]
+[DEBUG] 2020-12-02 11:37:57.259 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a3883c4]
+[DEBUG] 2020-12-02 11:37:57.259 [main] MetamodelGraphWalker - Visiting attribute path : reservations.end_date
+[DEBUG] 2020-12-02 11:37:57.259 [main] MetamodelGraphWalker - Visiting attribute path : reservations.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.259 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1304e0d7]
+[DEBUG] 2020-12-02 11:37:57.259 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6ddc67d0]
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Visiting attribute path : reservations.roomReserveds.price
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Visiting attribute path : reservations.roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Property path deemed to be circular : reservations.roomReserveds.reservation
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Visiting attribute path : reservations.roomReserveds.room
+[DEBUG] 2020-12-02 11:37:57.260 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@433ef204]
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Visiting attribute path : reservations.start_date
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Visiting attribute path : reservations.total_price
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Visiting attribute path : reservations.user
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Property path deemed to be circular : reservations.user
+[DEBUG] 2020-12-02 11:37:57.260 [main] MetamodelGraphWalker - Visiting attribute path : roles
+[DEBUG] 2020-12-02 11:37:57.261 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:6> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@4dd2ef54]
+[DEBUG] 2020-12-02 11:37:57.261 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:7> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@795b66d]
+[DEBUG] 2020-12-02 11:37:57.261 [main] MetamodelGraphWalker - Visiting attribute path : roles.roleName
+[DEBUG] 2020-12-02 11:37:57.261 [main] MetamodelGraphWalker - Visiting attribute path : roles.user
+[DEBUG] 2020-12-02 11:37:57.261 [main] MetamodelGraphWalker - Property path deemed to be circular : roles.user
+[DEBUG] 2020-12-02 11:37:57.261 [main] MetamodelGraphWalker - Visiting attribute path : roles.userName
+[DEBUG] 2020-12-02 11:37:57.261 [main] MetamodelGraphWalker - Visiting attribute path : user_name
+[DEBUG] 2020-12-02 11:37:57.261 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.269 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.274 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.User)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.User, querySpaceUid=<gen:0>, path=hote.entity.User)
+          - CollectionAttributeFetchImpl(collection=hote.entity.User.reservations, querySpaceUid=<gen:1>, path=hote.entity.User.reservations)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Reservation, querySpaceUid=<gen:2>, path=hote.entity.User.reservations.<elements>)
+                - CollectionAttributeFetchImpl(collection=hote.entity.Reservation.roomReserveds, querySpaceUid=<gen:3>, path=hote.entity.User.reservations.<elements>.roomReserveds)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:4>, path=hote.entity.User.reservations.<elements>.roomReserveds.<elements>)
+                      - EntityAttributeFetchImpl(entity=hote.entity.Room, querySpaceUid=<gen:5>, path=hote.entity.User.reservations.<elements>.roomReserveds.<elements>.room)
+          - CollectionAttributeFetchImpl(collection=hote.entity.User.roles, querySpaceUid=<gen:6>, path=hote.entity.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Role, querySpaceUid=<gen:7>, path=hote.entity.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+          - JOIN (JoinDefinedByMetadata(reservations)) : <gen:0> -> <gen:1>
+             - CollectionQuerySpaceImpl(uid=<gen:1>, collection=hote.entity.User.reservations)
+                - SQL table alias mapping - reservatio1_
+                - alias suffix - 1_
+                - suffixed key columns - {guest_id5_0_1_}
+                - entity-element alias suffix - 2_
+                - 2_entity-element suffixed key columns - id1_0_2_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.Reservation)
+                      - SQL table alias mapping - reservatio1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+                      - JOIN (JoinDefinedByMetadata(roomReserveds)) : <gen:2> -> <gen:3>
+                         - CollectionQuerySpaceImpl(uid=<gen:3>, collection=hote.entity.Reservation.roomReserveds)
+                            - SQL table alias mapping - roomreserv2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {reservat3_3_3_}
+                            - entity-element alias suffix - 4_
+                            - 4_entity-element suffixed key columns - id1_3_4_
+                            - JOIN (JoinDefinedByMetadata(elements)) : <gen:3> -> <gen:4>
+                               - EntityQuerySpaceImpl(uid=<gen:4>, entity=hote.entity.RoomReserved)
+                                  - SQL table alias mapping - roomreserv2_
+                                  - alias suffix - 4_
+                                  - suffixed key columns - {id1_3_4_}
+          - JOIN (JoinDefinedByMetadata(roles)) : <gen:0> -> <gen:6>
+             - CollectionQuerySpaceImpl(uid=<gen:6>, collection=hote.entity.User.roles)
+                - SQL table alias mapping - roles3_
+                - alias suffix - 5_
+                - suffixed key columns - {user_id4_1_5_}
+                - entity-element alias suffix - 6_
+                - 6_entity-element suffixed key columns - id1_1_6_
+                - JOIN (JoinDefinedByMetadata(elements)) : <gen:6> -> <gen:7>
+                   - EntityQuerySpaceImpl(uid=<gen:7>, entity=hote.entity.Role)
+                      - SQL table alias mapping - roles3_
+                      - alias suffix - 6_
+                      - suffixed key columns - {id1_1_6_}
+
+[DEBUG] 2020-12-02 11:37:57.274 [main] EntityLoader - Static select for entity hote.entity.User [READ]: select user0_.id as id1_4_0_, user0_.Password as Password2_4_0_, user0_.address as address3_4_0_, user0_.details as details4_4_0_, user0_.email as email5_4_0_, user0_.first_name as first_na6_4_0_, user0_.last_name as last_nam7_4_0_, user0_.phone as phone8_4_0_, user0_.user_name as user_nam9_4_0_, reservatio1_.guest_id as guest_id5_0_1_, reservatio1_.id as id1_0_1_, reservatio1_.id as id1_0_2_, reservatio1_.end_date as end_date2_0_2_, reservatio1_.start_date as start_da3_0_2_, reservatio1_.total_price as total_pr4_0_2_, reservatio1_.guest_id as guest_id5_0_2_, roomreserv2_.reservation_id as reservat3_3_3_, roomreserv2_.id as id1_3_3_, roomreserv2_.id as id1_3_4_, roomreserv2_.price as price2_3_4_, roomreserv2_.reservation_id as reservat3_3_4_, roomreserv2_.room_id as room_id4_3_4_, roles3_.user_id as user_id4_1_5_, roles3_.id as id1_1_5_, roles3_.id as id1_1_6_, roles3_.role_name as role_nam2_1_6_, roles3_.user_id as user_id4_1_6_, roles3_.user_name as user_nam3_1_6_ from user user0_ left outer join reservation reservatio1_ on user0_.id=reservatio1_.guest_id left outer join room_reserved roomreserv2_ on reservatio1_.id=roomreserv2_.reservation_id left outer join role roles3_ on user0_.id=roles3_.user_id where user0_.id=?
+[DEBUG] 2020-12-02 11:37:57.275 [main] Loader - Static select for action ACTION_MERGE on entity hote.entity.User: select user0_.id as id1_4_1_, user0_.Password as Password2_4_1_, user0_.address as address3_4_1_, user0_.details as details4_4_1_, user0_.email as email5_4_1_, user0_.first_name as first_na6_4_1_, user0_.last_name as last_nam7_4_1_, user0_.phone as phone8_4_1_, user0_.user_name as user_nam9_4_1_, reservatio1_.guest_id as guest_id5_0_3_, reservatio1_.id as id1_0_3_, reservatio1_.id as id1_0_0_, reservatio1_.end_date as end_date2_0_0_, reservatio1_.start_date as start_da3_0_0_, reservatio1_.total_price as total_pr4_0_0_, reservatio1_.guest_id as guest_id5_0_0_ from user user0_ left outer join reservation reservatio1_ on user0_.id=reservatio1_.guest_id where user0_.id=?
+[DEBUG] 2020-12-02 11:37:57.276 [main] Loader - Static select for action ACTION_REFRESH on entity hote.entity.User: select user0_.id as id1_4_1_, user0_.Password as Password2_4_1_, user0_.address as address3_4_1_, user0_.details as details4_4_1_, user0_.email as email5_4_1_, user0_.first_name as first_na6_4_1_, user0_.last_name as last_nam7_4_1_, user0_.phone as phone8_4_1_, user0_.user_name as user_nam9_4_1_, reservatio1_.guest_id as guest_id5_0_3_, reservatio1_.id as id1_0_3_, reservatio1_.id as id1_0_0_, reservatio1_.end_date as end_date2_0_0_, reservatio1_.start_date as start_da3_0_0_, reservatio1_.total_price as total_pr4_0_0_, reservatio1_.guest_id as guest_id5_0_0_ from user user0_ left outer join reservation reservatio1_ on user0_.id=reservatio1_.guest_id where user0_.id=?
+[DEBUG] 2020-12-02 11:37:57.276 [main] AbstractEntityPersister - Static SQL for entity: hote.entity.Role
+[DEBUG] 2020-12-02 11:37:57.276 [main] AbstractEntityPersister -  Version select: select id from role where id =?
+[DEBUG] 2020-12-02 11:37:57.276 [main] AbstractEntityPersister -  Snapshot select: select role_.id, role_.role_name as role_nam2_1_, role_.user_id as user_id4_1_, role_.user_name as user_nam3_1_ from role role_ where role_.id=?
+[DEBUG] 2020-12-02 11:37:57.276 [main] AbstractEntityPersister -  Insert 0: insert into role (role_name, user_id, user_name, id) values (?, ?, ?, ?)
+[DEBUG] 2020-12-02 11:37:57.276 [main] AbstractEntityPersister -  Update 0: update role set role_name=?, user_id=?, user_name=? where id=?
+[DEBUG] 2020-12-02 11:37:57.276 [main] AbstractEntityPersister -  Delete 0: delete from role where id=?
+[DEBUG] 2020-12-02 11:37:57.276 [main] AbstractEntityPersister -  Identity insert: insert into role (role_name, user_id, user_name) values (?, ?, ?)
+[DEBUG] 2020-12-02 11:37:57.276 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5bf4764d]
+[DEBUG] 2020-12-02 11:37:57.276 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2020-12-02 11:37:57.276 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-12-02 11:37:57.277 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@23ee2ccf]
+[DEBUG] 2020-12-02 11:37:57.277 [main] MetamodelGraphWalker - Visiting attribute path : user.Password
+[DEBUG] 2020-12-02 11:37:57.277 [main] MetamodelGraphWalker - Visiting attribute path : user.address
+[DEBUG] 2020-12-02 11:37:57.277 [main] MetamodelGraphWalker - Visiting attribute path : user.details
+[DEBUG] 2020-12-02 11:37:57.277 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2020-12-02 11:37:57.277 [main] MetamodelGraphWalker - Visiting attribute path : user.first_name
+[DEBUG] 2020-12-02 11:37:57.277 [main] MetamodelGraphWalker - Visiting attribute path : user.last_name
+[DEBUG] 2020-12-02 11:37:57.277 [main] MetamodelGraphWalker - Visiting attribute path : user.phone
+[DEBUG] 2020-12-02 11:37:57.277 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations
+[DEBUG] 2020-12-02 11:37:57.278 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6e685e6c]
+[DEBUG] 2020-12-02 11:37:57.279 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5b0902b4]
+[DEBUG] 2020-12-02 11:37:57.279 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.end_date
+[DEBUG] 2020-12-02 11:37:57.279 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.280 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@333398f]
+[DEBUG] 2020-12-02 11:37:57.281 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@103c97ff]
+[DEBUG] 2020-12-02 11:37:57.281 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.start_date
+[DEBUG] 2020-12-02 11:37:57.281 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.total_price
+[DEBUG] 2020-12-02 11:37:57.281 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.user
+[DEBUG] 2020-12-02 11:37:57.281 [main] MetamodelGraphWalker - Property path deemed to be circular : user.reservations.user
+[DEBUG] 2020-12-02 11:37:57.281 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-12-02 11:37:57.281 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2020-12-02 11:37:57.281 [main] MetamodelGraphWalker - Visiting attribute path : user.user_name
+[DEBUG] 2020-12-02 11:37:57.281 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-12-02 11:37:57.281 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.282 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.290 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.Role, querySpaceUid=<gen:0>, path=hote.entity.Role)
+          - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:1>, path=hote.entity.Role.user)
+             - CollectionAttributeFetchImpl(collection=hote.entity.User.reservations, querySpaceUid=<gen:2>, path=hote.entity.Role.user.reservations)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Reservation, querySpaceUid=<gen:3>, path=hote.entity.Role.user.reservations.<elements>)
+                   - CollectionAttributeFetchImpl(collection=hote.entity.Reservation.roomReserveds, querySpaceUid=<gen:4>, path=hote.entity.Role.user.reservations.<elements>.roomReserveds)
+                      - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:5>, path=hote.entity.Role.user.reservations.<elements>.roomReserveds.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hote.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+                - JOIN (JoinDefinedByMetadata(reservations)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=hote.entity.User.reservations)
+                      - SQL table alias mapping - reservatio2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {guest_id5_0_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_0_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=hote.entity.Reservation)
+                            - SQL table alias mapping - reservatio2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+
+[DEBUG] 2020-12-02 11:37:57.290 [main] EntityLoader - Static select for entity hote.entity.Role [NONE]: select role0_.id as id1_1_0_, role0_.role_name as role_nam2_1_0_, role0_.user_id as user_id4_1_0_, role0_.user_name as user_nam3_1_0_, user1_.id as id1_4_1_, user1_.Password as Password2_4_1_, user1_.address as address3_4_1_, user1_.details as details4_4_1_, user1_.email as email5_4_1_, user1_.first_name as first_na6_4_1_, user1_.last_name as last_nam7_4_1_, user1_.phone as phone8_4_1_, user1_.user_name as user_nam9_4_1_, reservatio2_.guest_id as guest_id5_0_2_, reservatio2_.id as id1_0_2_, reservatio2_.id as id1_0_3_, reservatio2_.end_date as end_date2_0_3_, reservatio2_.start_date as start_da3_0_3_, reservatio2_.total_price as total_pr4_0_3_, reservatio2_.guest_id as guest_id5_0_3_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id left outer join reservation reservatio2_ on user1_.id=reservatio2_.guest_id where role0_.id=?
+[DEBUG] 2020-12-02 11:37:57.290 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7d25913]
+[DEBUG] 2020-12-02 11:37:57.290 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2020-12-02 11:37:57.290 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-12-02 11:37:57.290 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@16f15ae9]
+[DEBUG] 2020-12-02 11:37:57.290 [main] MetamodelGraphWalker - Visiting attribute path : user.Password
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.address
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.details
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.email
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.first_name
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.last_name
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.phone
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations
+[DEBUG] 2020-12-02 11:37:57.291 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@77896335]
+[DEBUG] 2020-12-02 11:37:57.291 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c1b89ac]
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.end_date
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.291 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@2b79c8ff]
+[DEBUG] 2020-12-02 11:37:57.291 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2baf72d5]
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.start_date
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.total_price
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Visiting attribute path : user.reservations.user
+[DEBUG] 2020-12-02 11:37:57.291 [main] MetamodelGraphWalker - Property path deemed to be circular : user.reservations.user
+[DEBUG] 2020-12-02 11:37:57.292 [main] MetamodelGraphWalker - Visiting attribute path : user.roles
+[DEBUG] 2020-12-02 11:37:57.292 [main] MetamodelGraphWalker - Property path deemed to be circular : user.roles
+[DEBUG] 2020-12-02 11:37:57.292 [main] MetamodelGraphWalker - Visiting attribute path : user.user_name
+[DEBUG] 2020-12-02 11:37:57.292 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-12-02 11:37:57.292 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.296 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.298 [main] LoadPlanTreePrinter - LoadPlan(entity=hote.entity.Role)
+    - Returns
+       - EntityReturnImpl(entity=hote.entity.Role, querySpaceUid=<gen:0>, path=hote.entity.Role)
+          - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:1>, path=hote.entity.Role.user)
+             - CollectionAttributeFetchImpl(collection=hote.entity.User.reservations, querySpaceUid=<gen:2>, path=hote.entity.Role.user.reservations)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Reservation, querySpaceUid=<gen:3>, path=hote.entity.Role.user.reservations.<elements>)
+                   - CollectionAttributeFetchImpl(collection=hote.entity.Reservation.roomReserveds, querySpaceUid=<gen:4>, path=hote.entity.Role.user.reservations.<elements>.roomReserveds)
+                      - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:5>, path=hote.entity.Role.user.reservations.<elements>.roomReserveds.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hote.entity.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hote.entity.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+                - JOIN (JoinDefinedByMetadata(reservations)) : <gen:1> -> <gen:2>
+                   - CollectionQuerySpaceImpl(uid=<gen:2>, collection=hote.entity.User.reservations)
+                      - SQL table alias mapping - reservatio2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {guest_id5_0_2_}
+                      - entity-element alias suffix - 3_
+                      - 3_entity-element suffixed key columns - id1_0_3_
+                      - JOIN (JoinDefinedByMetadata(elements)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=hote.entity.Reservation)
+                            - SQL table alias mapping - reservatio2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_0_3_}
+
+[DEBUG] 2020-12-02 11:37:57.298 [main] EntityLoader - Static select for entity hote.entity.Role [READ]: select role0_.id as id1_1_0_, role0_.role_name as role_nam2_1_0_, role0_.user_id as user_id4_1_0_, role0_.user_name as user_nam3_1_0_, user1_.id as id1_4_1_, user1_.Password as Password2_4_1_, user1_.address as address3_4_1_, user1_.details as details4_4_1_, user1_.email as email5_4_1_, user1_.first_name as first_na6_4_1_, user1_.last_name as last_nam7_4_1_, user1_.phone as phone8_4_1_, user1_.user_name as user_nam9_4_1_, reservatio2_.guest_id as guest_id5_0_2_, reservatio2_.id as id1_0_2_, reservatio2_.id as id1_0_3_, reservatio2_.end_date as end_date2_0_3_, reservatio2_.start_date as start_da3_0_3_, reservatio2_.total_price as total_pr4_0_3_, reservatio2_.guest_id as guest_id5_0_3_ from role role0_ left outer join user user1_ on role0_.user_id=user1_.id left outer join reservation reservatio2_ on user1_.id=reservatio2_.guest_id where role0_.id=?
+[DEBUG] 2020-12-02 11:37:57.298 [main] Loader - Static select for action ACTION_MERGE on entity hote.entity.Role: select role0_.id as id1_1_0_, role0_.role_name as role_nam2_1_0_, role0_.user_id as user_id4_1_0_, role0_.user_name as user_nam3_1_0_ from role role0_ where role0_.id=?
+[DEBUG] 2020-12-02 11:37:57.299 [main] Loader - Static select for action ACTION_REFRESH on entity hote.entity.Role: select role0_.id as id1_1_0_, role0_.role_name as role_nam2_1_0_, role0_.user_id as user_id4_1_0_, role0_.user_name as user_nam3_1_0_ from role role0_ where role0_.id=?
+[DEBUG] 2020-12-02 11:37:57.309 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1578fa9]
+[DEBUG] 2020-12-02 11:37:57.310 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@414b2df5]
+[DEBUG] 2020-12-02 11:37:57.310 [main] MetamodelGraphWalker - Visiting attribute path : end_date
+[DEBUG] 2020-12-02 11:37:57.310 [main] MetamodelGraphWalker - Visiting attribute path : roomReserveds
+[DEBUG] 2020-12-02 11:37:57.310 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@26275b46]
+[DEBUG] 2020-12-02 11:37:57.310 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3e9beef2]
+[DEBUG] 2020-12-02 11:37:57.310 [main] MetamodelGraphWalker - Visiting attribute path : start_date
+[DEBUG] 2020-12-02 11:37:57.310 [main] MetamodelGraphWalker - Visiting attribute path : total_price
+[DEBUG] 2020-12-02 11:37:57.310 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-12-02 11:37:57.311 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2020-12-02 11:37:57.311 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.315 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.322 [main] LoadPlanTreePrinter - LoadPlan(collection=hote.entity.User.reservations)
+    - Returns
+       - CollectionReturnImpl(collection=hote.entity.User.reservations, querySpaceUid=<gen:0>, path=[hote.entity.User.reservations])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Reservation, querySpaceUid=<gen:1>, path=[hote.entity.User.reservations].<elements>)
+             - CollectionAttributeFetchImpl(collection=hote.entity.Reservation.roomReserveds, querySpaceUid=<gen:2>, path=[hote.entity.User.reservations].<elements>.roomReserveds)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:3>, path=[hote.entity.User.reservations].<elements>.roomReserveds.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=hote.entity.User.reservations)
+          - SQL table alias mapping - reservatio0_
+          - alias suffix - 0_
+          - suffixed key columns - {guest_id5_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hote.entity.Reservation)
+                - SQL table alias mapping - reservatio0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+[DEBUG] 2020-12-02 11:37:57.323 [main] CollectionLoader - Static select for collection hote.entity.User.reservations: select reservatio0_.guest_id as guest_id5_0_0_, reservatio0_.id as id1_0_0_, reservatio0_.id as id1_0_1_, reservatio0_.end_date as end_date2_0_1_, reservatio0_.start_date as start_da3_0_1_, reservatio0_.total_price as total_pr4_0_1_, reservatio0_.guest_id as guest_id5_0_1_ from reservation reservatio0_ where reservatio0_.guest_id=?
+[DEBUG] 2020-12-02 11:37:57.323 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@133aacbe]
+[DEBUG] 2020-12-02 11:37:57.323 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2aa5bd48]
+[DEBUG] 2020-12-02 11:37:57.324 [main] MetamodelGraphWalker - Visiting attribute path : roleName
+[DEBUG] 2020-12-02 11:37:57.324 [main] MetamodelGraphWalker - Visiting attribute path : user
+[DEBUG] 2020-12-02 11:37:57.324 [main] MetamodelGraphWalker - Property path deemed to be circular : user
+[DEBUG] 2020-12-02 11:37:57.325 [main] MetamodelGraphWalker - Visiting attribute path : userName
+[DEBUG] 2020-12-02 11:37:57.325 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.325 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.327 [main] LoadPlanTreePrinter - LoadPlan(collection=hote.entity.User.roles)
+    - Returns
+       - CollectionReturnImpl(collection=hote.entity.User.roles, querySpaceUid=<gen:0>, path=[hote.entity.User.roles])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Role, querySpaceUid=<gen:1>, path=[hote.entity.User.roles].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=hote.entity.User.roles)
+          - SQL table alias mapping - roles0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id4_1_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_1_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hote.entity.Role)
+                - SQL table alias mapping - roles0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+[DEBUG] 2020-12-02 11:37:57.329 [main] CollectionLoader - Static select for collection hote.entity.User.roles: select roles0_.user_id as user_id4_1_0_, roles0_.id as id1_1_0_, roles0_.id as id1_1_1_, roles0_.role_name as role_nam2_1_1_, roles0_.user_id as user_id4_1_1_, roles0_.user_name as user_nam3_1_1_ from role roles0_ where roles0_.user_id=?
+[DEBUG] 2020-12-02 11:37:57.330 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@19002b34]
+[DEBUG] 2020-12-02 11:37:57.330 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1ec88aa1]
+[DEBUG] 2020-12-02 11:37:57.331 [main] MetamodelGraphWalker - Visiting attribute path : price
+[DEBUG] 2020-12-02 11:37:57.331 [main] MetamodelGraphWalker - Visiting attribute path : reservation
+[DEBUG] 2020-12-02 11:37:57.331 [main] MetamodelGraphWalker - Property path deemed to be circular : reservation
+[DEBUG] 2020-12-02 11:37:57.331 [main] MetamodelGraphWalker - Visiting attribute path : room
+[DEBUG] 2020-12-02 11:37:57.331 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3030836d]
+[DEBUG] 2020-12-02 11:37:57.331 [main] MetamodelGraphWalker - Visiting attribute path : room.Avalable
+[DEBUG] 2020-12-02 11:37:57.332 [main] MetamodelGraphWalker - Visiting attribute path : room.current_price
+[DEBUG] 2020-12-02 11:37:57.332 [main] MetamodelGraphWalker - Visiting attribute path : room.description
+[DEBUG] 2020-12-02 11:37:57.332 [main] MetamodelGraphWalker - Visiting attribute path : room.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.336 [main] MetamodelGraphWalker - Property path deemed to be circular : room.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.336 [main] MetamodelGraphWalker - Visiting attribute path : room.room_name
+[DEBUG] 2020-12-02 11:37:57.337 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.337 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.345 [main] LoadPlanTreePrinter - LoadPlan(collection=hote.entity.Reservation.roomReserveds)
+    - Returns
+       - CollectionReturnImpl(collection=hote.entity.Reservation.roomReserveds, querySpaceUid=<gen:0>, path=[hote.entity.Reservation.roomReserveds])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:1>, path=[hote.entity.Reservation.roomReserveds].<elements>)
+             - EntityAttributeFetchImpl(entity=hote.entity.Room, querySpaceUid=<gen:2>, path=[hote.entity.Reservation.roomReserveds].<elements>.room)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=hote.entity.Reservation.roomReserveds)
+          - SQL table alias mapping - roomreserv0_
+          - alias suffix - 0_
+          - suffixed key columns - {reservat3_3_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_3_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hote.entity.RoomReserved)
+                - SQL table alias mapping - roomreserv0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(room)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.Room)
+                      - SQL table alias mapping - room1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_2_2_}
+
+[DEBUG] 2020-12-02 11:37:57.345 [main] CollectionLoader - Static select for collection hote.entity.Reservation.roomReserveds: select roomreserv0_.reservation_id as reservat3_3_0_, roomreserv0_.id as id1_3_0_, roomreserv0_.id as id1_3_1_, roomreserv0_.price as price2_3_1_, roomreserv0_.reservation_id as reservat3_3_1_, roomreserv0_.room_id as room_id4_3_1_, room1_.id as id1_2_2_, room1_.Avalable as Avalable2_2_2_, room1_.current_price as current_3_2_2_, room1_.description as descript4_2_2_, room1_.room_name as room_nam5_2_2_ from room_reserved roomreserv0_ left outer join room room1_ on roomreserv0_.room_id=room1_.id where roomreserv0_.reservation_id=?
+[DEBUG] 2020-12-02 11:37:57.345 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6ed18d80]
+[DEBUG] 2020-12-02 11:37:57.345 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4c24f3a2]
+[DEBUG] 2020-12-02 11:37:57.346 [main] MetamodelGraphWalker - Visiting attribute path : price
+[DEBUG] 2020-12-02 11:37:57.346 [main] MetamodelGraphWalker - Visiting attribute path : reservation
+[DEBUG] 2020-12-02 11:37:57.346 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4c176ff1]
+[DEBUG] 2020-12-02 11:37:57.346 [main] MetamodelGraphWalker - Visiting attribute path : reservation.end_date
+[DEBUG] 2020-12-02 11:37:57.346 [main] MetamodelGraphWalker - Visiting attribute path : reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.346 [main] MetamodelGraphWalker - Property path deemed to be circular : reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.346 [main] MetamodelGraphWalker - Visiting attribute path : reservation.start_date
+[DEBUG] 2020-12-02 11:37:57.346 [main] MetamodelGraphWalker - Visiting attribute path : reservation.total_price
+[DEBUG] 2020-12-02 11:37:57.346 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user
+[DEBUG] 2020-12-02 11:37:57.346 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@68aec50]
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.Password
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.address
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.details
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.email
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.first_name
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.last_name
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.phone
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.reservations
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Property path deemed to be circular : reservation.user.reservations
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.roles
+[DEBUG] 2020-12-02 11:37:57.347 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@1d60059f]
+[DEBUG] 2020-12-02 11:37:57.347 [main] QuerySpacesImpl - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@134a8ead]
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : reservation.user.user_name
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Visiting attribute path : room
+[DEBUG] 2020-12-02 11:37:57.347 [main] MetamodelGraphWalker - Property path deemed to be circular : room
+[DEBUG] 2020-12-02 11:37:57.347 [main] FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+[DEBUG] 2020-12-02 11:37:57.348 [main] LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+[DEBUG] 2020-12-02 11:37:57.353 [main] LoadPlanTreePrinter - LoadPlan(collection=hote.entity.Room.roomReserveds)
+    - Returns
+       - CollectionReturnImpl(collection=hote.entity.Room.roomReserveds, querySpaceUid=<gen:0>, path=[hote.entity.Room.roomReserveds])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.RoomReserved, querySpaceUid=<gen:1>, path=[hote.entity.Room.roomReserveds].<elements>)
+             - EntityAttributeFetchImpl(entity=hote.entity.Reservation, querySpaceUid=<gen:2>, path=[hote.entity.Room.roomReserveds].<elements>.reservation)
+                - EntityAttributeFetchImpl(entity=hote.entity.User, querySpaceUid=<gen:3>, path=[hote.entity.Room.roomReserveds].<elements>.reservation.user)
+                   - CollectionAttributeFetchImpl(collection=hote.entity.User.roles, querySpaceUid=<gen:4>, path=[hote.entity.Room.roomReserveds].<elements>.reservation.user.roles)
+                      - (collection element) CollectionFetchableElementEntityGraph(entity=hote.entity.Role, querySpaceUid=<gen:5>, path=[hote.entity.Room.roomReserveds].<elements>.reservation.user.roles.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=hote.entity.Room.roomReserveds)
+          - SQL table alias mapping - roomreserv0_
+          - alias suffix - 0_
+          - suffixed key columns - {room_id4_3_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_3_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hote.entity.RoomReserved)
+                - SQL table alias mapping - roomreserv0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_3_1_}
+                - JOIN (JoinDefinedByMetadata(reservation)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hote.entity.Reservation)
+                      - SQL table alias mapping - reservatio1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+                      - JOIN (JoinDefinedByMetadata(user)) : <gen:2> -> <gen:3>
+                         - EntityQuerySpaceImpl(uid=<gen:3>, entity=hote.entity.User)
+                            - SQL table alias mapping - user2_
+                            - alias suffix - 3_
+                            - suffixed key columns - {id1_4_3_}
+
+[DEBUG] 2020-12-02 11:37:57.356 [main] CollectionLoader - Static select for collection hote.entity.Room.roomReserveds: select roomreserv0_.room_id as room_id4_3_0_, roomreserv0_.id as id1_3_0_, roomreserv0_.id as id1_3_1_, roomreserv0_.price as price2_3_1_, roomreserv0_.reservation_id as reservat3_3_1_, roomreserv0_.room_id as room_id4_3_1_, reservatio1_.id as id1_0_2_, reservatio1_.end_date as end_date2_0_2_, reservatio1_.start_date as start_da3_0_2_, reservatio1_.total_price as total_pr4_0_2_, reservatio1_.guest_id as guest_id5_0_2_, user2_.id as id1_4_3_, user2_.Password as Password2_4_3_, user2_.address as address3_4_3_, user2_.details as details4_4_3_, user2_.email as email5_4_3_, user2_.first_name as first_na6_4_3_, user2_.last_name as last_nam7_4_3_, user2_.phone as phone8_4_3_, user2_.user_name as user_nam9_4_3_ from room_reserved roomreserv0_ left outer join reservation reservatio1_ on roomreserv0_.reservation_id=reservatio1_.id left outer join user user2_ on reservatio1_.guest_id=user2_.id where roomreserv0_.room_id=?
+[DEBUG] 2020-12-02 11:37:57.453 [main] SchemaManagementToolCoordinator - No actions specified; doing nothing
+[DEBUG] 2020-12-02 11:37:57.456 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2020-12-02 11:37:57.457 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2020-12-02 11:37:57.477 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2020-12-02 11:37:57.481 [main] JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[DEBUG] 2020-12-02 11:37:57.484 [main] NamedQueryRepository - Checking 0 named HQL queries
+[DEBUG] 2020-12-02 11:37:57.484 [main] NamedQueryRepository - Checking 0 named SQL queries
+[DEBUG] 2020-12-02 11:37:57.491 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@72b2c5ed
+[DEBUG] 2020-12-02 11:37:57.498 [main] SessionFactoryRegistry - Registering SessionFactory: a418d81f-6bd8-41d2-8706-4f0267d7106d (<unnamed>)
+[DEBUG] 2020-12-02 11:37:57.498 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2020-12-02 11:37:57.657 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2020-12-02 11:37:57.691 [main] SQL - select user0_.id as id1_4_0_, user0_.Password as Password2_4_0_, user0_.address as address3_4_0_, user0_.details as details4_4_0_, user0_.email as email5_4_0_, user0_.first_name as first_na6_4_0_, user0_.last_name as last_nam7_4_0_, user0_.phone as phone8_4_0_, user0_.user_name as user_nam9_4_0_, reservatio1_.guest_id as guest_id5_0_1_, reservatio1_.id as id1_0_1_, reservatio1_.id as id1_0_2_, reservatio1_.end_date as end_date2_0_2_, reservatio1_.start_date as start_da3_0_2_, reservatio1_.total_price as total_pr4_0_2_, reservatio1_.guest_id as guest_id5_0_2_, roomreserv2_.reservation_id as reservat3_3_3_, roomreserv2_.id as id1_3_3_, roomreserv2_.id as id1_3_4_, roomreserv2_.price as price2_3_4_, roomreserv2_.reservation_id as reservat3_3_4_, roomreserv2_.room_id as room_id4_3_4_, roles3_.user_id as user_id4_1_5_, roles3_.id as id1_1_5_, roles3_.id as id1_1_6_, roles3_.role_name as role_nam2_1_6_, roles3_.user_id as user_id4_1_6_, roles3_.user_name as user_nam3_1_6_ from user user0_ left outer join reservation reservatio1_ on user0_.id=reservatio1_.guest_id left outer join room_reserved roomreserv2_ on reservatio1_.id=roomreserv2_.reservation_id left outer join role roles3_ on user0_.id=roles3_.user_id where user0_.id=?
+[DEBUG] 2020-12-02 11:37:57.812 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-12-02 11:37:57.818 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-12-02 11:37:57.857 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [hote.entity.User.reservations#2]
+[DEBUG] 2020-12-02 11:37:57.891 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [hote.entity.User.roles#2]
+[DEBUG] 2020-12-02 11:37:57.892 [main] TwoPhaseLoad - Resolving attributes for [hote.entity.User#2]
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Processing attribute `Password` : value = jpatel2
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Attribute (`Password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Processing attribute `address` : value = 1014 8th street, baraboo, wi
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Processing attribute `details` : value = has reseasion
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Attribute (`details`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Processing attribute `email` : value = jate@some.com
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Processing attribute `first_name` : value = jackk
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Attribute (`first_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.897 [main] TwoPhaseLoad - Processing attribute `last_name` : value = ptel
+[DEBUG] 2020-12-02 11:37:57.898 [main] TwoPhaseLoad - Attribute (`last_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.898 [main] TwoPhaseLoad - Processing attribute `phone` : value = 6049638522
+[DEBUG] 2020-12-02 11:37:57.898 [main] TwoPhaseLoad - Attribute (`phone`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.898 [main] TwoPhaseLoad - Processing attribute `reservations` : value = NOT NULL COLLECTION
+[DEBUG] 2020-12-02 11:37:57.898 [main] TwoPhaseLoad - Attribute (`reservations`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.901 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2020-12-02 11:37:57.901 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.901 [main] TwoPhaseLoad - Processing attribute `user_name` : value = jpatel1
+[DEBUG] 2020-12-02 11:37:57.901 [main] TwoPhaseLoad - Attribute (`user_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:57.904 [main] TwoPhaseLoad - Done materializing entity [hote.entity.User#2]
+[DEBUG] 2020-12-02 11:37:57.904 [main] CollectionLoadContext - No collections were found in result set for role: hote.entity.Reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:57.909 [main] CollectionLoadContext - 1 collections were found in result set for role: hote.entity.User.reservations
+[DEBUG] 2020-12-02 11:37:57.913 [main] CollectionLoadContext - Collection fully initialized: [hote.entity.User.reservations#2]
+[DEBUG] 2020-12-02 11:37:57.913 [main] CollectionLoadContext - 1 collections initialized for role: hote.entity.User.reservations
+[DEBUG] 2020-12-02 11:37:57.913 [main] CollectionLoadContext - 1 collections were found in result set for role: hote.entity.User.roles
+[DEBUG] 2020-12-02 11:37:57.913 [main] CollectionLoadContext - Collection fully initialized: [hote.entity.User.roles#2]
+[DEBUG] 2020-12-02 11:37:57.913 [main] CollectionLoadContext - 1 collections initialized for role: hote.entity.User.roles
+[DEBUG] 2020-12-02 11:37:57.918 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-12-02 11:37:57.919 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : hote.entity.User#2
+[DEBUG] 2020-12-02 11:37:57.919 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-12-02 11:37:58.081 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2020-12-02 11:37:58.082 [main] TransactionImpl - begin
+[DEBUG] 2020-12-02 11:37:58.126 [main] TransactionImpl - committing
+[DEBUG] 2020-12-02 11:37:58.127 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2020-12-02 11:37:58.127 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2020-12-02 11:37:58.157 [main] Collections - Collection found: [hote.entity.User.reservations#2], was: [hote.entity.User.reservations#2] (initialized)
+[DEBUG] 2020-12-02 11:37:58.157 [main] Collections - Collection found: [hote.entity.User.roles#2], was: [hote.entity.User.roles#2] (initialized)
+[DEBUG] 2020-12-02 11:37:58.158 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2020-12-02 11:37:58.158 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 2 collections
+[DEBUG] 2020-12-02 11:37:58.160 [main] EntityPrinter - Listing entities:
+[DEBUG] 2020-12-02 11:37:58.161 [main] EntityPrinter - hote.entity.User{address=1014 8th street, baraboo, wi, reservations=[], phone=6049638522, user_name=jpatel1, roles=[], last_name=ptel, details=has reseasion, id=2, first_name=jac, email=jate@some.com, Password=jpatel2}
+[DEBUG] 2020-12-02 11:37:58.167 [main] SQL - update user set Password=?, address=?, details=?, email=?, first_name=?, last_name=?, phone=?, user_name=? where id=?
+[DEBUG] 2020-12-02 11:37:58.196 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-12-02 11:37:58.198 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2020-12-02 11:37:58.199 [main] SQL - select user0_.id as id1_4_0_, user0_.Password as Password2_4_0_, user0_.address as address3_4_0_, user0_.details as details4_4_0_, user0_.email as email5_4_0_, user0_.first_name as first_na6_4_0_, user0_.last_name as last_nam7_4_0_, user0_.phone as phone8_4_0_, user0_.user_name as user_nam9_4_0_, reservatio1_.guest_id as guest_id5_0_1_, reservatio1_.id as id1_0_1_, reservatio1_.id as id1_0_2_, reservatio1_.end_date as end_date2_0_2_, reservatio1_.start_date as start_da3_0_2_, reservatio1_.total_price as total_pr4_0_2_, reservatio1_.guest_id as guest_id5_0_2_, roomreserv2_.reservation_id as reservat3_3_3_, roomreserv2_.id as id1_3_3_, roomreserv2_.id as id1_3_4_, roomreserv2_.price as price2_3_4_, roomreserv2_.reservation_id as reservat3_3_4_, roomreserv2_.room_id as room_id4_3_4_, roles3_.user_id as user_id4_1_5_, roles3_.id as id1_1_5_, roles3_.id as id1_1_6_, roles3_.role_name as role_nam2_1_6_, roles3_.user_id as user_id4_1_6_, roles3_.user_name as user_nam3_1_6_ from user user0_ left outer join reservation reservatio1_ on user0_.id=reservatio1_.guest_id left outer join room_reserved roomreserv2_ on reservatio1_.id=roomreserv2_.reservation_id left outer join role roles3_ on user0_.id=roles3_.user_id where user0_.id=?
+[DEBUG] 2020-12-02 11:37:58.212 [main] ResultSetProcessorImpl - Starting ResultSet row #0
+[DEBUG] 2020-12-02 11:37:58.214 [main] EntityReferenceInitializerImpl - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+[DEBUG] 2020-12-02 11:37:58.214 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [hote.entity.User.reservations#2]
+[DEBUG] 2020-12-02 11:37:58.215 [main] CollectionReferenceInitializerImpl - Result set contains (possibly empty) collection: [hote.entity.User.roles#2]
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Resolving attributes for [hote.entity.User#2]
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `Password` : value = jpatel2
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Attribute (`Password`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `address` : value = 1014 8th street, baraboo, wi
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Attribute (`address`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `details` : value = has reseasion
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Attribute (`details`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `email` : value = jate@some.com
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Attribute (`email`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `first_name` : value = jac
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Attribute (`first_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `last_name` : value = ptel
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Attribute (`last_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `phone` : value = 6049638522
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Attribute (`phone`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `reservations` : value = NOT NULL COLLECTION
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Attribute (`reservations`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.215 [main] TwoPhaseLoad - Processing attribute `roles` : value = NOT NULL COLLECTION
+[DEBUG] 2020-12-02 11:37:58.216 [main] TwoPhaseLoad - Attribute (`roles`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.219 [main] TwoPhaseLoad - Processing attribute `user_name` : value = jpatel1
+[DEBUG] 2020-12-02 11:37:58.219 [main] TwoPhaseLoad - Attribute (`user_name`)  - enhanced for lazy-loading? - false
+[DEBUG] 2020-12-02 11:37:58.219 [main] TwoPhaseLoad - Done materializing entity [hote.entity.User#2]
+[DEBUG] 2020-12-02 11:37:58.219 [main] CollectionLoadContext - No collections were found in result set for role: hote.entity.Reservation.roomReserveds
+[DEBUG] 2020-12-02 11:37:58.219 [main] CollectionLoadContext - 1 collections were found in result set for role: hote.entity.User.reservations
+[DEBUG] 2020-12-02 11:37:58.219 [main] CollectionLoadContext - Collection fully initialized: [hote.entity.User.reservations#2]
+[DEBUG] 2020-12-02 11:37:58.219 [main] CollectionLoadContext - 1 collections initialized for role: hote.entity.User.reservations
+[DEBUG] 2020-12-02 11:37:58.220 [main] CollectionLoadContext - 1 collections were found in result set for role: hote.entity.User.roles
+[DEBUG] 2020-12-02 11:37:58.220 [main] CollectionLoadContext - Collection fully initialized: [hote.entity.User.roles#2]
+[DEBUG] 2020-12-02 11:37:58.220 [main] CollectionLoadContext - 1 collections initialized for role: hote.entity.User.roles
+[DEBUG] 2020-12-02 11:37:58.220 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2020-12-02 11:37:58.220 [main] AbstractLoadPlanBasedEntityLoader - Done entity load : hote.entity.User#2
+[DEBUG] 2020-12-02 11:37:58.220 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
