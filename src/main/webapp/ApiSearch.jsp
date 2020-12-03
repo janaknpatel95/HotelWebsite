@@ -5,7 +5,7 @@
 <h2>User Display Exercise</h2>
 
 <form action="ApiHtml" method="GET">
-    <input type="text" name="param1" value="LastName"/><br />
+    <input type="text" name="zipcode" value="zipcode"/><br />
     <br />
     <br />
     <input type="submit" name="" value="Enter"/>

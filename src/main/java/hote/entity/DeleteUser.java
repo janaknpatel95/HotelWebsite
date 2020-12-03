@@ -31,11 +31,11 @@ import java.io.IOException;
         @Override
         protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             GenericDao userData = new GenericDao(User.class);
-//            UserData userData = new UserData();
+
 
 
             userData.delete(userData.getById(Integer.parseInt(req.getParameter("id"))));
-//            genericDao.delete(genericDao.getById(2));
+
             String firstName = req.getParameter("firstName");
             RequestDispatcher dispatcher = req.getRequestDispatcher("searchreservasion?param1="+firstName+"&submit=viewAll");
             dispatcher.forward(req, resp);

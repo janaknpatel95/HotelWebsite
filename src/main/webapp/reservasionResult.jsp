@@ -49,8 +49,7 @@
         <c:forEach items="${user1.reservations}" var="reservasion">
             <td>${reservasion.getStart_date()}</td>
            <td>${reservasion.getEnd_date()}</td>
-            <td><a class='add' title="Add" data-toggle="tooltip" href="editUser.jsp"><i class="material-icons" >&#xe146;</i></a>
-                <a class="edit" title="Edit" data-toggle="tooltip" href="editUser?id=${user1.getId()}"><i class="material-icons" >&#xE254;</i></a>
+            <td><a class="edit" title="Edit" data-toggle="tooltip" href="reservasionEditPage?id=${user1.getId()}"><i class="material-icons" >&#xE254;</i></a>
                 <a class="delete" title="Delete" data-toggle="tooltip" href="deleteUser?id=${user1.getId()}&firstName=${user1.getFirst_name()}"><i class="material-icons" >&#xE872;</i></a></td>
         </c:forEach>
 
