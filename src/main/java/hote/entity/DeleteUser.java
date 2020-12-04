@@ -37,7 +37,7 @@ import java.io.IOException;
             userData.delete(userData.getById(Integer.parseInt(req.getParameter("id"))));
 
             String firstName = req.getParameter("firstName");
-            RequestDispatcher dispatcher = req.getRequestDispatcher("searchreservasion?param1="+firstName+"&submit=viewAll");
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/reservasionResult.jsp");
             dispatcher.forward(req, resp);
         }
 

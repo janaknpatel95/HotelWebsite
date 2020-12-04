@@ -4,7 +4,7 @@
 
 <h2>User Display Exercise</h2>
 
-<form action="searchreservasion" method="GET">
+<form action="searchreservasion" method="POST">
     <input type="text" name="param1" value="LastName"/><br />
     <br />
     <br />
