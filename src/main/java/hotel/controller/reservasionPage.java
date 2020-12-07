@@ -4,6 +4,7 @@ package hotel.controller;
 
 import Api.SendEmail;
 import hote.entity.Reservation;
+import hote.entity.Room;
 import hote.entity.User;
 import hotel.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Date;
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  * A simple servlet to welcome the user.
@@ -45,8 +47,24 @@ public class reservasionPage extends HttpServlet {
 
         GenericDao userDao = new GenericDao(User.class);
 
+        GenericDao RoomDao = new GenericDao(Room.class);
+
         User newUser = new User(firstName,lastName,userName,Email,phone);
 
+
+        List<Room> users = RoomDao.getByPropertyEqual1("date", start);
+
+        int avalable = 0;
+
+        for (Room room : users){
+
+            avalable =    room.getAvalable();
+
+            room.setAvalable(avalable - 1);
+
+            RoomDao.saveOrUpdate(room);
+
+        }
 
 
 

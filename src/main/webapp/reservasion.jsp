@@ -104,15 +104,8 @@
 
         <input type="hidden" value="<c:out value="${price}" />" name="price" >
 
-      <h4> <c:out value="${StartDate}" /></h4>
 
-       <h4> <c:out value="${EndDate}" /></h4>
 
-      <h4>  <c:out value="${price}" /></h4>
-
-<%--        <input type="hidden" id="id"--%>
-<%--               name="id1"--%>
-<%--               value = ${user.id}>--%>
 
         <p>By creating an account you agree to our Terms & Privacy</a>.</p>
 
