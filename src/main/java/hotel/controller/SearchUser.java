@@ -1,7 +1,8 @@
-package hote.entity;
+package hotel.controller;
 
 
 
+import hote.entity.User;
 import hotel.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -18,35 +19,17 @@ import java.io.IOException;
  */
 
 @WebServlet(
-        urlPatterns = {"/signPage"}
+        urlPatterns = {"/searchUser"}
 )
 
-public class signPage extends HttpServlet {
+public class SearchUser extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String firstName = req.getParameter("FirstName");
-        String lastName = req.getParameter("Lastname");
-        String Email = req.getParameter("email");
-        String phone = req.getParameter("phone");
-        String userName = req.getParameter("userName");
-        String Password = req.getParameter("psw");
+        String param1 = req.getParameter("param1");
 
         GenericDao userDao = new GenericDao(User.class);
 
-        User newUser = new User(firstName,lastName,userName,Email,Password,phone);
-
-
-
-            String roleName = "admin";
-            Role role = new Role(newUser,roleName, userName);
-
-            newUser.addRole(role);
-
-
-
-
-
-        req.setAttribute("users", userDao.insert(newUser));
+        req.setAttribute("users", userDao.getAll());
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
         dispatcher.forward(req, resp);
     }

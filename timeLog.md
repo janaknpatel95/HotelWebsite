@@ -23,6 +23,14 @@
 |10/21/2020|finish video for week 8|2|week8|
 |10/22/2020|statr on week 8 excercise for indi project|2|week8|
 |10/26/2020|working on check point 3|3|week 8|
+|11/2/2020|Working on week 9 and database for indi project|5|week9|
+|11/4/2020|finish week 9 and still working to get database|4|week9|
+|11/8/2020|finisha database desine|2|week10|
+|11/10/2020|start working on team project|3|week10|
+|11/14/2020|Working on team project|4|week10|
+|11/15/2020|working on indi project entity for database |3|week10|
+|//||||
+
 
              
 

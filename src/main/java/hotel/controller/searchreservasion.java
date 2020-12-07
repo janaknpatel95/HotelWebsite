@@ -1,7 +1,8 @@
-package hote.entity;
+package hotel.controller;
 
 
 
+import hote.entity.User;
 import hotel.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -37,8 +38,13 @@ public class searchreservasion extends HttpServlet {
             req.setAttribute("users", userDao.getByPropertyEqual("first_name", firstName));
 
 
-//        req.setAttribute("users", userDao.getAll());
+
         RequestDispatcher dispatcher = req.getRequestDispatcher("/reservasionResult.jsp");
         dispatcher.forward(req, resp);
     }
+
+    @Override
+        protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+            doPost(req, resp);
+        }
 }

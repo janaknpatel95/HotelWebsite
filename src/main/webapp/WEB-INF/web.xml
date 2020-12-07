@@ -17,18 +17,18 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>search</web-resource-name>
-      <url-pattern>/search.jsp</url-pattern>
+      <url-pattern>/AdminReservasion.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>
     </auth-constraint>
   </security-constraint>
 
-  <!-- Protect the user search page -->
+<!--   Protect the user search page -->
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>Search</web-resource-name>
-      <url-pattern>/search.jsp</url-pattern>
+      <url-pattern>/AdminReservasion.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>admin</role-name>

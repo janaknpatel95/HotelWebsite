@@ -2,6 +2,9 @@ package hote.entity;
 
 
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -12,6 +15,9 @@ import java.util.Objects;
  */
 @Entity(name = "Role")
 @Table(name = "role")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
@@ -31,11 +37,7 @@ public class Role {
     @Column(name="role_name")
     private String roleName;
 
-    /**
-     * Instantiates a new Role.
-     */
-    public Role() {
-    }
+
 
     /**
      * Instantiates a new Role.
@@ -49,60 +51,60 @@ public class Role {
         this.roleName = roleName;
         this.userName = userName;
     }
-
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    /**
-     * Gets user.
-     *
-     * @return the user
-     */
-    public User getUser() {
-        return user;
-    }
-
-    /**
-     * Sets user.
-     *
-     * @param user the user
-     */
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    /**
-     * Gets role name.
-     *
-     * @return the role name
-     */
-    public String getRoleName() {
-        return roleName;
-    }
-
-    /**
-     * Sets role name.
-     *
-     * @param roleName the role name
-     */
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
-    }
+//
+//    /**
+//     * Gets id.
+//     *
+//     * @return the id
+//     */
+//    public int getId() {
+//        return id;
+//    }
+//
+//    /**
+//     * Sets id.
+//     *
+//     * @param id the id
+//     */
+//    public void setId(int id) {
+//        this.id = id;
+//    }
+//
+//    /**
+//     * Gets user.
+//     *
+//     * @return the user
+//     */
+//    public User getUser() {
+//        return user;
+//    }
+//
+//    /**
+//     * Sets user.
+//     *
+//     * @param user the user
+//     */
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
+//
+//    /**
+//     * Gets role name.
+//     *
+//     * @return the role name
+//     */
+//    public String getRoleName() {
+//        return roleName;
+//    }
+//
+//    /**
+//     * Sets role name.
+//     *
+//     * @param roleName the role name
+//     */
+//    public void setRoleName(String roleName) {
+//        this.roleName = roleName;
+//    }
 
     @Override
     public String toString() {

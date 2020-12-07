@@ -3,9 +3,13 @@ package hote.entity;
 
 import javax.persistence.*;
 
+
+
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import lombok.AllArgsConstructor;
+import org.hibernate.validator.constraints.NotEmpty;
+
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -23,10 +27,12 @@ public class User {
     /**
      * The First name.
      */
+    @NotEmpty(message = "Please provide a First name")
     public String first_name;
     /**
      * The Last name.
      */
+    @NotEmpty(message = "Please provide a Last name")
     public String last_name;
     /**
      * The User name.
@@ -36,11 +42,13 @@ public class User {
     /**
      * The Email.
      */
+    @NotEmpty(message = "Please provide a Email")
     public String email;
 
     /**
      * The Phone.
      */
+    @NotEmpty(message = "Please provide a Phone")
     public String phone;
     /**
      * The Address.

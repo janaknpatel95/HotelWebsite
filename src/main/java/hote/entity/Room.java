@@ -1,9 +1,14 @@
 package hote.entity;
 
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,6 +17,9 @@ import java.util.Set;
  */
 @Entity(name = "Room")
 @Table(name = "room")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Room {
 
     /**
@@ -36,123 +44,134 @@ public class Room {
     /**
      * The Current price.
      */
-    String current_price;
+    Double current_price;
 
     /**
      * The Avalable.
      */
-    String Avalable;
+    int Avalable;
 
-    @OneToMany(mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<RoomReserved> roomReserveds = new HashSet<>();
+    LocalDate date;
 
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
+//    @OneToMany(mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+//    private Set<RoomReserved> roomReserveds = new HashSet<>();
 
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    /**
-     * Gets room name.
-     *
-     * @return the room name
-     */
-    public String getRoom_name() {
-        return room_name;
-    }
-
-    /**
-     * Sets room name.
-     *
-     * @param room_name the room name
-     */
-    public void setRoom_name(String room_name) {
+    public Room(String room_name, String description, Double current_price, int avalable, LocalDate date) {
         this.room_name = room_name;
-    }
-
-    /**
-     * Gets description.
-     *
-     * @return the description
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     * Sets description.
-     *
-     * @param description the description
-     */
-    public void setDescription(String description) {
         this.description = description;
-    }
-
-    /**
-     * Gets current price.
-     *
-     * @return the current price
-     */
-    public String getCurrent_price() {
-        return current_price;
-    }
-
-    /**
-     * Sets current price.
-     *
-     * @param current_price the current price
-     */
-    public void setCurrent_price(String current_price) {
         this.current_price = current_price;
-    }
-
-    /**
-     * Gets avalable.
-     *
-     * @return the avalable
-     */
-    public String getAvalable() {
-        return Avalable;
-    }
-
-    /**
-     * Sets avalable.
-     *
-     * @param avalable the avalable
-     */
-    public void setAvalable(String avalable) {
         Avalable = avalable;
+        this.date = date;
     }
+
+
+    //    /**
+//     * Gets id.
+//     *
+//     * @return the id
+//     */
+//    public int getId() {
+//        return id;
+//    }
+//
+//    /**
+//     * Sets id.
+//     *
+//     * @param id the id
+//     */
+//    public void setId(int id) {
+//        this.id = id;
+//    }
+//
+//    /**
+//     * Gets room name.
+//     *
+//     * @return the room name
+//     */
+//    public String getRoom_name() {
+//        return room_name;
+//    }
+//
+//    /**
+//     * Sets room name.
+//     *
+//     * @param room_name the room name
+//     */
+//    public void setRoom_name(String room_name) {
+//        this.room_name = room_name;
+//    }
+//
+//    /**
+//     * Gets description.
+//     *
+//     * @return the description
+//     */
+//    public String getDescription() {
+//        return description;
+//    }
+//
+//    /**
+//     * Sets description.
+//     *
+//     * @param description the description
+//     */
+//    public void setDescription(String description) {
+//        this.description = description;
+//    }
+//
+//    /**
+//     * Gets current price.
+//     *
+//     * @return the current price
+//     */
+//    public String getCurrent_price() {
+//        return current_price;
+//    }
+//
+//    /**
+//     * Sets current price.
+//     *
+//     * @param current_price the current price
+//     */
+//    public void setCurrent_price(String current_price) {
+//        this.current_price = current_price;
+//    }
+//
+//    /**
+//     * Gets avalable.
+//     *
+//     * @return the avalable
+//     */
+//    public String getAvalable() {
+//        return Avalable;
+//    }
+//
+//    /**
+//     * Sets avalable.
+//     *
+//     * @param avalable the avalable
+//     */
+//    public void setAvalable(String avalable) {
+//        Avalable = avalable;
+//    }
 
     /**
      * Gets room reserveds.
      *
      * @return the room reserveds
-     */
-    public Set<RoomReserved> getRoomReserveds() {
-        return roomReserveds;
-    }
-
-    /**
-     * Sets room reserveds.
-     *
-     * @param roomReserveds the room reserveds
-     */
-    public void setRoomReserveds(Set<RoomReserved> roomReserveds) {
-        this.roomReserveds = roomReserveds;
-    }
+//     */
+//    public Set<RoomReserved> getRoomReserveds() {
+//        return roomReserveds;
+//    }
+//
+//    /**
+//     * Sets room reserveds.
+//     *
+//     * @param roomReserveds the room reserveds
+//     */
+//    public void setRoomReserveds(Set<RoomReserved> roomReserveds) {
+//        this.roomReserveds = roomReserveds;
+//    }
 
     @Override
     public String toString() {
@@ -162,7 +181,7 @@ public class Room {
                 ", description='" + description + '\'' +
                 ", current_price='" + current_price + '\'' +
                 ", Avalable='" + Avalable + '\'' +
-                ", roomReserveds=" + roomReserveds +
+                ", Date='" + date + '\'' +
                 '}';
     }
 }

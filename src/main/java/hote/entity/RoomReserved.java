@@ -1,5 +1,8 @@
 package hote.entity;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -10,6 +13,9 @@ import javax.persistence.*;
  */
 @Entity(name = "Roomreserved")
 @Table(name = "room_reserved") // case sensitive!
+@Getter
+@Setter
+@NoArgsConstructor
 public class RoomReserved {
 
     /**
@@ -29,11 +35,11 @@ public class RoomReserved {
     /**
      * The Room.
      */
-    @ManyToOne
-    @JoinColumn(name = "room_id",
-            foreignKey = @ForeignKey(name = "room_reserved_room")
-    )
-    Room room;
+//    @ManyToOne
+//    @JoinColumn(name = "room_id",
+//            foreignKey = @ForeignKey(name = "room_reserved_room")
+//    )
+//    Room room;
 
     /**
      * The Reservation.
@@ -44,84 +50,83 @@ public class RoomReserved {
     )
     Reservation reservation;
 
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
-    public int getId() {
-        return id;
-    }
-
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    /**
-     * Gets price.
-     *
-     * @return the price
-     */
-    public double getPrice() {
-        return price;
-    }
-
-    /**
-     * Sets price.
-     *
-     * @param price the price
-     */
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    /**
-     * Gets room.
-     *
-     * @return the room
-     */
-    public Room getRoom() {
-        return room;
-    }
-
-    /**
-     * Sets room.
-     *
-     * @param room the room
-     */
-    public void setRoom(Room room) {
-        this.room = room;
-    }
-
-    /**
-     * Gets reservation.
-     *
-     * @return the reservation
-     */
-    public Reservation getReservation() {
-        return reservation;
-    }
-
-    /**
-     * Sets reservation.
-     *
-     * @param reservation the reservation
-     */
-    public void setReservation(Reservation reservation) {
-        this.reservation = reservation;
-    }
+//    /**
+//     * Gets id.
+//     *
+//     * @return the id
+//     */
+//    public int getId() {
+//        return id;
+//    }
+//
+//    /**
+//     * Sets id.
+//     *
+//     * @param id the id
+//     */
+//    public void setId(int id) {
+//        this.id = id;
+//    }
+//
+//    /**
+//     * Gets price.
+//     *
+//     * @return the price
+//     */
+//    public double getPrice() {
+//        return price;
+//    }
+//
+//    /**
+//     * Sets price.
+//     *
+//     * @param price the price
+//     */
+//    public void setPrice(double price) {
+//        this.price = price;
+//    }
+//
+//    /**
+//     * Gets room.
+//     *
+//     * @return the room
+//     */
+//    public Room getRoom() {
+//        return room;
+//    }
+//
+//    /**
+//     * Sets room.
+//     *
+//     * @param room the room
+//     */
+//    public void setRoom(Room room) {
+//        this.room = room;
+//    }
+//
+//    /**
+//     * Gets reservation.
+//     *
+//     * @return the reservation
+//     */
+//    public Reservation getReservation() {
+//        return reservation;
+//    }
+//
+//    /**
+//     * Sets reservation.
+//     *
+//     * @param reservation the reservation
+//     */
+//    public void setReservation(Reservation reservation) {
+//        this.reservation = reservation;
+//    }
 
     @Override
     public String toString() {
         return "RoomReserved{" +
                 "id=" + id +
                 ", price=" + price +
-                ", room=" + room +
                 ", reservation=" + reservation +
                 '}';
     }

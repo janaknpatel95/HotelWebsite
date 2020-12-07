@@ -1,4 +1,4 @@
-package hote.entity;
+package hotel.controller;
 
 
 
@@ -8,6 +8,7 @@ package hote.entity;
 //import edu.matc.entity.User;
 //import edu.matc.persistence.UserData;
 
+    import hote.entity.User;
     import hotel.persistence.GenericDao;
 
     import javax.servlet.RequestDispatcher;
@@ -37,7 +38,9 @@ import java.io.IOException;
             userData.delete(userData.getById(Integer.parseInt(req.getParameter("id"))));
 
             String firstName = req.getParameter("firstName");
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/reservasionResult.jsp");
+//            RequestDispatcher dispatcher = req.getRequestDispatcher("searchreservasion?param1="+firstName+"&submit=viewAll");
+//            dispatcher.forward(req, resp);
+            RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
             dispatcher.forward(req, resp);
         }
 
