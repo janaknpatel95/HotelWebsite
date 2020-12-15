@@ -8,7 +8,7 @@ package hotel.controller;
 //import edu.matc.entity.User;
 //import edu.matc.persistence.UserData;
 
-    import hote.entity.User;
+    import hotel.entity.User;
     import hotel.persistence.GenericDao;
 
     import javax.servlet.RequestDispatcher;

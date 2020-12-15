@@ -1,4 +1,4 @@
-package hote.entity;
+package hotel.entity;
 
 
 
@@ -51,60 +51,8 @@ public class Role {
         this.roleName = roleName;
         this.userName = userName;
     }
-//
-//    /**
-//     * Gets id.
-//     *
-//     * @return the id
-//     */
-//    public int getId() {
-//        return id;
-//    }
-//
-//    /**
-//     * Sets id.
-//     *
-//     * @param id the id
-//     */
-//    public void setId(int id) {
-//        this.id = id;
-//    }
-//
-//    /**
-//     * Gets user.
-//     *
-//     * @return the user
-//     */
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    /**
-//     * Sets user.
-//     *
-//     * @param user the user
-//     */
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
-//
-//    /**
-//     * Gets role name.
-//     *
-//     * @return the role name
-//     */
-//    public String getRoleName() {
-//        return roleName;
-//    }
-//
-//    /**
-//     * Sets role name.
-//     *
-//     * @param roleName the role name
-//     */
-//    public void setRoleName(String roleName) {
-//        this.roleName = roleName;
-//    }
+
+
 
     @Override
     public String toString() {

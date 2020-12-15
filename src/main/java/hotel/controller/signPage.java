@@ -2,8 +2,8 @@ package hotel.controller;
 
 
 
-import hote.entity.Role;
-import hote.entity.User;
+import hotel.entity.Role;
+import hotel.entity.User;
 import hotel.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;

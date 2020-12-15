@@ -1,4 +1,4 @@
-package hote.entity;
+package hotel.entity;
 
 
 import javax.persistence.*;
@@ -7,11 +7,9 @@ import javax.persistence.*;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
-import lombok.AllArgsConstructor;
 import org.hibernate.validator.constraints.NotEmpty;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 
@@ -172,149 +170,7 @@ public class User {
     }
 
 
-    /**
-     * Gets first name.
-     *
-     * @return the first name
-     */
-//    public String getFirst_name() {
-//        return first_name;
-//    }
-//
-//    /**
-//     * Sets first name.
-//     *
-//     * @param first_name the first name
-//     */
-//    public void setFirst_name(String first_name) {
-//        this.first_name = first_name;
-//    }
-//
-//    /**
-//     * Gets last name.
-//     *
-//     * @return the last name
-//     */
-//    public String getLast_name() {
-//        return last_name;
-//    }
-//
-//    /**
-//     * Sets last name.
-//     *
-//     * @param last_name the last name
-//     */
-//    public void setLast_name(String last_name) {
-//        this.last_name = last_name;
-//    }
-//
-//    /**
-//     * Gets user name.
-//     *
-//     * @return the user name
-//     */
-//    public String getUser_name() {
-//        return user_name;
-//    }
-//
-//    /**
-//     * Sets user name.
-//     *
-//     * @param user_name the user name
-//     */
-//    public void setUser_name(String user_name) {
-//        this.user_name = user_name;
-//    }
-//
-//    /**
-//     * Gets email.
-//     *
-//     * @return the email
-//     */
-//    public String getEmail() {
-//        return email;
-//    }
-//
-//    /**
-//     * Sets email.
-//     *
-//     * @param email the email
-//     */
-//    public void setEmail(String email) {
-//        this.email = email;
-//    }
-//
-//    /**
-//     * Gets phone.
-//     *
-//     * @return the phone
-//     */
-//    public String getPhone() {
-//        return phone;
-//    }
-//
-//    /**
-//     * Sets phone.
-//     *
-//     * @param phone the phone
-//     */
-//    public void setPhone(String phone) {
-//        this.phone = phone;
-//    }
-//
-//    /**
-//     * Gets address.
-//     *
-//     * @return the address
-//     */
-//    public String getAddress() {
-//        return address;
-//    }
-//
-//    /**
-//     * Sets address.
-//     *
-//     * @param address the address
-//     */
-//    public void setAddress(String address) {
-//        this.address = address;
-//    }
-//
-//    /**
-//     * Gets details.
-//     *
-//     * @return the details
-//     */
-//    public String getDetails() {
-//        return details;
-//    }
-//
-//    /**
-//     * Sets details.
-//     *
-//     * @param details the details
-//     */
-//    public void setDetails(String details) {
-//        this.details = details;
-//    }
-//
-//    /**
-//     * Gets id.
-//     *
-//     * @return the id
-//     */
-//    public int getId() {
-//        return id;
-//    }
-//
-//    /**
-//     * Sets id.
-//     *
-//     * @param id the id
-//     */
-//    public void setId(int id) {
-//        this.id = id;
-//    }
+
 
     /**
      * Gets reservations.

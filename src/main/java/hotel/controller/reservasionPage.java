@@ -3,9 +3,9 @@ package hotel.controller;
 
 
 import Api.SendEmail;
-import hote.entity.Reservation;
-import hote.entity.Room;
-import hote.entity.User;
+import hotel.entity.Reservation;
+import hotel.entity.Room;
+import hotel.entity.User;
 import hotel.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
 

@@ -2,7 +2,7 @@ package hotel.controller;
 
 
 
-import hote.entity.User;
+import hotel.entity.User;
 import hotel.persistence.GenericDao;
 
 import javax.servlet.RequestDispatcher;
@@ -12,8 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.time.LocalDate;
-import java.util.List;
 
 /**
  * A simple servlet to welcome the user.

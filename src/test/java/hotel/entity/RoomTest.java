@@ -1,8 +1,6 @@
-package hotel.persistence;
+package hotel.entity;
 
-//import hote.entity.Order;
-import hote.entity.Reservation;
-import hote.entity.User;
+import hotel.persistence.GenericDao;
 import hotel.test.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,17 +8,19 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.util.List;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * The type User dao test.
- */
-class UserDaoTest {
+class RoomTest {
+
+
+
+
 
     /**
      * The Generic dao.
      */
-//    UserDao dao;
+
     GenericDao genericDao;
 
     /**
@@ -28,51 +28,72 @@ class UserDaoTest {
      */
     @BeforeEach
     void setUp() {
-//        dao = new UserDao();
+
         Database database = Database.getInstance();
         database.runSQL("clean.sql");
-        genericDao = new GenericDao(User.class);
-
-
-
+        genericDao = new GenericDao(Room.class);
 
 
     }
+
+
+
+
+
+
+    @Test
+    void getByPropertyEqualSuccess() {
+
+        LocalDate date = LocalDate.of(2020, 12, 06);
+
+        List<Room> users = genericDao.getByPropertyEqual1("date", date);
+
+
+        assertEquals(1, users.size());
+//        assertEquals(1, users.get(0).getId());
+//        logger.info(users);
+//        User retrievedUser = (User) genericDao.getById(users.get(0).getId());
+//        assertEquals("admin", retrievedUser.getUserRoles().toString());
+//        System.out.print(retrievedUser.getUserRoles());
+
+        // For loop works too!
+//        for(User userRole : users) {
+//            logger.info(userRole.userRoles);
+//        }
+    }
+
 
     /**
      * Verify successful update of a User
      */
     @Test
     void saveOrUpdate() {
-        String updateNewUser = "jac";
-        User userBeforeUpdate = (User)genericDao.getById(2);
+        String updateNewUser = "KingBed";
+        Room userBeforeUpdate = (Room)genericDao.getById(2);
 
-        userBeforeUpdate.setFirst_name(updateNewUser);
+        userBeforeUpdate.setRoom_name(updateNewUser);
 
         genericDao.saveOrUpdate(userBeforeUpdate);
-        User userAfterUpdate = (User)genericDao.getById(2);
+        Room userAfterUpdate = (Room) genericDao.getById(2);
 
-        assertTrue(updateNewUser.equals(userAfterUpdate.getFirst_name()));
+        assertTrue(updateNewUser.equals(userAfterUpdate.getRoom_name()));
 
     }
 
-//    String newLastName = "Davis";
-//    User userToUpdate = dao.getById(3);
-//        userToUpdate.setLastName(newLastName);
-//        dao.saveOrUpdate(userToUpdate);
-//    User retrievedUser = dao.getById(3);
-//    assertEquals(newLastName, retrievedUser.getLastName());
+
     /**
      * Insert.
      */
     @Test
     void insert() {
-        User newUser = new User("jack", "robertson", "jackrobert", "some@some.com", "60800000000", "101 8th st", "hi");
+
+        LocalDate date = LocalDate.of(2020, 12, 8);
+        Room newUser = new Room("3queen", "2 queen bed",60.00,2, date);
         int id = genericDao.insert(newUser);
         assertNotEquals(0,id);
-        User insertedUser = (User)genericDao.getById(id);
+        Room insertedUser = (Room) genericDao.getById(id);
         assertEquals(insertedUser, insertedUser);
-//        System.out.println(insertedUser);
+
     }
 
     /**
@@ -90,8 +111,8 @@ class UserDaoTest {
     @Test
     void getByPropertyLike() {
 
-        List<User> users = genericDao.getByPropertyLike("last_name", "p");
-        assertEquals(2, users.size());
+        List<Room> room = genericDao.getByPropertyLike("room_name", "K");
+        assertEquals(1, room.size());
 
 
 
@@ -102,9 +123,9 @@ class UserDaoTest {
      */
     @Test
     void getAllSuccess() {
-        List<User> users = genericDao.getAll();
-        assertEquals(2, users.size());
-//        System.out.println(users);
+        List<Room> room = genericDao.getAll();
+        assertEquals(2, room.size());
+
     }
 
 
