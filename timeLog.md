@@ -29,7 +29,15 @@
 |11/10/2020|start working on team project|3|week10|
 |11/14/2020|Working on team project|4|week10|
 |11/15/2020|working on indi project entity for database |3|week10|
-|//||||
+|11/17/|2020working on project re desinn detabase |4||
+|11/20/2020|working on jsp |3||
+|11/27/2020|working on servlatedelate and rservasion |3||
+|12/01/2020|working on servlet edit and admin |4||
+|12/03/2020|working on test for entity|5||
+|12/05/2020|fixing error on page for post and get |4||
+|12/07/2020|implment api for email server|3||
+|12/08/2020|Working on extra credit multihereting|5||
+|12/10/2020|REmoving code that do not need it|2||
 
 
              

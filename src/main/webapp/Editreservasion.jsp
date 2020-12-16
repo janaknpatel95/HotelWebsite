@@ -92,9 +92,9 @@
 
         <input type="text" placeholder="Enter LastName" name="Lastname" required>
 
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <input type="text" placeholder="Enter Email" name="email" >
 
-        <input type="text" placeholder="Enter Phone" name="phone" required>
+        <input type="text" placeholder="Enter Phone" name="phone" >
 
         <input type="hidden" id="id"
                name="id1"

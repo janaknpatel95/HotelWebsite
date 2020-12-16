@@ -5,12 +5,12 @@
 
 
 <div class="container-fluid">
-    <h2>Search Results: </h2>
+    <h2>Your request has been made: </h2>
 
 
     <h1>Thank you</h1>
 
-    <a href ="ApiSearch.jsp">Please go back to login page to login </a>
+    <a href ="login.jsp">Please go back to login page to login </a>
 
     <br><br><br>
 
@@ -20,7 +20,9 @@
 
     <a href ="reservasion.jsp">Please go back to reservasion page to make reservasion </a>
 
-    <li><a href ="AdminReservasion.jsp">Admin Reservasion</a></li>
+    <br><br><br>
+
+    <a href ="AdminReservasion.jsp">Admin Reservasion</a>
 
 </div>
 

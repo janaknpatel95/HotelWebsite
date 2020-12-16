@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A simple servlet to welcome the user.
- *
- * @author pwaite
+ * This is for search reser vasion with first name
+ * request coming from reservasionsearch.jsp
+ * @author janak
  */
 @WebServlet(
         urlPatterns = {"/searchreservasion"}

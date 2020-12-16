@@ -112,6 +112,7 @@ public class GenericDao<T> {
     }
 
     /**
+     * only for reservasion class
      * Get order by property (exact match)
      * sample usage: getByPropertyEqual("lastname", "Curry")
      *

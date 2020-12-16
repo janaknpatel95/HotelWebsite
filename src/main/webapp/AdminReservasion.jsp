@@ -11,7 +11,9 @@
     <input type="submit" name="" value="Enter"/>
 </form>
 
-<a href = "searchUser">Go to the User Search</a>
+<a href = "searchUser">Go to the User Search</a><br><br><br>
+
+<a href = "RoomInfoChange.jsp">Go to change reservasion avablity</a>
 </body>
 </html
 

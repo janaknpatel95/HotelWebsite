@@ -20,8 +20,9 @@ import java.time.LocalDate;
 import java.util.List;
 
 /**
- * A simple servlet to welcome the user.
- * @author pwaite
+ * This is fo creating reservasion from user
+ * Request coming from reservasion.jsp to make reservasion
+ * @author janak
  */
 
 @WebServlet(
@@ -56,7 +57,7 @@ public class reservasionPage extends HttpServlet {
         int avalable = 0;
 
         for (Room room : users){
-
+            //Chnaging avablity for room so we do not get over book
             avalable =    room.getAvalable();
 
             room.setAvalable(avalable - 1);
@@ -65,9 +66,11 @@ public class reservasionPage extends HttpServlet {
 
         }
 
-
+        logger.info("reservasion has been created " + firstName + lastName + start + end + price);
 
             Reservation reservation = new Reservation(start, end, price, newUser );
+
+
 
             newUser.addReservasion(reservation);
 //        Email for reservasion

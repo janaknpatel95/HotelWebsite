@@ -50,3 +50,5 @@ fabric.properties
 
 src/main/resources/email.properties
 src/test/resources/email.properties
+
+

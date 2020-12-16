@@ -4,7 +4,8 @@ package hotel.controller;
 
 import hotel.entity.User;
 import hotel.persistence.GenericDao;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,8 +15,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A simple servlet to welcome the user.
- * @author pwaite
+ * This is for editing user data only edit name phone email address
+ * Coming from reservasion edit button on result jsp
+ * @author janak
  */
 
 @WebServlet(
@@ -23,6 +25,8 @@ import java.io.IOException;
 )
 
 public class reservasionEditPage extends HttpServlet {
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String firstName = req.getParameter("FirstName");
@@ -49,7 +53,7 @@ public class reservasionEditPage extends HttpServlet {
 
 
 
-
+        logger.debug("User is updated" + userBeforeUpdate);
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("searchreservasion?param1="+firstName+"&submit=viewAll");
         dispatcher.forward(req, resp);

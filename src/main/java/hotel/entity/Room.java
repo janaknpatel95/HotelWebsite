@@ -51,9 +51,21 @@ public class Room {
      */
     int Avalable;
 
+    /**
+     * The Date.
+     */
     LocalDate date;
 
 
+    /**
+     * Instantiates a new Room.
+     *
+     * @param room_name     the room name
+     * @param description   the description
+     * @param current_price the current price
+     * @param avalable      the avalable
+     * @param date          the date
+     */
     public Room(String room_name, String description, Double current_price, int avalable, LocalDate date) {
         this.room_name = room_name;
         this.description = description;

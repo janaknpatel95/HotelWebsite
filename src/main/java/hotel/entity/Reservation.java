@@ -29,7 +29,7 @@ public class Reservation {
     @GenericGenerator(name = "native",strategy = "native")
     int id;
 
-
+//    many to one with user class
     @ManyToOne
     @JoinColumn(name = "guest_id",
             foreignKey = @ForeignKey(name = "reservation_guest"))
@@ -40,21 +40,17 @@ public class Reservation {
     /**
      * The Start date.
      */
-
     LocalDate start_date;
 
     /**
      * The End date.
      */
-
     LocalDate end_date;
 
     /**
      * The Total price.
      */
     Double total_price;
-
-
 
 
     /**
@@ -72,6 +68,13 @@ public class Reservation {
         this.total_price = total_price;
     }
 
+    /**
+     * Instantiates a new Reservation.
+     *
+     * @param start_date  the start date
+     * @param end_date    the end date
+     * @param total_price the total price
+     */
     public Reservation(LocalDate start_date, LocalDate end_date, double total_price) {
 
         this.end_date = end_date;

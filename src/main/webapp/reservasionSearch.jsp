@@ -2,10 +2,10 @@
 <html>
 <body>
 
-<h2>User Display Exercise</h2>
+<h2>Reservasion search </h2>
 
 <form action="searchreservasion" method="POST">
-    <input type="text" name="param1" value="LastName"/><br />
+    <input type="text" name="param1" value="First name"/><br />
     <br />
     <br />
     <input type="submit" name="" value="Enter"/>

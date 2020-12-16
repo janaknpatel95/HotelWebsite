@@ -5,6 +5,8 @@ package hotel.controller;
 import hotel.entity.Role;
 import hotel.entity.User;
 import hotel.persistence.GenericDao;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -15,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A simple servlet to welcome the user.
- * @author pwaite
+ * This is fo creating user with role for sign up page
+ * @author janak
  */
 
 @WebServlet(
@@ -24,6 +26,8 @@ import java.io.IOException;
 )
 
 public class signPage extends HttpServlet {
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String firstName = req.getParameter("FirstName");
@@ -45,7 +49,7 @@ public class signPage extends HttpServlet {
             newUser.addRole(role);
 
 
-
+        logger.info("Role has been created" + newUser + roleName);
 
 
         req.setAttribute("users", userDao.insert(newUser));

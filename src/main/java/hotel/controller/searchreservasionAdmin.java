@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * A simple servlet to welcome the user.
- *
- * @author pwaite
+ * This is only for admin so he can see how many reservasion is comming
+ * request comming fro adminreservasion.jsp
+ * @author janak
  */
 @WebServlet(
         urlPatterns = {"/searchreservasionAdmin"}

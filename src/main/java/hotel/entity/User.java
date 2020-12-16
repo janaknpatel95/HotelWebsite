@@ -64,23 +64,7 @@ public class User {
     public String Password;
 
 
-    /**
-     * Gets password.
-     *
-     * @return the password
-     */
-//    public String getPassword() {
-//        return Password;
-//    }
-//
-//    /**
-//     * Sets password.
-//     *
-//     * @param password the password
-//     */
-//    public void setPassword(String password) {
-//        Password = password;
-//    }
+
 
     // Every Entity must have a unique identifier which is annotated @Id
     // Notice there is no @Column here as the column and instance variable name are the same
@@ -105,11 +89,7 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
 
-    /**
-     * Instantiates a new User.
-     */
-//    public User() {
-//    }
+
 
     /**
      * Instantiates a new User.
@@ -170,8 +150,6 @@ public class User {
     }
 
 
-
-
     /**
      * Gets reservations.
      *
@@ -221,10 +199,10 @@ public class User {
      *
      * @param reservasion the role
      */
-    public void removeReservasion(Reservation reservasion) {
-        reservations.remove(reservasion);
-        reservasion.setUser(null);
-    }
+//    public void removeReservasion(Reservation reservasion) {
+//        reservations.remove(reservasion);
+//        reservasion.setUser(null);
+//    }
 
 
     /**
@@ -261,9 +239,13 @@ public class User {
      *
      * @param role the role
      */
-    public void removeRole(Role role) {
-        roles.remove(role);
-        role.setUser(null);
-    }
+//    public void removeRole(Role role) {
+//        roles.remove(role);
+//        role.setUser(null);
+//    }
+
+
+
+
 
 }

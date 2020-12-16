@@ -16,8 +16,8 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 /**
- * A simple servlet to welcome the user.
- * @author pwaite
+ * This is for only admin so he can change price avalabe room
+ * @author janak
  */
 
 @WebServlet(
@@ -43,10 +43,6 @@ public class RoomEditPage extends HttpServlet {
 
 
 
-//        LocalDate start = LocalDate.of(2020, 12, 06);
-//        LocalDate end = LocalDate.of(2020, 12, 10);
-//        LocalDate start = startDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
-//        LocalDate end = endDate.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 
         for (LocalDate date = start; date.isBefore(end); date = date.plusDays(1)) {
             // Do your job here with `date`.
@@ -58,24 +54,7 @@ public class RoomEditPage extends HttpServlet {
             userDao.insert(newUser);
         }
 
-//        Room newUser = new Room(roomName,description,Price,Avalable,start);
 
-
-//        Double price = 50.00;
-
-//            Reservation reservation = new Reservation(start, end, price, newUser );
-//
-//            newUser.addReservasion(reservation);
-////        Email for reservasion
-//        SendEmail send = new SendEmail();
-//        send.getInfo("Your Conformasion for reservasion : ",  "Your name " + firstName + " "+lastName +
-//                        "\nStartDate: "+ start + " End Date: " + end + " \n If you want to edit your reservasion please call at property or go back to website" +
-//                         "\nYour reservasion is conform \n Thank you for making reservasion with us");
-//        logger.info("Email was sent");
-
-
-
-//        req.setAttribute("users",userDao.insert(newUser) );
         RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
         dispatcher.forward(req, resp);
     }

@@ -5,11 +5,11 @@ package hotel.controller;
 
 
 
-//import edu.matc.entity.User;
-//import edu.matc.persistence.UserData;
 
     import hotel.entity.User;
     import hotel.persistence.GenericDao;
+    import org.apache.logging.log4j.LogManager;
+    import org.apache.logging.log4j.Logger;
 
     import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,16 +19,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-    /**
-     * Add or edit the user
-     * @author pwaite
-     */
+/**
+ * This is fo cdelating user data or reservasion
+ * Coming from delate button on result page
+ * @author janak
+ */
 
     @WebServlet(
             urlPatterns = {"/deleteUser"}
     )
 
     public class DeleteUser extends HttpServlet {
+
+        private final Logger logger = LogManager.getLogger(this.getClass());
         @Override
         protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             GenericDao userData = new GenericDao(User.class);
@@ -36,10 +39,8 @@ import java.io.IOException;
 
 
             userData.delete(userData.getById(Integer.parseInt(req.getParameter("id"))));
+            logger.debug("User has been delited");
 
-            String firstName = req.getParameter("firstName");
-//            RequestDispatcher dispatcher = req.getRequestDispatcher("searchreservasion?param1="+firstName+"&submit=viewAll");
-//            dispatcher.forward(req, resp);
             RequestDispatcher dispatcher = req.getRequestDispatcher("/results.jsp");
             dispatcher.forward(req, resp);
         }
