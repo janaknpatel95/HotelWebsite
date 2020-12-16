@@ -50,16 +50,7 @@ class RoomTest {
 
 
         assertEquals(1, users.size());
-//        assertEquals(1, users.get(0).getId());
-//        logger.info(users);
-//        User retrievedUser = (User) genericDao.getById(users.get(0).getId());
-//        assertEquals("admin", retrievedUser.getUserRoles().toString());
-//        System.out.print(retrievedUser.getUserRoles());
 
-        // For loop works too!
-//        for(User userRole : users) {
-//            logger.info(userRole.userRoles);
-//        }
     }
 
 
@@ -129,29 +120,5 @@ class RoomTest {
     }
 
 
-    /**
-     * Verify successful insert of a user
-     */
-//    @Test
-//    void insertWithOrderSuccess() {
-//
-//        User newUser = new User("Fred", "Flintstone", "fflintstone");
-//        String orderDecription = "Order 1";
-//        Order order = new Order(orderDecription, newUser);
-//
-//        newUser.addOrder(order);
-//
-//
-//
-//        int id = genericDao.insert(newUser);
-//
-//
-//        assertNotEquals(0,id);
-//        User insertedUser = (User)genericDao.getById(id);
-//        assertEquals(insertedUser, insertedUser);
-//        assertEquals(1, insertedUser.getOrders().size());
-//        // Could continue comparing all values, but
-//        // it may make sense to use .equals()
-//        // TODO review .equals recommendations http://docs.jboss.org/hibernate/orm/5.2/userguide/html_single/Hibernate_User_Guide.html#mapping-model-pojo-equalshashcode
-//    }
+
 }

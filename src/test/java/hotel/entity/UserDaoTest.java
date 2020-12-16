@@ -77,7 +77,7 @@ class UserDaoTest {
         assertNotEquals(0,id);
         User insertedUser = (User)genericDao.getById(id);
         assertEquals(insertedUser, insertedUser);
-//        System.out.println(insertedUser);
+
     }
 
     /**
@@ -109,7 +109,7 @@ class UserDaoTest {
     void getAllSuccess() {
         List<User> users = genericDao.getAll();
         assertEquals(2, users.size());
-//        System.out.println(users);
+
     }
 
 

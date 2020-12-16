@@ -48,7 +48,7 @@ public class RoomEditPage extends HttpServlet {
             // Do your job here with `date`.
 
             Room newUser = new Room(roomName,description,Price,Avalable,date);
-            System.out.println("this is date "+date);
+
             logger.info(date);
 
             userDao.insert(newUser);
