@@ -38,6 +38,9 @@
 |12/07/2020|implment api for email server|3||
 |12/08/2020|Working on extra credit multihereting|5||
 |12/10/2020|REmoving code that do not need it|2||
+|12/13/2020|Working on error page and login page for admin|4||
+|12/16/2020|record video and finishing project for final touch |6||
+
 
 
              
