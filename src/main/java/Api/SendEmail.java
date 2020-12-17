@@ -45,11 +45,8 @@ public class SendEmail {
         }
 
         public void getInfo(String Subject, String message) {
-//        final String fromEmail = "sukamatc661@gmail.com"; //requires valid gmail id
-//        final String password = "%Ying006"; // correct password for gmail id
-//        final String toEmail = "yingritta@gmail.com"; // can be any email id
 
-            //log.error("SSLEmail Start");
+
             Properties props = new Properties();
             props.put("mail.smtp.host", "smtp.gmail.com"); //SMTP Host
             props.put("mail.smtp.socketFactory.port", "465"); //SSL Port
@@ -66,7 +63,7 @@ public class SendEmail {
             };
 
             Session session = Session.getDefaultInstance(props, auth);
-            //log.error("Session created");
+
             Email.sendEmail(session, properties.getProperty("toEmail"),Subject, message);
 
         }
